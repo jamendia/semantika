@@ -171,8 +171,8 @@ Eta erregela bakarra, tipoa osatzeko:
 > $a$ eta $b$ tipo semantikoak badira, $\langle a, b \rangle$ tipo semantikoa da.
 
 Erregela horrek sistema errekurtsiboa osatzen du, eta, beraz, tipo kopurua
-infinitua da. Espresio baten tipoa azpi-indize gisa markatuko dugu: $\alpha_{t}$
-bezala.
+infinitua da. Espresio baten tipoa azpi-indize gisa markatuko dugu:
+$\alpha_{\langle e, t\rangle}$ bezala.
 
 ::: {#exm-tipoak}
 a. $\langle e, t \rangle$
@@ -284,10 +284,11 @@ $$
 $$
 
 Modu horretan, $\langle e, \langle e, t\rangle\rangle$ eta
-$\langle\langle e,e\rangle, t\rangle$ berdinak dira multzo gisa, baina ez
-funtzio gisa. Lehenak konposizioa ahalbidetzen du, sintaxiarekin bat etorriz;
-bigarrenak ez. Hori da tipo-teoria erabiltzearen abantaila nagusia: egitura
-sintaktikoa eta konposizio semantikoa bat datozela bermatzen du.
+$\langle\langle e,e\rangle, t\rangle$ elkarri lotuta daude —kurifikazioak
+batetik bestera eramatea ahalbidetzen du—, baina konposizioari dagokionez ez
+dira baliokideak: lehenak sintaxiarekin bat egiten du, bigarrenak ez. Hori da
+tipo-teoria erabiltzearen abantaila nagusia: egitura sintaktikoa eta konposizio
+semantikoa bat datozela bermatzen du.
 
 ## Lambda eragilea
 
