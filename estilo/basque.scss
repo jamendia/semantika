@@ -19,28 +19,28 @@ h1 {
   margin-bottom: 1rem;
 }
 
-/* Adibideak: hizkuntzalaritzako ohiko itxura (ezkerreko marra mehea) */
-.theorem {
-  border-left: 2px solid #d0d0d0;
-  padding-left: 0.9rem;
-  margin: 1.1rem 0 1.1rem 0.2rem;
+/* Adibideak: hizkuntzalaritzako ohiko itxura (ezkerreko zenbakia) */
+.theorem.example {
+  position: relative;
+  border: none;
+  border-left: none;
+  padding-left: 2.2rem;
+  margin: 1.1rem 0;
   font-style: normal;
 }
 
-.theorem p {
-  margin-bottom: 0.25rem;
-}
-
-.theorem .theorem-title {
-  font-variant: small-caps;
+.theorem.example .theorem-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-variant: normal;
   font-weight: 600;
-  color: #555;
+  color: #444;
+  font-size: 0.95em;
 }
 
-/* Adibideen azpibanaketak: a., b., c. */
-.theorem ol,
-.theorem ul {
-  margin-bottom: 0.2rem;
+.theorem.example p {
+  margin-bottom: 0.25rem;
 }
 
 /* Definizioak: markatuagoak */
@@ -48,6 +48,43 @@ h1 {
   background: #f7f6f3;
   border-left: 3px solid #1f4e79;
   padding: 0.7rem 1rem 0.5rem 1rem;
+}
+
+/* Zuhaitzak: zentratuta, marjina */
+.tree, pre.tree, .quarto-figure .tree {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.tree img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Glossak: lerrokatutako hiru lerro */
+.gloss {
+  margin: 0.8rem 0 1rem 0;
+  font-size: 0.95em;
+}
+
+.gloss-line {
+  margin: 0;
+  line-height: 1.35;
+}
+
+.gloss-orig {
+  font-style: italic;
+}
+
+.gloss-gloss {
+  font-family: "Iosevka", "Cascadia Mono", monospace;
+  font-size: 0.88em;
+  color: #444;
+}
+
+.gloss-trans {
+  font-size: 0.9em;
+  color: #555;
 }
 
 /* Zuhaitzak eta parentesi etiketatuak: letra monoespatiatua, tamaina txikiagoa */

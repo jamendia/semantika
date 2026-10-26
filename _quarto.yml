@@ -37,6 +37,11 @@ book:
 
 lang: eu
 
+bibliography: bibliografia.bib
+csl: estilo/unified-style-sheet-for-linguistics.csl
+filters:
+  - tresnak/linguistika.lua
+
 crossref:
   exm-title: "Adibidea"
   exr-title: "Ariketa"
@@ -53,15 +58,17 @@ format:
     link-external-icon: false
     fig-cap-location: bottom
     tbl-cap-location: top
-  typst:
-    papersize: a4
-    margin:
-      x: 2.4cm
-      y: 2.6cm
-    mainfont: "Libertinus Serif"
-    fontsize: 10.5pt
-    linkcolor: "#1f4e79"
-    citecolor: "#1f4e79"
+  pdf:
+    pdf-engine: lualatex
+    include-in-header:
+      - tex/aurrea.tex
+    keep-tex: true
+    number-sections: true
+    colorlinks: true
+    linkcolor: esteka
+    citecolor: esteka
+    toc: true
+    toc-depth: 3
 
 execute:
   echo: false

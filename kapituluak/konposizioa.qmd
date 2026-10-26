@@ -207,6 +207,14 @@ Horretarako **eredua** behar da. Eredua munduaren (edo mundu posible baten)
 irudikapen sinplifikatu bat da: zer banako dagoen, eta nolako harremanak
 dituzten.
 
+Adibidez, honako perpausaren esanahia azter dezagun:
+
+::: {.gloss #gloss-konp-etorri}
+Ane-k etorri du
+Ane-ERG come AUX
+Ane etorri da.
+:::
+
 Demagun gure eredua $\mathcal{E}$ dela, eta eredu horretan Ane, Amaia,
 Beatriz eta Mikel daudela. Demagun, halaber, Ane eta Beatriz etorri direla.
 Orduan *etorri* predikatuaren denotazioa hauxe da:
@@ -270,6 +278,10 @@ $$
 [\mkern-2mu_{\text{P}}\ \text{Ane-k}\ [\mkern-2mu_{\text{AS}}\ \text{Amaia}\ \text{ikusi}\,]]
 $$
 
+::: {.tree #tree-konp-ikusi}
+[P [IS Ane-k] [AS [IS Amaia] [A ikusi]]]
+:::
+
 Behetik gorako bidean, lehenengo *Amaia* eta *ikusi* konbinatzen dira *AS*
 osatzeko, eta gero *Ane-k* gehitzen zaio. Beraz, *ikusi*-ren denotazioak
 lehenengo zerbait eman behar du *Amaia*-rekin konbinatuta, eta emaitza hori
@@ -291,6 +303,16 @@ tipo-teoria erabiltzearen abantaila nagusia: egitura sintaktikoa eta konposizio
 semantikoa bat datozela bermatzen du.
 
 ## Lambda eragilea
+
+::: {.gloss #gloss-konp-amaia-ikusi}
+Amaia ikusi du Anek
+Amaia see AUX Ane.ERG
+Anek Amaia ikusi du.
+:::
+
+::: {.tree #tree-konp-amaia-ikusi}
+[AS [IS Amaia] [A ikusi]]
+:::
 
 ### Arazoa: espresio asegabeen esanahia
 
@@ -587,7 +609,7 @@ testuingurua sarrera lexikoen parte bihurtuz.
 ### Ondorioa: "nola" galdera
 
 Aurreko lau erronkek erakusten dute konposizionalitatea ez dela bai/ez galdera.
-David Dowty-k (2006: 5) argi jarri zuen:
+David Dowty-k (@dowty2006 [5]) argi jarri zuen:
 
 > "Compositionality really should be considered 'an empirical question'. But it
 > is not a yes-no question, rather it is a 'how'-question."

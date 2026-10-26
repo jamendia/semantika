@@ -31,8 +31,27 @@ jobs:
         with:
           version: "1.10.18"
 
+      - name: TeX prestatu (XeLaTeX + expex + forest)
+        uses: r-lib/actions/setup-texlive@v2
+        with:
+          texlive-version: "2024"
+          packages: >
+            xetex
+            luatex
+            expex
+            forest
+            babel-basque
+            microtype
+            needspace
+
+      - name: Poppler prestatu (SVG bihurketarako)
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
       - name: Terminologia birsortu
         run: python tresnak/hiztegia.py
+
+      - name: Zuhaitzak sortu (SVG)
+        run: python tresnak/arbolak.py
 
       - name: Kalitate-egiaztapena
         run: python tresnak/terminoak-egiaztatu.py
@@ -40,10 +59,13 @@ jobs:
       - name: Hiztegia sinkronizatuta dagoela egiaztatu
         run: |
           git diff --exit-code -- eranskinak/a-terminologia.qmd \
-            || (echo "::error::a-terminologia.qmd zaharkituta dago. Exekutatu 'python tresnak/hiztegia.py' eta egin commit." && exit 1)
+            || (echo "::error::a-terminologia.qmd zaharkituta dago." && exit 1)
 
       - name: Errendatu
         run: quarto render
+
+      - name: HTML ostprozesatu (adibideen etiketak)
+        run: python tresnak/ostprozesatu.py
 
       - name: Pages prestatu
         uses: actions/configure-pages@v5

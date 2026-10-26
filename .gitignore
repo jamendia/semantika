@@ -45,3 +45,7 @@ __pycache__/
 
 /.quarto/
 **/*.quarto_ipynb
+
+# LaTeX errendatzearen ondorioak
+*.tex
+!tex/aurrea.tex
