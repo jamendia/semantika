@@ -4,7 +4,7 @@
 
 Liburu ireki bat, euskaraz, hizkuntzaren esanahiaz.
 
-- **Egilea:** Jamendia
+- **Egilea:** jamendia
 - **Lizentzia:** [CC BY 4.0](LICENSE)
 - **Biltegia:** <https://github.com/jamendia/semantika>
 - **Egoera:** eraikuntza-fasea. Pilotua: *Konposizioa* kapitulua.
