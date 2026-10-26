@@ -22,6 +22,16 @@ jobs:
         with:
           version: "1.10.18"
 
+      - name: TinyTeX prestatu (PDFarentzat)
+        uses: r-lib/actions/setup-tinytex@v2
+
+      - name: LaTeX paketeak instalatu
+        run: |
+          tlmgr install \
+            expex forest newunicodechar babel-basque \
+            unicode-math fontspec latexmk \
+            koma-script selnolig parskip xurl bookmark
+
       - name: Terminologia birsortu
         run: python tresnak/hiztegia.py
 
@@ -31,8 +41,11 @@ jobs:
       - name: Kalitate-egiaztapena
         run: python tresnak/terminoak-egiaztatu.py
 
-      - name: Errendatzearen proba (HTML)
-        run: quarto render --to html
+      - name: Errendatzearen proba (HTML + PDF)
+        run: quarto render
 
       - name: HTML ostprozesatu
         run: python tresnak/ostprozesatu.py
+
+      - name: Zenbakitze globala egiaztatu
+        run: python tresnak/ostprozesatu.py --check

@@ -15,6 +15,7 @@ egia-balioa;truth value;Egiazkoa edo faltsua izatearen propietatea.;;onartua;Oin
 eredua;model;Munduaren irudikapen formala, banakoek eta haien arteko harremanek osatua.;Ez erabili "modeloa".;onartua;Oinarrizko kontzeptuak
 errepresentazio semantikoa;semantic representation;Espresio baten esanahiaren idazkera formala.;;onartua;Oinarrizko kontzeptuak
 inferentzia;inference;Proposizio batetik bestera arrazoibidez igarotzea.;;onartua;Oinarrizko kontzeptuak
+glossa interlineala;interlinear gloss;Adibide linguistiko bati jarraitzen dion hiru lerroko azalpena: jatorrizko perpausa, hitz bakoitzaren glossa morfosintaktikoa eta itzulpen askea.;Euskarazko adibideak ez dira glossatzen, beste hizkuntza batetakoak bai.;berria;Oinarrizko kontzeptuak
 konposizionalitatearen hatsarrea;principle of compositionality;Espresio konplexu baten esanahia osagaien esanahien eta egitura sintaktikoaren funtzioa da.;Literaturan "printzipioa" ere erabiltzen da.;onartua;Konposizioa
 konposizio semantikoa;semantic composition;Osagaien esanahietatik espresio konplexuaren esanahia eraikitzea.;;onartua;Konposizioa
 espresio asea;saturated expression;Bere argumentu guztiak beteta dituen espresioa.;;onartua;Konposizioa

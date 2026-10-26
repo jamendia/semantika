@@ -12,7 +12,7 @@ oharrak. Termino baten ondoren **†** badago, terminoa proposamena da
 oraindik, eta **‡** badago, berrikusteko dago.
 :::
 
-Guztira **92** termino daude, 9 ataletan banatuta.
+Guztira **93** termino daude, 9 ataletan banatuta.
 
 
 ## Oinarrizko kontzeptuak
@@ -30,6 +30,7 @@ Guztira **92** termino daude, 9 ataletan banatuta.
 | **esanahi linguistikoa** | linguistic meaning | Espresio bati hizkuntzak berak ematen dion esanahia, testuinguruaren eta hiztunaren asmoen gainetik. |  |
 | **esanahi pragmatikoa** | pragmatic meaning | Testuinguruan eta erabileran oinarrituta hiztunak transmititzen duen esanahia. |  |
 | **esanahia** | meaning | Espresio batek daraman informazio konbentzionala. |  |
+| **glossa interlineala†** | interlinear gloss | Adibide linguistiko bati jarraitzen dion hiru lerroko azalpena: jatorrizko perpausa, hitz bakoitzaren glossa morfosintaktikoa eta itzulpen askea. | Euskarazko adibideak ez dira glossatzen, beste hizkuntza batetakoak bai. |
 | **hiztunaren esanahia** | speaker meaning | Hiztunak esaldi batekin transmititu nahi duen esanahia. |  |
 | **inferentzia** | inference | Proposizio batetik bestera arrazoibidez igarotzea. |  |
 | **perpausa** | sentence | Osagai sintaktikoen konbinazio ondo eratua, egia-balioa har dezakeena. | Ez erabili "esaldia" zentzu honetan. |
@@ -202,6 +203,7 @@ Guztira **92** termino daude, 9 ataletan banatuta.
 | funtzioa | function |
 | gaia | topic |
 | gertakaria | event |
+| glossa interlineala† | interlinear gloss |
 | heina | range |
 | hiperonimia | hypernymy |
 | hiponimia | hyponymy |

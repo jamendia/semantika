@@ -1,0 +1,130 @@
+% ---------------------------------------------------------------------------
+% tex/aurrea.tex — PDFaren aurrea (preamble).
+%
+% Quarto-k kargatzen du: format: pdf > include-in-header.
+%
+% ExPex + unicode-math GATAZKA (konponduta, baina ez aldatu arrazoirik gabe):
+% Quarto-txantiloiak unicode-math kargatzen du lualatex-entzat, eta
+% unicode-math-ek \AtBeginDocumentean beraplikatzen du bere ikur-taula
+% (unicode-math-luatex.sty, \__um_define_math_chars:). Taula horretan
+% U+2AA5 ("greater-than beside less-than") ikurraren izena \gla da:
+%   \UnicodeMathSymbol{"02AA5}{\gla}{\mathrel}{greater-than beside less-than}
+% Beraz, hasierakoan \gla \let egiten zaio karaktere-token bati, eta ExPex-en
+% \gla glossa-lerroaren makroa suntsituta geratzen da: \gla ez da hedatzen,
+% talde-egitura puskatzen da, eta \endgl huts egiten du ("Too many }'s").
+% (\glb ez da jotzen, izenez ez datorrelako bat unicode-matheren taularekin.)
+% KONPONBIDEA: expex kargatu ondoren kopia bat gorde (\expex@gla) eta
+% \AtBeginDocumentean bueltatu. Hook-ak ordenan exekutatzen dira:
+% unicode-math-ena lehen (txantiloiak erregistratua), gurea gero.
+% ---------------------------------------------------------------------------
+
+\usepackage{expex}               % adibideak + glossa interlineala
+\usepackage[linguistics]{forest} % zuhaitzak
+\input{tex/forest-ezarpenak.tex}
+
+% --- ExPex / unicode-math gatazkaren konponketa (ikus goiko oharra) --------
+\makeatletter
+\let\expex@gla\gla
+\let\expex@glb\glb
+\let\expex@glc\glc
+\let\expex@glft\glft
+\AtBeginDocument{%
+  \let\gla\expex@gla
+  \let\glb\expex@glb
+  \let\glc\expex@glc
+  \let\glft\expex@glft
+}
+\makeatother
+
+% --- Notazioaren unicode karaktereak -> LaTeX makroak -----------------------
+% .qmd iturrietan karaktereak literalki daude (⟦α⟧^ℰ, ⟨e, t⟩...); pandoc-ek
+% pasatzen ditu aldatu gabe. unicode-math-ek izen natiboak ditu horietarako:
+% U+27E6 -> \lBrack, U+27E7 -> \rBrack, U+2130 -> \mscrE.
+\usepackage{newunicodechar}
+\newunicodechar{⟦}{\ensuremath{\lBrack}}
+\newunicodechar{⟧}{\ensuremath{\rBrack}}
+\newunicodechar{⟨}{\ensuremath{\langle}}
+\newunicodechar{⟩}{\ensuremath{\rangle}}
+\newunicodechar{λ}{\ensuremath{\lambda}}
+\newunicodechar{ℰ}{\ensuremath{\mscrE}}
+\newunicodechar{≠}{\ensuremath{\neq}}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{∧}{\ensuremath{\wedge}}
+\newunicodechar{∨}{\ensuremath{\vee}}
+\newunicodechar{∃}{\ensuremath{\exists}}
+\newunicodechar{∀}{\ensuremath{\forall}}
+\newunicodechar{∈}{\ensuremath{\in}}
+\newunicodechar{∉}{\ensuremath{\notin}}
+\newunicodechar{⊆}{\ensuremath{\subseteq}}
+\newunicodechar{∩}{\ensuremath{\cap}}
+\newunicodechar{∪}{\ensuremath{\cup}}
+\newunicodechar{∅}{\ensuremath{\emptyset}}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+\newunicodechar{↦}{\ensuremath{\mapsto}}
+\newunicodechar{⟹}{\ensuremath{\Longrightarrow}}
+\newunicodechar{⟼}{\ensuremath{\longmapsto}}
+
+% --- ExPex ezarpenak --------------------------------------------------------
+% exnoformat=(X) eta exnotype=arabic ExPex-en lehenetsiak dira: zenbakitze
+% globala (1), (2), (3)... liburu osoan, kapituluko resetik gabe.
+\lingset{aboveglftskip=.3ex, exskip=1.2ex, interpartskip=.6ex}
+
+% --- Adibide-ingurunea: zenbakitze globala ----------------------------------
+% Quarto crossref-ek \begin{example} ingurunea sortzen du amsthm-ekin,
+% kapituluko zenbakitzearekin ("Adibidea 4.1"). Hizkuntzalaritzako
+% konbentzioa liburu osoko zenbakitzea da: (1), (2), (3)... crossref-ek bere
+% div-ak quarto-pre fasean "custom AST" nodo bihurtzen ditu erabiltzailearen
+% iragazkientzat ikusegin, beraz konponbidea ingurunea bera birdefinitzea da.
+% Inguruneak crossref-ek utzitako ~ lausoa neutralizatzen du, eta
+% \everypar bidez lehenengo benetako paragrafoaren hasieran jartzen du
+% (n) etiketa, marjinan zintzilik: horrela "(1) a. ..." layout estandarra
+% lortzen da, bai zerrendadun adibideentzat, bai perpaus bakarrekoentzat,
+% bai glossadunentzat. \label/\ref ondo funtzionatzen dute.
+% Ariketak (#exr-) eta definizioak (#def-) kapituluko zenbakitzearekin
+% geratzen dira, nahi bezala.
+\makeatletter
+\newcounter{adibkont}
+\newif\ifadib@jarrita
+\def\adib@etiketa{%
+  \ifadib@jarrita\else
+    \adib@jarritatrue
+    \llap{(\arabic{adibkont})\enspace}%
+  \fi
+}
+\def\adib@empty{}
+\AtBeginDocument{%
+  \renewenvironment{example}[1][]{%
+    \par\addvspace{1.2ex}%
+    \refstepcounter{adibkont}%
+    \adib@jarritafalse
+    \let~\adib@empty
+    \edef\adib@savedeverypar{\the\everypar}%
+    \everypar{\adib@etiketa\everypar{\adib@savedeverypar}}%
+    % Zerrenda-adibideak: LaTeX-en \everypar mekanismoa listek baliogabetzen
+    % dute, eta lehenengo \item-aren aurretik. Soluzioa: lehenengo itemaren
+    % etiketan sartu zenbakia -> "(1) a. ..." layout estandarra.
+    \let\adib@oldatitem\@item
+    \def\@item[##1]{%
+      \ifadib@jarrita
+        \adib@oldatitem[{##1}]%
+      \else
+        \adib@jarritatrue
+        \adib@oldatitem[{(\arabic{adibkont})\enspace##1}]%
+      \fi
+    }%
+    \ignorespaces
+  }{%
+    \everypar{\adib@savedeverypar}%
+    \par\addvspace{1.2ex}%
+  }
+  % Ariketak: kapituluko zenbakitzea, baina marjinan "(4.1)" gisa (HTML-ekin
+  % bateratzeko); amsthm-aren "Ariketa 4.1" goiburua ordezten du.
+  \renewenvironment{exercise}[1][]{%
+    \par\addvspace{1.2ex}\refstepcounter{exercise}%
+    \noindent\llap{(\theexercise)\enspace}\ignorespaces
+  }{%
+    \par\addvspace{1.2ex}%
+  }%
+}
+\makeatother

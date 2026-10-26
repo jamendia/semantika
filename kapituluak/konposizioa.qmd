@@ -472,6 +472,17 @@ Bigarren ondorioa are baliagarriagoa da analisirako. Har dezagun perpaus hau:
 *Ikasle guztiek bi liburu irakurri dituzte.*
 :::
 
+Perpaus bera ingelesez, glossa interlinealarekin (glossa hizkuntza
+arrotzetarako erabiltzen da; euskarazko adibideak ez dira glossatzen):
+
+::: {#exm-eskopa-en}
+::: {.gloss}
+Every student read two books
+every student read.PST two book.PL
+Ikasle guztiek bi liburu irakurri dituzte.
+:::
+:::
+
 Perpausak bi irakurketa ditu, eta ez dago hitzetan anbiguotasun lexikorik.
 Irakurketak hauek dira:
 

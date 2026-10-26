@@ -12,6 +12,7 @@ _site/
 .quarto/
 .quarto-cache/
 *_files/
+site_libs/
 /.luarc.json
 /.Rhistory
 /.RData
@@ -21,6 +22,8 @@ _site/
 *.docx
 *.typ
 *.tex
+!tex/aurrea.tex
+!tex/forest-ezarpenak.tex
 !/assets/**/*.pdf
 
 # ---------------------------------------------------------------------------

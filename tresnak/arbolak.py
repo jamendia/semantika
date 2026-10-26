@@ -24,31 +24,29 @@ ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets" / "arbolak"
 TREE_RE = re.compile(r":::\s*\{\.tree\s+#([\w-]+)\}\s*\n(.*?)\n:::", re.DOTALL)
 
+# Zuhaitzen ezarpen partekatuak: tex/forest-ezarpenak.tex da iturri bakarra
+# (PDFaren aurreak \input egiten du; hemen irakurri eta muntatzen da).
+FOREST_EZARPENAK = ROOT / "tex" / "forest-ezarpenak.tex"
+
 PREAMBLE = r"""
 \documentclass[border=4pt]{standalone}
 \usepackage{fontspec}
 \usepackage[basque]{babel}
 \usepackage[linguistics]{forest}
-\forestset{
-  default preamble={
-    for tree={
-      parent anchor=south,
-      child anchor=north,
-      font=\small,
-      edge={semithick},
-      l sep+=1.2ex,
-      s sep+=1.5ex,
-      inner sep=2pt,
-      align=center
-    }
-  }
-}
+%s
 \begin{document}
 \begin{forest}
 %s
 \end{forest}
 \end{document}
 """
+
+
+def forest_ezarpenak() -> str:
+    if not FOREST_EZARPENAK.exists():
+        print(f"ERROREA: ez da aurkitu {FOREST_EZARPENAK.relative_to(ROOT)}")
+        raise SystemExit(1)
+    return FOREST_EZARPENAK.read_text(encoding="utf-8")
 
 
 def find_trees():
@@ -69,7 +67,7 @@ def find_trees():
 def compile_tree(tid, content):
     ASSETS.mkdir(parents=True, exist_ok=True)
     svg_path = ASSETS / f"{tid}.svg"
-    tex = PREAMBLE % content
+    tex = PREAMBLE % (forest_ezarpenak(), content)
 
     with tempfile.TemporaryDirectory() as tmp:
         tmpdir = Path(tmp)

@@ -58,8 +58,15 @@ eranskinak/
   b-ikurrak.qmd            Notazio-taula
   c-aipamena.qmd           Nola aitatu
 terminologia/hiztegia.csv  Terminologiaren iturri bakarra
-tresnak/hiztegia.py        Hiztegia → eranskina sortzen du
-tresnak/terminoak-egiaztatu.py  Kalitate-egiaztapena
+tex/
+  aurrea.tex               PDFaren aurrea (expex, forest, unicode mapa)
+  forest-ezarpenak.tex     Zuhaitzen ezarpenak (iturri bakarra: PDF + SVG)
+tresnak/
+  hiztegia.py              Hiztegia → eranskina sortzen du
+  terminoak-egiaztatu.py   Kalitate-egiaztapena
+  linguistika.lua          Pandoc iragazkia: zuhaitzak eta glossak
+  arbolak.py               Forest → SVG (assets/arbolak/)
+  ostprozesatu.py          HTML adibideen zenbakitze globala + --check
 estilo/basque.scss         Estiloa
 ```
 
@@ -97,6 +104,43 @@ Txantiloia: `kapituluak/_txantiloia.qmd` (ez da errendatzen).
 
 Ariketen IDak: `::: {#exr-<kapitulua>-<zenbakia>}`. Adibidez `#exr-konp-1`.
 Ebazpenak beste biltegian ID berarekin gordetzen dira.
+
+### Adibideen zenbakitzea eta glossak (garrantzitsua)
+
+**Adibideak (`#exm-`) liburu osoan zenbatzen dira: `(1), (2), (3)…`, ez
+kapituluko `(4.1)`.** Ariketak (`#exr-`), aldiz, kapituluko zenbakitzea
+gorde behar dute: `(4.1)`. Bi formatuek berdin errendatu behar dute:
+
+- **PDF:** crossref-ek sortutako `example` ingurunea `tex/aurrea.tex`-ek
+  birdefinitzen du `\AtBeginDocument`-ean, kontagailu global batekin
+  (`adibkont`). Ez aldatu hori arazorik gabe.
+- **HTML:** Quarto-k `Adibidea 4.1` etiketa sortzen du, eta
+  `python tresnak/ostprozesatu.py`-k `(n)` global bihurtzen du
+  `_quarto.yml`-ko kapitulu ordena jarraituz. `--check` modua CI-rako:
+  idempotentea dela eta `(1)…(n)` sekuentzia osoa dagoela egiaztatzen du.
+
+**Glossa interlineala** hizkuntza arrotzetako adibideentzat soilik;
+euskarazko adibideak ez dira inoiz glossatzen. Glossa `#exm-` div baten
+**barnean** kapsulatzen da (zenbaki bakarra adibide bakoitzeko):
+
+```markdown
+::: {#exm-eskopa-en}
+::: {.gloss}
+Every student read two books
+every student read.PST two book.PL
+Ikasle guztiek bi liburu irakurri dituzte.
+:::
+:::
+```
+
+Hiru lerro: jatorrizko perpausa, glossa morfosintaktikoa, itzulpen askea.
+PDFan ExPex-en `\gla/\glb/\glft` bihurtzen du `tresnak/linguistika.lua`-k;
+HTMLan `div.gloss` sortzen du.
+
+**Zuhaitzak:** `::: {.tree #id}` div-ak, parentesi etiketatuekin
+(`[P [IS Ane-k] [AS ...]]`). PDFan Forest; HTMLan SVG
+(`python tresnak/arbolak.py`-k sortuak, biltegian gordeta). Ezarpenak
+`tex/forest-ezarpenak.tex`-en: iturri bakarra PDF eta SVGrentzat.
 
 ---
 
@@ -148,12 +192,16 @@ Ez erabili ingelesezko `S`, `NP`, `VP`, `DP`.
 | Itzulpen lexikoa | `etorri'` | Apostrofo bakuna |
 | Aplikazioa | `⟦ikusi'⟧^ℰ(⟦amaia⟧^ℰ)` | |
 
-Matematika `$...$` eta `$$...$$` artean. Ez erabili `\begin{array}` baino
-konstruktu exotikorik: HTMLrako MathJax eta PDFrako Typst bietara heldu behar du.
+Matematika `$...$` eta `$$...$$` artean, karaktere unicode literalekin
+(`⟦⟧`, `⟨⟩`, `λ`, `ℰ`). Ez erabili `\begin{array}` baino konstruktu
+exotikorik: HTMLrako MathJax eta PDFrako LaTeX (lualatex) bietara heldu
+behar du. PDFaren aldean karaktere horiek `tex/aurrea.tex`-eko
+`\newunicodechar` mapak bihurtzen ditu makrotara; karaktere matematiko berri
+bat erabili behar bada, gehitu mapa horri.
 
-Zuhaitzak: parentesi etiketatuak lehentsi
+Zuhaitzak: parentesi etiketatuak `::: {.tree #id}` div batean
 (`[P [IS Ane-k] [AS [IS Amaia] [A ikusi]]]`), eta gehienez zuhaitz bat edo bi
-marraztu `array` bidez kapitulu bakoitzean.
+kapitulu bakoitzean.
 
 ---
 
@@ -176,11 +224,18 @@ marraztu `array` bidez kapitulu bakoitzean.
 ```bash
 python tresnak/hiztegia.py          # hiztegia birsortu
 python tresnak/terminoak-egiaztatu.py  # QA: markatzaileak, termino okerrak
+python tresnak/arbolak.py           # zuhaitz berriak SVG bihurtu (--check: egiaztatu)
 quarto render                       # HTML + PDF (_site/)
+python tresnak/ostprozesatu.py      # HTML: adibideen zenbakitze globala
+python tresnak/ostprozesatu.py --check  # CI: idempotentzia + (1)..(n) sekuentzia
 quarto preview                      # tokiko aurrebista
 ```
 
-CIk (` .github/workflows/`) hirurak exekutatzen ditu push bakoitzean.
+**Oharra:** `quarto render --to html` bakarrik exekutatuz gero, Quarto-k
+`_site` garbitzen du eta PDFa ezabatzen du. Azken egoeran beti errendatu
+bi formatuak elkarrekin (`quarto render`, formaturik gabe).
+
+CIk (`.github/workflows/`) guztiak exekutatzen ditu push bakoitzean.
 `quarto render` huts egiten badu, ez egin commit.
 
 ---
@@ -209,14 +264,36 @@ dira; edo onargarria da, edo `{.unnumbered}` bidez konpondu beharko litzateke
 geroago (Quarto 1.10-en ez du garbi funtzionatzen liburu-proiektuetan).
 Kapitulu berriak gehitzean, zenbakiak automatikoki berrantolatzen dira.
 
+### PDFaren mugarri teknikoak (ez aldatu arrazoirik gabe)
+
+- **ExPex + unicode-math gatazka:** Quarto-txantiloiak `unicode-math`
+  kargatzen du lualatex-entzat, eta pakete horrek `\AtBeginDocument`-ean
+  beraplikatzen du bere ikur-taula. Taulan U+2AA5 ikurraren izena `\gla` da,
+  eta ExPex-en `\gla` (glossaren lehen lerroa) suntsitzen du: `\endgl`
+  huts egiten du ("Too many }'s"). Konponketa `tex/aurrea.tex`-en dago:
+  `\gla/\glb/\glc/\glft` kopiatu eta `\AtBeginDocument`-ean bueltatu.
+  Ez kendu; beste konponbide bakarra unicode-math ez erabiltzea da, eta
+  Quarto-txantiloiak ez du hori baimentzen.
+- **Crossref-en custom AST:** quarto-pre fasean crossref-ek `#exm-`/`#exr-`
+  div-ak nodo pertsonal bihurtzen ditu, erabiltzaile-iragazkientzat
+  ikusegin (identifikatzailerik gabe iristen zaizkio `Div` maneiatzaileari).
+  Gainera, `require("quarto")` ez dabil erabiltzaile-iragazkietan. Ondorioz:
+  adibideak ezin dira iragazkiaren bidez `\ex/\pex` bihurtu PDFan; horregatik
+  `example` ingurunea birdefinitzen da `tex/aurrea.tex`-en. `.tree` eta
+  `.gloss` div-ak, aldiz, iragazkiraino iristen dira eta hark kudeatzen ditu.
+- **`~` lausoa:** crossref-ek `~` jartzen du adibidearen lehen paragrafo
+  gisa; `tex/aurrea.tex`-eko ingurune berriak neutralizatzen du, zenbakia
+  lehenengo eduki-lerroan ager dadin.
+
 ---
 
 ## 9. Kalitate-ateak
 
 Kapitulu bat "egina" dela esateko:
 
-- [ ] `quarto render` akatsik gabe.
+- [ ] `quarto render` akatsik gabe (bi formatuak: HTML + PDF).
 - [ ] `python tresnak/terminoak-egiaztatu.py` akatsik gabe.
+- [ ] `python tresnak/ostprozesatu.py --check` akatsik gabe.
 - [ ] Termino berri guztiak `hiztegia.csv`-n erregistratuta.
 - [ ] Adibide gakoek `#exm-` IDa dute, eta testuan erreferentzia egiten zaie.
 - [ ] Ariketek `#exr-` IDa dute.

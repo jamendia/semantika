@@ -57,6 +57,13 @@ format:
     link-external-icon: false
     fig-cap-location: bottom
     tbl-cap-location: top
+  pdf:
+    engine: lualatex
+    keep-tex: true
+    include-in-header: tex/aurrea.tex
+    toc: true
+    number-sections: true
+    colorlinks: true
 
 execute:
   echo: false

@@ -1,0 +1,23 @@
+% ---------------------------------------------------------------------------
+% tex/forest-ezarpenak.tex — Zuhaitzen (Forest) ezarpen partekatuak.
+%
+% Iturri bakarra. Bi erabilera:
+%   1. tex/aurrea.tex-k \input egiten du (PDFaren aurrea).
+%   2. tresnak/arbolak.py-k irakurtzen du SVGak sortzeko muntatzen duen
+%      standalone dokumentuan.
+% Aldatu hemen; ez bi lekutan.
+% ---------------------------------------------------------------------------
+\forestset{
+  default preamble={
+    for tree={
+      parent anchor=south,
+      child anchor=north,
+      font=\small,
+      edge={semithick},
+      l sep+=1.2ex,
+      s sep+=1.5ex,
+      inner sep=2pt,
+      align=center
+    }
+  }
+}
