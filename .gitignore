@@ -20,6 +20,7 @@ _site/
 *.pdf
 *.docx
 *.typ
+*.tex
 !/assets/**/*.pdf
 
 # ---------------------------------------------------------------------------
@@ -46,6 +47,8 @@ __pycache__/
 /.quarto/
 **/*.quarto_ipynb
 
-# LaTeX errendatzearen ondorioak
-*.tex
-!tex/aurrea.tex
+# LaTeX errendatzearen ondorioak (gordeta: adibideen .aux/.log arrastoak)
+*.aux
+*.log
+*.toc
+*.out

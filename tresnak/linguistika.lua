@@ -1,28 +1,27 @@
 -- tresnak/linguistika.lua
--- Pandoc filter: linguistic trees and glosses.
+-- Pandoc iragazkia: hizkuntzalaritzako zuhaitzak eta glossak (HTML).
 --
+-- Zuhaitza:
 --   ::: {.tree #id}
 --   [P [IS ...] [AS ...]]
 --   :::
---     -> LaTeX: \begin{forest}...\end{forest}
---     -> HTML:  <img src="assets/arbolak/<id>.svg">
+--   -> <img src="assets/arbolak/<id>.svg">
+--   SVGa tresnak/arbolak.py-k sortzen du (Forest -> SVG), eta biltegian
+--   gordetzen da. Aldatu zuhaitza bada, exekutatu: python tresnak/arbolak.py
 --
+-- Glossa (hizkuntza arrotzetako adibideentzat soilik; euskarazkoak ez):
 --   ::: {.gloss #id}
---   original line
---   gloss line
---   translation line
+--   jatorrizko lerroa
+--   glossa lerroa
+--   itzulpen lerroa
 --   :::
---     -> LaTeX: \begingl ... \endgl  (ExPex)
---     -> HTML:  <div class="gloss"> with three lines
-
-local function is_latex()
-  return FORMAT:match("latex") ~= nil or FORMAT:match("pdf") ~= nil
-end
+--   -> <div class="gloss"> hiru lerrorekin
 
 local function is_html()
   return FORMAT:match("html") ~= nil
 end
 
+-- Div baten lerroak lortu, SoftBreak/LineBreak-ak errespetatuz.
 local function div_lines(el)
   local out = {}
   local current = ""
@@ -57,16 +56,10 @@ end
 function Div(el)
   if el.classes:includes("tree") then
     local id = el.identifier or ""
-    local content = pandoc.utils.stringify(el):gsub("^%s+", ""):gsub("%s+$", "")
-    if is_latex() then
-      local latex = "\\begin{forest}\n" .. content .. "\n\\end{forest}"
-      return pandoc.RawBlock("latex", latex)
-    elseif is_html() then
-      local src = "assets/arbolak/" .. id .. ".svg"
-      local alt = "Zuhaitz sintaktikoa: " .. id
-      local img = pandoc.Image({pandoc.Str(alt)}, src, alt)
-      return pandoc.Para({img})
-    end
+    local src = "assets/arbolak/" .. id .. ".svg"
+    local alt = "Zuhaitz sintaktikoa: " .. id
+    local img = pandoc.Image({pandoc.Str(alt)}, src, alt)
+    return pandoc.Para({img})
   end
 
   if el.classes:includes("gloss") then
@@ -74,21 +67,12 @@ function Div(el)
     local orig = lines[1] or ""
     local gloss = lines[2] or ""
     local trans = lines[3] or ""
-    if is_latex() then
-      local latex = "\\begingl\n"
-      if orig ~= "" then latex = latex .. "\\gla " .. orig .. " //\n" end
-      if gloss ~= "" then latex = latex .. "\\glb " .. gloss .. " //\n" end
-      if trans ~= "" then latex = latex .. "\\glft " .. trans .. " //\n" end
-      latex = latex .. "\\endgl"
-      return pandoc.RawBlock("latex", latex)
-    elseif is_html() then
-      local html = "<div class=\"gloss\">\n"
-      if orig ~= "" then html = html .. "<div class=\"gloss-line gloss-orig\">" .. orig .. "</div>\n" end
-      if gloss ~= "" then html = html .. "<div class=\"gloss-line gloss-gloss\">" .. gloss .. "</div>\n" end
-      if trans ~= "" then html = html .. "<div class=\"gloss-line gloss-trans\">" .. trans .. "</div>\n" end
-      html = html .. "</div>"
-      return pandoc.RawBlock("html", html)
-    end
+    local html = "<div class=\"gloss\">\n"
+    if orig ~= "" then html = html .. "<div class=\"gloss-line gloss-orig\">" .. orig .. "</div>\n" end
+    if gloss ~= "" then html = html .. "<div class=\"gloss-line gloss-gloss\">" .. gloss .. "</div>\n" end
+    if trans ~= "" then html = html .. "<div class=\"gloss-line gloss-trans\">" .. trans .. "</div>\n" end
+    html = html .. "</div>"
+    return pandoc.RawBlock("html", html)
   end
 
   return nil

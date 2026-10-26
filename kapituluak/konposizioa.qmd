@@ -207,14 +207,6 @@ Horretarako **eredua** behar da. Eredua munduaren (edo mundu posible baten)
 irudikapen sinplifikatu bat da: zer banako dagoen, eta nolako harremanak
 dituzten.
 
-Adibidez, honako perpausaren esanahia azter dezagun:
-
-::: {.gloss #gloss-konp-etorri}
-Ane-k etorri du
-Ane-ERG come AUX
-Ane etorri da.
-:::
-
 Demagun gure eredua $\mathcal{E}$ dela, eta eredu horretan Ane, Amaia,
 Beatriz eta Mikel daudela. Demagun, halaber, Ane eta Beatriz etorri direla.
 Orduan *etorri* predikatuaren denotazioa hauxe da:
@@ -303,12 +295,6 @@ tipo-teoria erabiltzearen abantaila nagusia: egitura sintaktikoa eta konposizio
 semantikoa bat datozela bermatzen du.
 
 ## Lambda eragilea
-
-::: {.gloss #gloss-konp-amaia-ikusi}
-Amaia ikusi du Anek
-Amaia see AUX Ane.ERG
-Anek Amaia ikusi du.
-:::
 
 ::: {.tree #tree-konp-amaia-ikusi}
 [AS [IS Amaia] [A ikusi]]

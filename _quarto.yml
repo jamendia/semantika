@@ -22,7 +22,6 @@ book:
     left: "© 2026 Jamendia · [CC BY 4.0](LICENSE)"
     right: "Eraikia Quartorekin"
   search: true
-  downloads: [pdf]
   chapters:
     - index.qmd
     - hitzaurrea.qmd
@@ -58,17 +57,6 @@ format:
     link-external-icon: false
     fig-cap-location: bottom
     tbl-cap-location: top
-  pdf:
-    pdf-engine: lualatex
-    include-in-header:
-      - tex/aurrea.tex
-    keep-tex: true
-    number-sections: true
-    colorlinks: true
-    linkcolor: esteka
-    citecolor: esteka
-    toc: true
-    toc-depth: 3
 
 execute:
   echo: false

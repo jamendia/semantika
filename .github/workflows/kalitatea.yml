@@ -22,32 +22,16 @@ jobs:
         with:
           version: "1.10.18"
 
-      - name: TeX prestatu
-        uses: r-lib/actions/setup-texlive@v2
-        with:
-          texlive-version: "2024"
-          packages: >
-            xetex
-            luatex
-            expex
-            forest
-            babel-basque
-            microtype
-            needspace
-
-      - name: Poppler prestatu (SVG bihurketarako)
-        run: sudo apt-get update && sudo apt-get install -y poppler-utils
-
       - name: Terminologia birsortu
         run: python tresnak/hiztegia.py
 
-      - name: Zuhaitzak sortu (SVG)
-        run: python tresnak/arbolak.py
+      - name: Zuhaitzak egiaztatu (SVGak biltegian daudela)
+        run: python tresnak/arbolak.py --check
 
       - name: Kalitate-egiaztapena
         run: python tresnak/terminoak-egiaztatu.py
 
-      - name: Errendatzearen proba
+      - name: Errendatzearen proba (HTML)
         run: quarto render --to html
 
       - name: HTML ostprozesatu
