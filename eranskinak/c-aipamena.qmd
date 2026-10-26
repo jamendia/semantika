@@ -1,0 +1,37 @@
+---
+title: "Nola aitatu"
+---
+
+## Liburua
+
+```
+Jamendia (2026). Esanahia eta egitura: interpretazioaren zientzia.
+https://jamendia.github.io/semantika/
+```
+
+## Kapitulu bat
+
+```
+Jamendia (2026). "Konposizioa: esanahia nola eraikitzen da". In
+Esanahia eta egitura: interpretazioaren zientzia.
+https://jamendia.github.io/semantika/kapituluak/konposizioa.html
+```
+
+## Lizentzia
+
+Liburua **CC BY 4.0** lizentziaren pean dago. Beraz, liburua kopiatu,
+birbanatu eta molda dezakezu, baita helburu komertzialekin ere, baldin eta:
+
+1. **Aitortza** ematen baduzu (egilea, izenburua, lizentzia eta esteka).
+2. **Aldaketak** egin badituzu, hori adierazten baduzu.
+3. Ez baduzu iradokitzen egileak zure erabilera onartzen duenik.
+
+Lizentzia osoa: <https://creativecommons.org/licenses/by/4.0/legalcode.eu>
+
+## Iturburuak
+
+Liburuak Roussarie (2017, CC BY 4.0) eta Coppock & Champollion lanak erabiltzen
+ditu iturri gisa. Haien materiala berrerabili nahi baduzu, haien lizentzia eta
+aitortza-baldintzak aplikatzen zaizkizu, ez liburu honetakoak bakarrik. Xehetasunak
+[CREDITS.md](https://github.com/jamendia/semantika/blob/main/CREDITS.md)
+fitxategian.

@@ -1,0 +1,70 @@
+project:
+  type: book
+  output-dir: _site
+  resources:
+    - assets/
+
+book:
+  title: "Esanahia eta egitura"
+  subtitle: "Interpretazioaren zientzia"
+  author: "Jamendia"
+  date: "2026"
+  language: eu
+  repo-url: https://github.com/jamendia/semantika
+  repo-branch: main
+  repo-actions: [edit, issue]
+  site-url: https://jamendia.github.io/semantika/
+  sidebar:
+    style: docked
+    search: true
+    collapse-level: 1
+  page-footer:
+    left: "© 2026 Jamendia · [CC BY 4.0](LICENSE)"
+    right: "Eraikia Quartorekin"
+  search: true
+  downloads: [pdf]
+  chapters:
+    - index.qmd
+    - hitzaurrea.qmd
+    - nola-irakurri.qmd
+    - part: "I. Esanahia eta konposizioa"
+      chapters:
+        - kapituluak/konposizioa.qmd
+  appendices:
+    - eranskinak/a-terminologia.qmd
+    - eranskinak/b-ikurrak.qmd
+    - eranskinak/c-aipamena.qmd
+
+lang: eu
+
+crossref:
+  exm-title: "Adibidea"
+  exr-title: "Ariketa"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - estilo/basque.scss
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    anchor-sections: true
+    link-external-icon: false
+    fig-cap-location: bottom
+    tbl-cap-location: top
+  typst:
+    papersize: a4
+    margin:
+      x: 2.4cm
+      y: 2.6cm
+    mainfont: "Libertinus Serif"
+    fontsize: 10.5pt
+    linkcolor: "#1f4e79"
+    citecolor: "#1f4e79"
+
+execute:
+  echo: false
+  warning: false
+
+editor: source

@@ -1,0 +1,257 @@
+---
+title: "Terminologia"
+---
+
+Hiztegi honek liburuan erabilitako terminologia biltzen du, euskaraz eta
+ingelesez. Termino bakoitzak definizio labur bat du, eta, beharrezkoa
+denean, erabilera-ohar bat.
+
+::: {.callout-note title="Nola irakurri taula hau" appearance="simple"}
+Zutabeak: euskarazko terminoa, ingelesezko parekidea, definizioa eta
+oharrak. Termino baten ondoren **†** badago, terminoa proposamena da
+oraindik, eta **‡** badago, berrikusteko dago.
+:::
+
+Guztira **92** termino daude, 9 ataletan banatuta.
+
+
+## Oinarrizko kontzeptuak
+
+| Euskara | Ingelesez | Definizioa | Oharrak |
+|:---|:---|:---|:---|
+| **adierazitako proposizioa** | proposition expressed | Perpausak literalki adierazten duen proposizioa. |  |
+| **egia-baldintza** | truth condition | Perpaus bat egiazkoa izateko bete behar den baldintza. |  |
+| **egia-balioa** | truth value | Egiazkoa edo faltsua izatearen propietatea. |  |
+| **egokitasun deskriptiboa** | descriptive adequacy | Teoria batek hiztunen intuizioak behar bezala deskribatzen dituen ala ez. |  |
+| **eredua** | model | Munduaren irudikapen formala, banakoek eta haien arteko harremanek osatua. | Ez erabili "modeloa". |
+| **errepresentazio semantikoa** | semantic representation | Espresio baten esanahiaren idazkera formala. |  |
+| **esaldia** | utterance | Hiztun batek testuinguru jakin batean ekoizten duen perpausaren agerraldia. | Ez erabili "perpausa" zentzu honetan. |
+| **esanahi konbentzionala** | conventional meaning | Hizkuntza-komunitateak hitzartutako esanahia. |  |
+| **esanahi linguistikoa** | linguistic meaning | Espresio bati hizkuntzak berak ematen dion esanahia, testuinguruaren eta hiztunaren asmoen gainetik. |  |
+| **esanahi pragmatikoa** | pragmatic meaning | Testuinguruan eta erabileran oinarrituta hiztunak transmititzen duen esanahia. |  |
+| **esanahia** | meaning | Espresio batek daraman informazio konbentzionala. |  |
+| **hiztunaren esanahia** | speaker meaning | Hiztunak esaldi batekin transmititu nahi duen esanahia. |  |
+| **inferentzia** | inference | Proposizio batetik bestera arrazoibidez igarotzea. |  |
+| **perpausa** | sentence | Osagai sintaktikoen konbinazio ondo eratua, egia-balioa har dezakeena. | Ez erabili "esaldia" zentzu honetan. |
+| **proposizioa** | proposition | Perpaus batek adierazten duen eduki abstraktua, egiazkoa edo faltsua izan daitekeena. |  |
+| **testuingurua** | context | Espresio baten interpretaziorako garrantzitsua den informazioa: egoera, hiztuna, entzulea, denbora eta lekua. |  |
+
+## Konposizioa
+
+| Euskara | Ingelesez | Definizioa | Oharrak |
+|:---|:---|:---|:---|
+| **anbiguotasun lexikoa** | lexical ambiguity | Hitz bakar batek esanahi bat baino gehiago izateagatiko anbiguotasuna. |  |
+| **egitura sintaktikoa** | syntactic structure | Osagaien arteko antolaketa hierarkikoa. |  |
+| **egiturazko anbiguotasuna** | structural ambiguity | Espresio batek egitura sintaktiko bat baino gehiago izateak sortzen duen anbiguotasuna. |  |
+| **espresio asea** | saturated expression | Bere argumentu guztiak beteta dituen espresioa. |  |
+| **espresio asegabea** | unsaturated expression | Argumenturen bat falta zaion espresioa, funtzio baten bidez osatzen dena. |  |
+| **hiztegi mentala** | mental lexicon | Hiztunak buruan duen hitzen eta haien esanahien biltegia. |  |
+| **irakurketa** | reading | Espresio baten interpretazio posible bat. |  |
+| **ko-konposizioa** | co-composition | Bi osagairen esanahiek elkar moldatuz esanahi berria sortzea. | Pustejovsky 1995. |
+| **konposizio semantikoa** | semantic composition | Osagaien esanahietatik espresio konplexuaren esanahia eraikitzea. |  |
+| **konposizionalitatearen hatsarrea** | principle of compositionality | Espresio konplexu baten esanahia osagaien esanahien eta egitura sintaktikoaren funtzioa da. | Literaturan "printzipioa" ere erabiltzen da. |
+| **ordezgarritasunaren hatsarrea** | principle of substitutivity | Sinonimoak truka daitezke esanahi osoa aldatu gabe. |  |
+| **sarrera lexikoa** | lexical entry | Hiztegian hitz bati dagokion informazio multzoa. |  |
+| **tipo koertzioa** | type coercion | Osagai baten tipo semantikoa aldatzea beste osagaiak eskatutako tipora egokitzeko. |  |
+| **uztardura hautakorra** | selective binding | Adjektibo edo modifikatzaile batek izenaren ezaugarri jakin bat hautatzea. | Pustejovsky 1995. |
+
+## Tipoak eta funtzioak
+
+| Euskara | Ingelesez | Definizioa | Oharrak |
+|:---|:---|:---|:---|
+| **aldagaia** | variable | Balio zehaztugabea adierazten duen sinboloa. |  |
+| **argumentu-egitura** | argument structure | Predikatu batek eskatzen dituen argumentuen multzoa eta haien rolak. |  |
+| **argumentua** | argument | Predikatu batek eskatzen duen espresioa. |  |
+| **balio semantikoa** | semantic value | Espresio baten interpretazioa ereduarekiko, denotazioaren sinonimo teknikoa. | Ez erabili "balore semantikoa". |
+| **denotazioa** | denotation | Espresio batek eredu batean adierazten duen objektua edo multzoa. |  |
+| **eremua** | domain | Funtzio batek onartzen dituen argumentuen multzoa. |  |
+| **funtzio karakteristikoa** | characteristic function | Multzo baten kide izateari 0 edo 1 balioa esleitzen dion funtzioa. |  |
+| **funtzioa** | function | Eremu bateko elementuei hein bateko balioak esleitzen dizkien erlazioa. |  |
+| **heina** | range | Funtzio batek ematen dituen balioen multzoa. |  |
+| **lambda abstrakzioa** | lambda abstraction | Aldagai aske baten gainean funtzio bat eraikitzea. |  |
+| **lambda bihurketa** | lambda conversion | Lambda espresio bat argumentu bati aplikatzean aldagaia haren balioaz ordeztea. |  |
+| **lambda eragilea** | lambda operator | Argumentu baten gainean abstrakzioa egiteko eragilea (λ). |  |
+| **predikatua** | predicate | Banakoei propietate edo erlazio bat esleitzen dien espresioa. |  |
+| **tipo semantikoa** | semantic type | Espresio baten propietate semantikoak formalki sailkatzen dituen etiketa (e, t eta haien konbinazioak). |  |
+
+## Erreferentzia
+
+| Euskara | Ingelesez | Definizioa | Oharrak |
+|:---|:---|:---|:---|
+| **aditz sintagma** | verb phrase | Aditza buru duen sintagma (AS). |  |
+| **deiktikoa** | deictic | Testuinguruaren arabera soilik interpreta daitekeen espresioa (ni, hemen, atzo). |  |
+| **determinatzaile sintagma** | determiner phrase | Determinatzailea buru duen sintagma (DetS). |  |
+| **erreferentzia** | reference | Espresio batek munduko objektu edo multzo zehatz bati egiten dion lotura. |  |
+| **erreferentzia-murrizketa** | domain restriction | Kuantifikatzailearen eremua testuinguruak mugatzea. |  |
+| **erreferentziagaia** | referent | Espresio batek erreferentzia egiten dion objektua. | Ez erabili "erreferentea". |
+| **esparrua** | scope | Kuantifikatzaile edo eragile baten eragina zein zatiri dagokion. |  |
+| **izen arrunta** | common noun | Banakoen multzo bati dagokion izena. |  |
+| **izen propioa** | proper noun | Banako bakar bati erreferentzia egiten dion izena. |  |
+| **izen sintagma** | noun phrase | Izen baten nukleoa duen sintagma (IS). |  |
+| **izena** | noun | Banakoak, multzoak edo substantziak izendatzen dituen kategoria. |  |
+| **kuantifikatzailea** | quantifier | Multzo bateko kide kopuruari buruz zerbait esaten duen espresioa. |  |
+| **kuantifikazioa** | quantification | Kuantifikatzaileen bidez multzoei buruzko baieztapenak egitea. |  |
+
+## Semantika lexikoa
+
+| Euskara | Ingelesez | Definizioa | Oharrak |
+|:---|:---|:---|:---|
+| **antonimia** | antonymy | Esanahi kontrajarriko hitzen arteko harremana. |  |
+| **ekarpena** | entailment | Proposizio bat egiazkoa bada nahitaez beste bat ere egiazkoa izatea. |  |
+| **esanahi lexikoa** | lexical meaning | Hitz bati hiztegian dagokion esanahia. |  |
+| **esapide idiomatikoa** | idiom | Osagaien esanahitik zuzenean ateratzen ez den esanahia duen espresioa. |  |
+| **faktiboa** | factive | Osagarriaren egia suposatzen duen aditza (jakin, damutu). |  |
+| **hiperonimia** | hypernymy | Esanahi orokorragoa duen hitzaren eta zehatzagoaren arteko harremana. |  |
+| **hiponimia** | hyponymy | Esanahi-harremana, non baten esanahia bestearen barnean dagoen. |  |
+| **polisemia** | polysemy | Hitz batek elkarrekin lotutako hainbat esanahi izatea. |  |
+| **presuposizioa** | presupposition | Perpausak egia izateko aurretiaz onartutzat ematen den informazioa. |  |
+| **sinonimia** | synonymy | Bi espresiok esanahi bera izatea. |  |
+
+## Gertakariak
+
+| Euskara | Ingelesez | Definizioa | Oharrak |
+|:---|:---|:---|:---|
+| **aspektua** | aspect | Gertakari baten barne-egitura denboran nola aurkezten den. |  |
+| **burutzea** | achievement | Une batean gertatzen den aldaketa. |  |
+| **egoera** | state | Aldaketarik gabeko gertakaria. |  |
+| **gertakaria** | event | Denboran eta espazioan kokatutako gertaera edo egoera. |  |
+| **jarduera** | activity | Amaiera naturalik gabeko gertakaria. |  |
+| **lorpena** | accomplishment | Amaiera naturala duen gertakaria. |  |
+
+## Modalitatea
+
+| Euskara | Ingelesez | Definizioa | Oharrak |
+|:---|:---|:---|:---|
+| **estentsioa** | extension | Espresio batek mundu jakin batean adierazten duen multzoa. |  |
+| **intentsioa** | intension | Espresio baten denotazioa mundu posible guztietan zehar. |  |
+| **intentsionalitatea** | intensionality | Espresio baten denotazioa mundu posibleen araberakoa izatea. |  |
+| **modalitatea** | modality | Beharrezko, posible edo derrigorrezko izateari buruzko esanahia. |  |
+| **mundu posiblea** | possible world | Egia izan zitekeen egoera oso bat. |  |
+
+## Pragmatika
+
+| Euskara | Ingelesez | Definizioa | Oharrak |
+|:---|:---|:---|:---|
+| **egintza ilokutiboa** | illocutionary act | Esaldi baten bidez burutzen den ekintza. |  |
+| **egintza perlokutiboa** | perlocutionary act | Esaldi batek entzulearengan sortzen duen efektua. |  |
+| **indar ilokutiboa** | illocutionary force | Esaldi batekin egiten den ekintza (baieztatu, eskatu, agindu). |  |
+| **inplikatura** | implicature | Hiztunak esan gabe iradokitzen duen esanahia. |  |
+| **inplikazioa** | implication | Testuinguruan oinarritutako inferentzia zabala. |  |
+| **kortesia** | politeness | Hizkuntza-erabileran harreman soziala zaintzeko estrategiak. |  |
+| **lokuzio egintza** | locutionary act | Esaldi bat esateko ekintza bera. |  |
+| **pragmatika** | pragmatics | Erabilerak esanahiari gehitzen diona aztertzen duen diziplina. |  |
+
+## Testua eta egitura
+
+| Euskara | Ingelesez | Definizioa | Oharrak |
+|:---|:---|:---|:---|
+| **aurreiritzia** | background | Entzuleak ezagutzat jotzen duen informazioa. |  |
+| **fokua** | focus | Informazio berria edo nabarmentzen den zatia. |  |
+| **gaia** | topic | Perpausak zerbait esaten duenari buruzko zatia. |  |
+| **informazio-egitura** | information structure | Perpausak informazio zaharra eta berria nola antolatzen duen. |  |
+| **iruzkina** | comment | Gaiari buruz esaten dena. |  |
+| **perpaus ez-deklaratiboa** | non-declarative sentence | Baieztapena ez den perpausa (galdera, agindua, harridura). |  |
+
+## Aurkibide alfabetikoa
+
+| Euskara | Ingelesez |
+|:---|:---|
+| adierazitako proposizioa | proposition expressed |
+| aditz sintagma | verb phrase |
+| aldagaia | variable |
+| anbiguotasun lexikoa | lexical ambiguity |
+| antonimia | antonymy |
+| argumentu-egitura | argument structure |
+| argumentua | argument |
+| aspektua | aspect |
+| aurreiritzia | background |
+| balio semantikoa | semantic value |
+| burutzea | achievement |
+| deiktikoa | deictic |
+| denotazioa | denotation |
+| determinatzaile sintagma | determiner phrase |
+| egia-baldintza | truth condition |
+| egia-balioa | truth value |
+| egintza ilokutiboa | illocutionary act |
+| egintza perlokutiboa | perlocutionary act |
+| egitura sintaktikoa | syntactic structure |
+| egiturazko anbiguotasuna | structural ambiguity |
+| egoera | state |
+| egokitasun deskriptiboa | descriptive adequacy |
+| ekarpena | entailment |
+| eredua | model |
+| eremua | domain |
+| erreferentzia | reference |
+| erreferentzia-murrizketa | domain restriction |
+| erreferentziagaia | referent |
+| errepresentazio semantikoa | semantic representation |
+| esaldia | utterance |
+| esanahi konbentzionala | conventional meaning |
+| esanahi lexikoa | lexical meaning |
+| esanahi linguistikoa | linguistic meaning |
+| esanahi pragmatikoa | pragmatic meaning |
+| esanahia | meaning |
+| esapide idiomatikoa | idiom |
+| esparrua | scope |
+| espresio asea | saturated expression |
+| espresio asegabea | unsaturated expression |
+| estentsioa | extension |
+| faktiboa | factive |
+| fokua | focus |
+| funtzio karakteristikoa | characteristic function |
+| funtzioa | function |
+| gaia | topic |
+| gertakaria | event |
+| heina | range |
+| hiperonimia | hypernymy |
+| hiponimia | hyponymy |
+| hiztegi mentala | mental lexicon |
+| hiztunaren esanahia | speaker meaning |
+| indar ilokutiboa | illocutionary force |
+| inferentzia | inference |
+| informazio-egitura | information structure |
+| inplikatura | implicature |
+| inplikazioa | implication |
+| intentsioa | intension |
+| intentsionalitatea | intensionality |
+| irakurketa | reading |
+| iruzkina | comment |
+| izen arrunta | common noun |
+| izen propioa | proper noun |
+| izen sintagma | noun phrase |
+| izena | noun |
+| jarduera | activity |
+| ko-konposizioa | co-composition |
+| konposizio semantikoa | semantic composition |
+| konposizionalitatearen hatsarrea | principle of compositionality |
+| kortesia | politeness |
+| kuantifikatzailea | quantifier |
+| kuantifikazioa | quantification |
+| lambda abstrakzioa | lambda abstraction |
+| lambda bihurketa | lambda conversion |
+| lambda eragilea | lambda operator |
+| lokuzio egintza | locutionary act |
+| lorpena | accomplishment |
+| modalitatea | modality |
+| mundu posiblea | possible world |
+| ordezgarritasunaren hatsarrea | principle of substitutivity |
+| perpaus ez-deklaratiboa | non-declarative sentence |
+| perpausa | sentence |
+| polisemia | polysemy |
+| pragmatika | pragmatics |
+| predikatua | predicate |
+| presuposizioa | presupposition |
+| proposizioa | proposition |
+| sarrera lexikoa | lexical entry |
+| sinonimia | synonymy |
+| testuingurua | context |
+| tipo koertzioa | type coercion |
+| tipo semantikoa | semantic type |
+| uztardura hautakorra | selective binding |
+
+::: {.callout-warning title="Fitxategi sortua" appearance="simple"}
+Orri hau automatikoki sortzen da `terminologia/hiztegia.csv` fitxategitik.
+Ez editatu eskuz: aldaketak CSVan egin eta gero exekutatu
+`python tresnak/hiztegia.py`.
+:::
+

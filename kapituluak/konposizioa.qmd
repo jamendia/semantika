@@ -1,0 +1,695 @@
+---
+title: "Konposizioa: esanahia nola eraikitzen da"
+---
+
+## Sarrera
+
+Espresio baten esanahi linguistikora iristeko bi bide daude: esanahia sarrera
+lexikoan konbentzionalki finkatzea, edo arau semantikoen bidez eratzea. Lehen
+bidea jarraitzen duten espresioak semantikoki bakunak dira, eta haien esanahia
+hiztegian gordetzen da. Bigarrena jarraitzen dutenak, aldiz, konplexuak dira:
+haien esanahia ez dago inon gordeta, unean bertan eraikitzen da.
+
+Eraikuntza hori ez da edozein modutakoa. Har dezagun adibide sinple bat.
+
+::: {#exm-ibaia}
+a. *Ibaia lehortu da.*
+b. *Geranioa lehortu da.*
+:::
+
+Bi perpaus hauek egitura bera dute, eta hitz berak erabiltzen dituzte
+*lehortu* aditzaren inguruan. Baina lehenak ibai bati buruz zerbait dio, eta
+bigarrenak, berriz, landare bati buruz. Desberdintasun bakarra izen bat da, eta
+hori nahikoa da esanahi osoa aldatzeko.
+
+Orain har dezagun beste adibide bat, aurkakoa dirudiena.
+
+::: {#exm-errieta}
+a. *Irakasleak ikasleari errieta egin dio.*
+b. *Ikasleak irakasleari errieta egin dio.*
+:::
+
+Hemen hitzak berberak dira: *irakasle*, *ikasle*, *errieta egin*, *dio*. Baina
+perpausak ez du gauza bera esaten. Lehenengoan irakaslea da errieta egiten
+duena; bigarrenean, ikaslea. Hitzak berak izanik, esanahia aldatu da.
+
+Bi adibideek gauza bera erakusten dute, bi norabidetan: esanahia ez da hitzen
+zerrenda bat, eta ez da egitura hutsa ere. Hitzek eta haien arteko harremanek
+elkarrekin egiten dute esanahia. Kapitulu honen gaia hori nola gertatzen den
+da.
+
+## Konposizionalitatearen hatsarrea
+
+Intuizio hori formulatu zuen lehenetarikoa Gottlob Frege izan zen, eta
+harrezkero printzipio gisa ezagutzen da. Hona hemen formulazio estandarra.
+
+::: {#def-konposizionalitatea}
+**Konposizionalitatearen hatsarrea.** Espresio konplexu baten esanahi
+linguistikoa bere osagaien esanahi linguistikoen eta haien arteko egitura
+sintaktikoaren funtzioa da.
+:::
+
+Hiru gauza daude definizio horretan, eta hirurak dira eztabaidagarri. Lehena,
+*osagaien esanahia*: zein esanahi mota hartzen da kontuan? Bigarrena, *egitura
+sintaktikoa*: nolako egitura da semantikarako ikusgaia? Hirugarrena,
+*funtzioa*: nolako funtzioa da, eta nola kalkulatzen da?
+
+Kapitulu honek hiru galdera horiei erantzun nahi die. Baina aurretik, argitu
+behar da zergatik den hatsarrea hain garrantzitsua. Izan ere, ez da
+hautazko printzipio bat: ez baztertzeko modukoa da.
+
+## Hatsarrearen aldeko hiru argudioak
+
+### Produktibitatea: espresioak infinituak dira
+
+Hiztun batek nahi adina espresio eraiki eta uler ditzake. Prozesuak ez du
+mugarik: perpaus bati *Jonek esan du* aurretik itsatsiz gero, beste perpaus bat
+sortzen da, eta horri beste bat, eta horrela amaigabe.
+
+::: {#exm-jonek}
+a. *Jonek esan du Miren etorri dela.*
+b. *Mirenek esan du Jonek esan duela Miren etorri dela.*
+c. *Jonek esan du Mirenek esan duela Jonek esan duela Miren etorri dela.*
+:::
+
+Fenomeno bera ikusten da hizkuntza guztietan, eta modu are nabarmenagoan
+ingeleseko *fish* hitzarekin, zeinak izen zein aditz gisa funtzionatzen duen.
+
+::: {#exm-fish}
+a. *Fish* — ‘arraina’ / ‘arrantza egin’
+b. *Fish fish* — ‘arrainak arrantza egiten du’
+c. *Fish fish fish* — ‘arrainak arraina arrantza egiten du’
+d. *Fish fish fish fish* — ‘arrantza egiten duen arrainak arraina arrantza egiten du’
+:::
+
+Espresio kopurua infinitua bada eta hiztunaren gaitasuna, berriz, mugatua
+(burmuina gauza finitua da), orduan gaitasun semantikoa ezin da espresioen
+zerrenda batean oinarritu. Hiztegi mentalak, beraz, ezin du hiztunaren
+gaitasun osoa bere gain hartu. Espresio konplexuen esanahia egituratuta egon
+behar da nahitaez.
+
+### Berritasuna: sekula entzun ez ditugun perpausak ulertzen ditugu
+
+Bigarren argudioa are nabarmenagoa da. Hona hemen perpaus bat, seguru asko
+lehen aldiz irakurtzen duzuna:
+
+::: {#exm-tximino}
+*Tximino urdin bat bigarren mendeko espazio-ontzi bat gidatzen ikusi dut.*
+:::
+
+Ulertzen duzu, ezta? Ez duzu inoiz perpaus hau entzun, ez eta antzeko bat ere
+beharbada. Hala ere, badakizu zer deskribatzen duen. Horrek esan nahi du
+esanahia ez dela kasuan kasu gordetzen, unean bertan eraikitzen dela, osagaien
+esanahietatik abiatuta.
+
+### Sistematikotasuna: bat ulertzeak bestea ulertzea dakar
+
+Hirugarren argudioa sotilagoa da, baina indartsuena agian.
+
+::: {#exm-maite}
+a. *Jonek Miren maite du.*
+b. *Mirenek Jon maite du.*
+:::
+
+Bi perpaus hauen esanahiak desberdinak dira, noski. Baina ez dira elkarrekiko
+independenteak: lehena ulertzen duenak bigarrena ere ulertzen du berehala, eta
+alderantziz. Inork ez du *Jonek Miren maite du* ikasten *Mirenek Jon maite du*
+ikasi gabe, eta alderantziz.
+
+Sistematikotasun hori ezin da azaldu funtzio opaku baten bidez, non espresio
+bakoitzak esanahi arbitrario bat baitauka. Azaltzeko modu bakarra da esatea
+biek osagai berak partekatzen dituztela, antzeko egitura batean. Bestela esanda:
+konposizioa da sistematikotasunaren iturria.
+
+## Funtzioa: espresio aseak eta asegabeak
+
+Hatsarrearen hirugarren hanka *funtzioa* da, eta hor dago benetako lana.
+Galdera zehatza hau da: espresio baten esanahiak beste baten esanahiarekin bat
+egitean, nola egiten dute bat?
+
+Abiapuntua intuizio bat da: espresio batzuek bakarrik funtzionatzen dute,
+eta beste batzuek zerbait behar dute osatzeko. Deitu diezaiegun, hurrenez
+hurren, **espresio aseak** eta **espresio asegabeak**.
+
+::: {#exm-asegabeak}
+a. \**Beatriz norbait*
+b. \**Beatriz etorri da norbait*
+c. \**Beatriz etorri da Beatrizek norbait ikusi du*
+:::
+
+Adibide hauek gaizki eratuak dira, baina ez sintaxiaren arazo hutsegatik:
+esanahiari dagokionez ere, zerbait falta zaie. Konpara itzazu ondo eratutako
+hauekin:
+
+::: {#exm-aseak}
+a. *Beatriz etorri da.*
+b. *Beatrizek norbait ikusi du.*
+c. *Beatriz etorri da eta norbait joan da.*
+:::
+
+Desberdintasuna zera da: lehen multzoan espresio asegabe bat dago, eta
+bigarrenean, berriz, guztiak aseak dira. *Beatriz* izenak badu erreferentzia
+bat, eta *etorri da* perpaus oso batek badu egi-balio bat. *Norbait*, aldiz,
+ez da inor konkretua: zerbait behar du osatzeko.
+
+Beraz, espresioak ez dira denak maila berekoak. Badago hierarkia bat, eta
+hierarkia hori formalki adierazi behar da.
+
+### Tipo semantikoak
+
+Demagun *Beatriz etorri da* perpausak egi-balio bat duela: egiazkoa ala
+faltsua. *Beatriz* izenak, aldiz, banako bat adierazten du. Bi hauek gauza
+desberdinak dira, eta desberdintasun hori formalki markatu behar dugu.
+
+Horretarako, **tipo semantikoak** erabiliko ditugu. Bi oinarrizko tipo daude:
+
+- $e$: banakoak (ingelesez, *entity*).
+- $t$: egi-balioak (ingelesez, *truth value*).
+
+Eta erregela bakarra, tipoa osatzeko:
+
+> $a$ eta $b$ tipo semantikoak badira, $\langle a, b \rangle$ tipo semantikoa da.
+
+Erregela horrek sistema errekurtsiboa osatzen du, eta, beraz, tipo kopurua
+infinitua da. Espresio baten tipoa azpi-indize gisa markatuko dugu: $\alpha_{t}$
+bezala.
+
+::: {#exm-tipoak}
+a. $\langle e, t \rangle$
+b. $\langle\langle e, t\rangle, \langle e, t\rangle\rangle$
+c. $\langle t, t \rangle$
+d. $\langle\langle e, t\rangle, \langle\langle e, t\rangle, t\rangle\rangle$
+:::
+
+Orain, funtsezko ideia: $\langle a, b\rangle$ tipoko espresio bat **funtzio**
+bat da. Bere *eremua* $a$ tipoko espresioek osatzen dute, eta bere *heina*
+$b$ tipokoek. Beraz, $\langle a, b\rangle$ tipoko espresio batek $a$ tipoko
+espresio bat eskatzen du, eta $b$ tipoko bat ematen du.
+
+Euskarazko espresio ohikoenen tipoak taula honetan daude bilduta.
+
+| Tipoa | Espresio mota | Adibideak |
+|:---|:---|:---|
+| $e$ | Izen propioak, izenordainak | *Ane*, *hau* |
+| $t$ | Perpausak | *Ane etorri da* |
+| $\langle e, t\rangle$ | Izen arruntak, adjektiboak, aditz iragangaitzak | *mahai*, *gorri*, *etorri* |
+| $\langle e, \langle e, t\rangle\rangle$ | Aditz iragankorrak | *ikusi*, *jan*, *apurtu* |
+| $\langle t, \langle t, t\rangle\rangle$ | Juntagailu diadikoak | *eta*, *edo* |
+| $\langle\langle e,t\rangle, \langle e,t\rangle\rangle$ | Predikatuen modifikatzaileak | *poliki*, *nahita* |
+| $\langle\langle e,t\rangle, \langle\langle e,t\rangle, t\rangle\rangle$ | Kuantifikatzaileak | *guzti*, *batzuk* |
+
+: Espresio mota ohikoenak eta haien tipo semantikoak {#tbl-tipoak}
+
+### Ereduak eta denotazioa
+
+Tipoek esaten digute nolako funtzioa den, baina ez zein funtzio zehatz.
+Horretarako **eredua** behar da. Eredua munduaren (edo mundu posible baten)
+irudikapen sinplifikatu bat da: zer banako dagoen, eta nolako harremanak
+dituzten.
+
+Demagun gure eredua $\mathcal{E}$ dela, eta eredu horretan Ane, Amaia,
+Beatriz eta Mikel daudela. Demagun, halaber, Ane eta Beatriz etorri direla.
+Orduan *etorri* predikatuaren denotazioa hauxe da:
+
+$$
+⟦\text{etorri}'⟧^{\mathcal{E}} = \{\text{Ane}, \text{Beatriz}\}
+$$
+
+Denotazioa multzo gisa idazten da, baina modu baliokide batean funtzio gisa
+ere idatz daiteke. Funtzio horrek banako bakoitzari balio bat esleitzen dio:
+$1$, predikatua betetzen badu, eta $0$, bestela.
+
+$$\begin{array}{c|c}
+\text{Banakoa} & \text{Balioa} \\ \hline
+\text{Ane}     & 1 \\
+\text{Amaia}   & 0 \\
+\text{Beatriz} & 1 \\
+\text{Mikel}   & 0
+\end{array}$$
+
+Funtzio horri **funtzio karakteristikoa** deitzen zaio. Bere eremua banakoek
+osatzen dute ($e$ tipoa), eta heina, berriz, egi-balioek ($t$ tipoa). Beraz,
+*etorri* predikatua $\langle e, t\rangle$ tipokoa da. Eta horrek esan nahi du
+*Ane* izenarekin konbinatu daitekeela, eta perpaus bat ematen duela:
+
+$$
+⟦\text{etorri}'⟧^{\mathcal{E}}(⟦\text{Ane}⟧^{\mathcal{E}}) = 1
+$$
+
+### Predikatu iragankorrak
+
+Orain artekoak errazak ziren: predikatu batek banako bat hartzen zuen. Baina
+*ikusi* bezalako aditzek bi argumentu hartzen dituzte, eta horrek arazo bat
+sortzen du.
+
+Intuizioak esaten du *ikusi* dela bi banako lotzen dituen erlazioa. Beraz,
+pentsa liteke $\langle\langle e,e\rangle, t\rangle$ tipokoa dela. Baina egitura
+sintaktikoari erreparatzen badiogu, bi argumentuak ez daude maila berean:
+
+$$
+\begin{array}{ccc}
+ & \text{P} & \\[2pt]
+\swarrow & & \searrow \\[2pt]
+\text{IS}_{\,e}\text{: Ane-k} & & \text{AS}_{\langle e, t\rangle}
+\end{array}
+$$
+
+Eta *AS* delakoaren barnean, beste konposizio bat gertatzen da:
+
+$$
+\begin{array}{ccc}
+ & \text{AS}_{\langle e, t\rangle} & \\[2pt]
+\swarrow & & \searrow \\[2pt]
+\text{IS}_{\,e}\text{: Amaia} & & \text{A}_{\langle e, \langle e,t\rangle\rangle}\text{: ikusi}
+\end{array}
+$$
+
+Parentesi etiketatuta, egitura osoa horrela idazten da:
+
+$$
+[\mkern-2mu_{\text{P}}\ \text{Ane-k}\ [\mkern-2mu_{\text{AS}}\ \text{Amaia}\ \text{ikusi}\,]]
+$$
+
+Behetik gorako bidean, lehenengo *Amaia* eta *ikusi* konbinatzen dira *AS*
+osatzeko, eta gero *Ane-k* gehitzen zaio. Beraz, *ikusi*-ren denotazioak
+lehenengo zerbait eman behar du *Amaia*-rekin konbinatuta, eta emaitza hori
+izan behar da *Ane-k*-rekin konbinatzen dena.
+
+Horrek esan nahi du *ikusi* $\langle e, \langle e, t\rangle\rangle$ tipokoa
+dela: banako bat hartu eta funtzio bat itzultzen du, eta funtzio horrek beste
+banako bat hartzen du egi-balio bat emateko.
+
+$$
+⟦\text{ikusi}'⟧^{\mathcal{E}} = \{\langle \text{Ane}, \text{Amaia}\rangle, \langle \text{Beatriz}, \text{Mikel}\rangle\}
+$$
+
+Modu horretan, $\langle e, \langle e, t\rangle\rangle$ eta
+$\langle\langle e,e\rangle, t\rangle$ berdinak dira multzo gisa, baina ez
+funtzio gisa. Lehenak konposizioa ahalbidetzen du, sintaxiarekin bat etorriz;
+bigarrenak ez. Hori da tipo-teoria erabiltzearen abantaila nagusia: egitura
+sintaktikoa eta konposizio semantikoa bat datozela bermatzen du.
+
+## Lambda eragilea
+
+### Arazoa: espresio asegabeen esanahia
+
+Orain arte, osagaiak konbinatu ditugu. Baina konposizioak tarteko espresioak
+sortzen ditu, eta horiek ez dute hitzik. Har dezagun *Amaia ikusi*.
+
+Sintaktikoki, *AS* bat da. Semantikoki, propietate bat adierazten du: *Amaia
+ikusi* duen banakoen multzoa. Baina gure tresna formalekin ezin dugu multzo
+hori zuzenean idatzi, ez baitakigu zer den falta den argumentua.
+
+Izan ere, badakigu *ikusi*-ren denotazioa, eta badakigu *Amaia* zein den,
+baina ez dugu objektu formal bat horiek lotzen dituena.
+
+Irtenbidea hutsunea markatzean datza. Har dezagun *ikusi* predikatuaren
+formalizazio bat, bi argumenturekin:
+
+$$
+\text{ikusi}'(\_, \text{Amaia})
+$$
+
+Hutsunea aldagai batez ordezka dezakegu:
+
+$$
+\text{ikusi}'(x, \text{Amaia})
+$$
+
+Baina hori oraindik ez da espresio asea: $x$ askea da. Behar duguna da
+adieraztea $x$ dela argumentua, eta espresio osoa funtzio bat dela. Horretarako
+erabiltzen dugu lambda eragilea.
+
+$$
+\lambda x\,[\,\text{ikusi}'(x)(\text{Amaia})\,]
+$$
+
+Espresio honek *Amaia ikusi* duen banakoen multzoa adierazten du, eta
+$\langle e, t\rangle$ tipokoa da. Prozesuari **lambda abstrakzioa** deitzen
+zaio: argumentu baten gainean abstrakzioa egiten dugu.
+
+::: {#def-lambda}
+**Lambda eragilearen sintaxia.** $\alpha$ $a$ tipoko aldagaia bada eta $\beta$
+$b$ tipoko espresioa bada, orduan $\lambda\alpha\,[\beta]$ ondo eratutako
+$\langle a, b\rangle$ tipoko espresioa da.
+:::
+
+### Lambda bihurketa
+
+Lambda abstrakzioak funtzio bat sortzen du. Funtzio hori argumentu bati
+aplikatzean, aldagaia argumentuaren balioaz ordezkatzen da. Prozesu horri
+**lambda bihurketa** deitzen zaio.
+
+$$
+\lambda x\,[\,\text{ikusi}'(x)(\text{Amaia})\,](⟦\text{Ane}⟧^{\mathcal{E}})
+\;\Longrightarrow\;
+\text{ikusi}'(⟦\text{Ane}⟧^{\mathcal{E}})(⟦\text{Amaia}⟧^{\mathcal{E}})
+$$
+
+Emaitza lehengo predikatu-logikako idazkera da, baina orain badakigu nondik
+datorren eta zergatik den ondo eratua. Lambda-kalkuluak, beraz, ez du
+predikatu-logika ordezkatzen: hari justifikazio konposizionala ematen dio.
+
+### Hiru aplikazio
+
+Lambda eragilea ez da trikimailu teknikoa. Hiru adibide hauek erakusten dute
+benetako lan egiten duela.
+
+#### Adberbioak
+
+Har dezagun *poliki*.
+
+::: {#exm-poliki}
+a. *Anek eskutitza poliki idatzi du.*
+b. *Poliki eskutitza idatzi du Anek.*
+:::
+
+*Poliki* ez da banako bati buruzkoa, ez eta perpaus oso bati buruzkoa ere:
+ekintza bati buruzkoa da. Ekintza hori aditzaren eta haren argumentuen
+konposizioak ematen du. Beraz, *poliki*-ren esanahiak $\langle e,t\rangle$
+tipoko espresio bat hartu behar du eta $\langle e,t\rangle$ tipoko beste bat
+eman.
+
+$$
+\lambda P\,[\,\lambda x\,[\,P(x) \wedge \text{poliki}'(x)\,]\,]
+$$
+
+Horrela, *poliki eskutitza idatzi* espresioaren esanahia automatikoki sortzen
+da, eta ez da sarrera lexiko berri bat behar aditz bakoitzeko.
+
+#### Erlatibozko perpausak
+
+::: {#exm-erlatiboa}
+a. *liburu zaila*
+b. *Anek irakurri duen liburua*
+:::
+
+Bi espresioek banakoen multzo bat adierazten dute, eta baldintza bat edo bi
+eskatzen dizkiete kideei:
+
+$$
+\lambda x\,[\,\text{liburu}'(x) \wedge \text{zail}'(x)\,]
+$$
+
+$$
+\lambda x\,[\,\text{irakurri}'(x)(\text{Ane}) \wedge \text{liburu}'(x)\,]
+$$
+
+Bigarren kasuan, erlatibozko perpausak berak espresio asegabe bat ematen du,
+eta *liburu* izenarekin konbinatzen da. Lambda eragileak, beraz, erlatibozko
+perpausen semantika modu bateratuan azaltzen du.
+
+#### Koordinazioa
+
+::: {#exm-koordinazioa}
+a. *Katu batzuek jauzi eta miau egin dute.*
+b. *Katu batzuek jauzi egin dute eta katu batzuek miau egin dute.*
+:::
+
+Demagun hiru katu ditugula: Lili, Fifi eta Nini. Lilik eta Fifik miau egiten
+dute; Ninik, berriz, jauzi egiten du. Egoera horretan, lehen perpausa faltsua
+da, eta bigarrena egiazkoa. Arrazoia da lehenengoak propietate konposatu bat
+eskatzen diela katu-multzo berari:
+
+$$
+\lambda x\,[\,\text{jauzi}'(x) \wedge \text{miau egin}'(x)\,]
+$$
+
+Lambda eragileak, beraz, ez du soilik espresio asegabeak sortzen: esanahia
+*eraiki* egiten du, eta eraikuntza horren urratsak aztertzeko modua ematen du.
+
+## Hatsarrearen aurresanak
+
+Konposizionalitatearen hatsarrea ez da printzipio hutsa: ondorio frogagarriak
+ditu. Hona hemen bi.
+
+### Ordezgarritasuna
+
+Lehen ondorioa **ordezgarritasunaren hatsarrea** da: espresio konplexu batean
+sinonimoak diren bi espresio truka daitezke, esanahi osoa aldatu gabe.
+
+::: {#exm-ordezgarritasuna}
+a. *Ulertzen ez dena galdetu behar da.*
+b. *Ulertzen ez dena itaundu behar da.*
+:::
+
+*Galdetu* eta *itaundu* sinonimoak badira, bi perpausek esanahi bera izan behar
+dute. Hori da hatsarreak iragartzen duena, eta hori da, oro har, gertatzen
+dena.
+
+Baina kontuz: zein esanahi-mailari buruz ari gara? Estereotipoa, adibidez, ez
+da konposizionala. *Arrain maskota* espresioaren estereotipoa ez da *arrain*
+eta *maskota* hitzen estereotipoen funtzioa. Beraz, ordezgarritasunak
+denotazio-mailan funtzionatzen du batez ere, ez konnotazio-mailan.
+
+Eta are gehiago: ordezgarritasuna huts egiten du testuinguru intentsionaletan.
+*Bernardo Atxaga* eta *José Irazu* pertsona bera badira ere, hauek ez dute
+esanahi bera:
+
+::: {#exm-atxaga}
+a. *Anek jakin nahi du ea Bernardo Atxaga José Irazu den.*
+b. *Anek jakin nahi du ea Bernardo Atxaga Bernardo Atxaga den.*
+:::
+
+Hemen hatsarrea ez da hausten: argi uzten du denotazio hutsak ez duela
+askatzen, eta esanahi intentsional bat behar dela. Gai hori intentsionalitateari
+eskainitako kapituluan landuko da.
+
+### Egiturazko anbiguotasuna
+
+Bigarren ondorioa are baliagarriagoa da analisirako. Har dezagun perpaus hau:
+
+::: {#exm-anbiguoa}
+*Ikasle guztiek bi liburu irakurri dituzte.*
+:::
+
+Perpausak bi irakurketa ditu, eta ez dago hitzetan anbiguotasun lexikorik.
+Irakurketak hauek dira:
+
+::: {#exm-anbiguoa-2}
+a. *Badira bi liburu ikasle guztiek irakurri dituztenak.*
+b. *Ikasle guztiei buruz esan daiteke bakoitzak bi liburu irakurri dituela.*
+:::
+
+Bi irakurketa hauek ez dira baliokideak. Lehenak bigarrena dakar, baina
+bigarrenak ez du lehena ekarriko: hamar ikaslek liburu berak irakurriz gero,
+bigarrena egiazkoa da eta lehena faltsua.
+
+Konposizionalitateak azalpen bat ematen du: bi irakurketa badira eta hitzetan
+anbiguotasunik ez badago, orduan bi egitura sintaktiko daude. Anbiguotasun
+mota horri **egiturazko anbiguotasuna** deitzen zaio, eta hatsarrearen
+ondorio garbia da: egitura desberdintasunak esanahi desberdintasuna dakar.
+
+## Ustezko ahuleziak
+
+Hatsarrea indartsua da, baina ez dio denari erantzuten. Atal honetan lau
+erronka aztertuko ditugu, eta ikusiko dugu erantzuna ez dela hatsarrea
+baztertzea, baizik eta konposizio-mota gehiago onartzea.
+
+### Esapide idiomatikoak
+
+::: {#exm-idiomak}
+a. *Gorriak ikusi ditut.*
+b. *Gizon hori besoa besoaren gainean dago.*
+:::
+
+Lehen begirada batean, espresio hauen esanahia ez da osagaien esanahitik
+ateratzen. *Gorriak ikusi* ez da kolore gorriak ikustea. Hala ere, konponbidea
+erraza da: esapidea unitate lexiko bat da, eta hatsarrea ukitu gabe geratzen
+da. Hiztegia ez da hitzen zerrenda hutsa, espresio konplexu batzuen sarrerak ere
+baditu.
+
+### Polisemia eta uztardura hautakorra
+
+::: {#exm-polisemia}
+a. *liburu erraza*
+b. *bide erraza*
+:::
+
+*Erraz* adjektiboak ez du gauza bera esaten kasu bakoitzean. Lehenengoan
+*irakurtzeko erraza* da; bigarrenean, *ibiltzeko erraza*. Adjektiboak izenaren
+ezaugarri bat hautatzen du, eta hautapen hori izenaren esanahi lexikoaren
+araberakoa da.
+
+Konposizio mota horri **uztardura hautakorra** deitzen zaio. Ondorioa da
+sarrera lexikoak aberatsa izan behar duela: izenak ez du soilik adierazten zer
+den, baita zertarako erabiltzen den eta nolako egitura duen ere.
+
+### Ko-konposizioa eta tipo koertzioa
+
+::: {#exm-kokonposizioa}
+a. *sobrea ireki*
+b. *bidea ireki*
+:::
+
+*Ireki* aditzak gauza desberdinak egiten ditu kasu bakoitzean. *Sobre* bat
+irekitzean, haren itxiera hausten da. *Bide* bat irekitzean, berriz, zerbait
+sortzen da. Aditzak, beraz, izenaren egiturarekiko moldatzen da.
+
+Kasurik muturrekoena **tipo koertzioa** da: osagai baten tipoa aldatu egiten da
+besteak eskatzen duen tipora egokitzeko.
+
+::: {#exm-koertzioa}
+a. *Liburu bat hasi dut.*
+b. *Ogia nahi dut.*
+:::
+
+*Hasi* eta *nahi* aditzek gertaerak hautatzen dituzte. Baina *liburu bat* eta
+*ogia* ez dira gertaerak, objektuak baizik. Interpretazioan, ordea, objektutik
+gertaerara jotzen dugu:
+
+::: {#exm-koertzioa-2}
+a. *Liburu bat irakurtzen hasi naiz.*
+b. *Ogia erosi nahi dut.*
+:::
+
+Formalki, $\langle e, t\rangle$ tipoko espresio bat gertaera batean
+eraldatzen da, funtzio berezi baten bidez:
+
+$$
+x \;\longmapsto\; F(x)
+$$
+
+non $F$ testuinguruak edo aditzak ematen duen funtzio bat den.
+
+### Testuinguruarekiko mendekotasuna
+
+Azken erronka, eta garrantzitsuena, testuinguruarena da. Espresio deiktikoen
+balio semantikoa ezin da kalkulatu testuingurura jo gabe: *ni*, *hemen*,
+*atzo*. Horrek esan nahi du konposizioak testuingurua ere kontuan hartu behar
+duela noizbait.
+
+Baina badago testuinguru-mendekotasun mota sotilago bat, eta horrek
+konposizionalitateari parteski egiten dio eraso.
+
+::: {#exm-ogitarteko}
+*Umeek ogitarteko gehienak jan dituzte.*
+:::
+
+Perpaus hau egiazkoa izan daiteke umeek hiru ogitarteko jan badituzte, baina
+ez badituzte munduko ogitarteko guztiak jaten. Kuantifikatzaileak, beraz, ez du
+izenaren denotazio osoa hartzen: zati bat hartzen du. Zati hori testuinguruak
+zehazten du, eta ez dago perpausean bertan.
+
+Hori konpontzeko, ohikoa da testuinguruko funtzio bat gehitzea ($f$), izenaren
+denotazioa murrizten duena:
+
+$$
+⟦\text{ogitarteko gehienak}⟧^{\mathcal{E}, f} =
+\lambda Q\,[\,|Q \cap f(\text{ogitarteko}')| > |f(\text{ogitarteko}')| / 2\,]
+$$
+
+Funtzio horren balioa ez dago perpausean, baina bai haren interpretazioan.
+Kasu honetan, beraz, konposizionalitatea ez da hausten: zabaltzen da,
+testuingurua sarrera lexikoen parte bihurtuz.
+
+### Ondorioa: "nola" galdera
+
+Aurreko lau erronkek erakusten dute konposizionalitatea ez dela bai/ez galdera.
+David Dowty-k (2006: 5) argi jarri zuen:
+
+> "Compositionality really should be considered 'an empirical question'. But it
+> is not a yes-no question, rather it is a 'how'-question."
+
+Hau da, galdera ez da *ea* esanahia konposizionala den, baizik eta *nola* den:
+zein funtzio mota behar diren, zein informazio lexiko, eta zein baldintzatan
+husten den konposizioa. Liburu honetako gainerako kapituluek galdera horri
+erantzungo diote, kasu bakoitzean.
+
+## Laburpena
+
+- Espresio baten esanahia sarrera lexikoan egon daiteke, edo konposizioz
+  eraiki.
+- **Konposizionalitatearen hatsarrea**: espresio konplexuaren esanahia osagaien
+  esanahien eta egitura sintaktikoaren funtzioa da.
+- Hatsarreak hiru argudio sendo ditu: produktibitatea, berritasuna eta
+  sistematikotasuna.
+- *Funtzioa* tipo semantikoen eta lambda-kalkuluaren bidez formalizatzen da.
+- Tipek egitura sintaktikoarekin bat etortzea bermatzen dute: horregatik da
+  *ikusi* $\langle e, \langle e,t\rangle\rangle$ eta ez
+  $\langle\langle e,e\rangle, t\rangle$.
+- Lambda abstrakzioak ahalbidetzen du hitzik gabeko tarteko espresioen esanahia
+  adieraztea.
+- Hatsarreak ondorio frogagarriak ditu: ordezgarritasuna eta egiturazko
+  anbiguotasuna.
+- Ahuleziak ez dira hatsarrearen kontrako frogak, konposizio-mota gehiagoren
+  beharra baizik: uztardura hautakorra, ko-konposizioa, tipo koertzioa eta
+  testuinguru-mendekotasuna.
+
+## Ariketak
+
+::: {#exr-konp-1}
+**1. ariketa.** Azaldu, zure hitzekin, zergatik den konposizionalitatea
+beharrezkoa espresio kopuru infinitua azaltzeko. Erabili *Jonek esan du*
+adibidea eta asmatu beste bat egitura bereko.
+
+:::
+
+::: {#exr-konp-2}
+**2. ariketa.** Eman espresio hauen tipo semantikoa: *Ane*, *etorri*,
+*ikusi*, *eta*, *poliki*, *Ane etorri da*, *Bederatzi katu*.
+
+:::
+
+::: {#exr-konp-3}
+**3. ariketa.** Idatzi lambda-espresioak honako hauetarako, eta egiaztatu
+tipoak: (a) *Amaia ikusi*; (b) *liburu gorria*; (c) *Anek irakurri duen
+liburua*; (d) *poliki idatzi*.
+
+:::
+
+::: {#exr-konp-4}
+**4. ariketa.** Perpaus honek bi irakurketa ditu: *Irakasle bakoitzak bi
+ikasle ikusi zituen*. Azaldu bi irakurketak, eta erabaki ea egiturazko
+anbiguotasuna den ala lexikoa. Justifikatu.
+
+:::
+
+::: {#exr-konp-5}
+**5. ariketa.** Bilatu egunkari batean esapide idiomatiko bat, eta azaldu
+zergatik ez duen konposizionalitateari eraso egiten, unitate lexikotzat hartzen
+badugu. Ondoren, azaldu noiz ez den azalpen hori nahikoa.
+
+:::
+
+::: {#exr-konp-6}
+**6. ariketa.** *Liburu bat hasi dut* perpausean tipo koertzioa gertatzen da.
+Deskribatu urratsak formalki, eta konpara ezazu *Liburu bat irakurtzen hasi
+naiz* perpausarekin. Zein da alde nagusia?
+
+:::
+
+::: {#exr-konp-7}
+**7. ariketa (zaila).** Konposizionalitateak iragartzen du sinonimoak truka
+daitezkeela esanahia aldatu gabe. Eman ezazu kontraadibide bat, eta azaldu
+zein baldintzatan huts egiten duen iragarpenak. Lagungarria: pentsa ezazu
+aipamenetan eta sinesmen-aditzetan.
+
+:::
+
+## Irakurketa gehiago
+
+- Frege, G. (1892). "Über Sinn und Bedeutung". *Zeitschrift für Philosophie
+  und philosophische Kritik* 100: 25–50. [Euskarazko oharrak: esanahiaren eta
+  erreferentziaren bereizketa klasikoa.]
+- Janssen, T. M. V. (1997). "Compositionality". In J. van Benthem & A. ter
+  Meulen (arg.), *Handbook of Logic and Language*. Elsevier, 417–473.
+- Pagin, P. & Westerståhl, D. (2010). "Compositionality I: Definitions and
+  variants". *Philosophy Compass* 5(3): 250–264. [Bi ataletatik lehena;
+  bigarrena ere irakurtzea gomendatzen da.]
+- Partee, B. (1984). "Compositionality". In F. Landman & F. Veltman (arg.),
+  *Varieties of Formal Semantics*. Foris, 281–311.
+- Dowty, D. (2006). "Compositionality as an empirical problem". In C. Barker &
+  P. Jacobson (arg.), *Direct Compositionality*. Oxford University Press, 1–18.
+- Pustejovsky, J. (1995). *The Generative Lexicon*. MIT Press. [Uztardura
+  hautakorrari eta ko-konposizioari buruz.]
+- Roussarie, L. (2017). *Sémantique formelle. Volume 1*. Language Science
+  Press. [CC BY 4.0]
+
+::: {.callout-note title="Aitortza" appearance="simple"}
+Kapitulu hau egilearen eskuizkribuan oinarritzen da (*Semantika konbinatorioa*),
+eta bertako terminologia eta adibideak gordetzen ditu. Tipo-teoriaren eta
+lambda-kalkuluaren aurkezpenak Roussarieren (2017) eta Coppock & Champollionen
+ereduak jarraitzen ditu, egokitzapen eta adibide berriekin. Egitura orokorra
+egilearena da.
+:::

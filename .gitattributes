@@ -1,0 +1,15 @@
+* text=auto eol=lf
+
+*.qmd text
+*.yml text
+*.yaml text
+*.py text
+*.md text
+*.csv text
+*.scss text
+*.bib text
+
+*.png binary
+*.jpg binary
+*.pdf binary
+*.docx binary

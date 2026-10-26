@@ -1,0 +1,32 @@
+name: Kalitatea
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+jobs:
+  egiaztatu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Biltegia deskargatu
+        uses: actions/checkout@v4
+
+      - name: Python prestatu
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Quarto prestatu
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.10.18"
+
+      - name: Terminologia birsortu
+        run: python tresnak/hiztegia.py
+
+      - name: Kalitate-egiaztapena
+        run: python tresnak/terminoak-egiaztatu.py
+
+      - name: Errendatzearen proba
+        run: quarto render --to html

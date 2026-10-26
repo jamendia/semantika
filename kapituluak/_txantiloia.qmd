@@ -1,0 +1,53 @@
+---
+title: "Kapituluaren izenburua"
+---
+
+<!--
+TXANTILOIA. Ez da liburuan agertzen: `_` aurrizkia duen fitxategia ez da
+errendatzen. Kapitulu berri bat hasteko, kopiatu fitxategi hau `kapituluak/`
+karpetara, berridatzi izenburua, eta gehitu dagokion tokian `_quarto.yml`-ko
+`book.chapters` zerrendan.
+
+Gogoratu: atalak `##` mailan daude (ez `#`), kapituluaren izenburua YAML
+buruan baitago. Azpiatalak `###`.
+-->
+
+## Sarrera
+
+Arazoa planteatu, motz. Irakurleak jakin behar du zergatik duen garrantzia
+hurrengo orrialdeek.
+
+## Garapena
+
+Edukia.
+
+::: {#def-eredua}
+**Definizioaren izenburua.** Definizioa, argi eta labur.
+:::
+
+Adibideak beti zenbakituta:
+
+::: {#exm-adibidea}
+a. *Lehenengo adibidea.*
+b. *Bigarrena.*
+:::
+
+## Laburpena
+
+- Puntu nagusia.
+- Bigarren puntua.
+- Hirugarrena.
+
+## Ariketak
+
+::: {#exr-kapitulua-1}
+**1. ariketa.** Enuntziatua.
+:::
+
+::: {#exr-kapitulua-2}
+**2. ariketa.** Enuntziatua.
+:::
+
+## Irakurketa gehiago
+
+- Egilea, A. (urtea). *Izenburua*. Argitaletxea.

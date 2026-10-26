@@ -1,0 +1,65 @@
+name: Argitaratu
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  eraiki:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Biltegia deskargatu
+        uses: actions/checkout@v4
+
+      - name: Python prestatu
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Quarto prestatu
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.10.18"
+
+      - name: Terminologia birsortu
+        run: python tresnak/hiztegia.py
+
+      - name: Kalitate-egiaztapena
+        run: python tresnak/terminoak-egiaztatu.py
+
+      - name: Hiztegia sinkronizatuta dagoela egiaztatu
+        run: |
+          git diff --exit-code -- eranskinak/a-terminologia.qmd \
+            || (echo "::error::a-terminologia.qmd zaharkituta dago. Exekutatu 'python tresnak/hiztegia.py' eta egin commit." && exit 1)
+
+      - name: Errendatu
+        run: quarto render
+
+      - name: Pages prestatu
+        uses: actions/configure-pages@v5
+
+      - name: Artifacta igo
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  argitaratu:
+    needs: eraiki
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Pages-era argitaratu
+        id: deployment
+        uses: actions/deploy-pages@v4

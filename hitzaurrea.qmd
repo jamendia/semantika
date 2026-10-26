@@ -1,0 +1,60 @@
+---
+title: "Hitzaurrea"
+---
+
+Liburu hau ez da hutsetik sortu. Urteak daramatzat semantika eta pragmatika
+irakasten, eta urte horietan zehar gela batean funtzionatu zuen materiala
+biltzen joan naiz: azalpenak, adibideak, ariketak, okerren zerrendak. Material
+hori, hasieran, ikasleentzako apunte solteak besterik ez zen. Geroago ikastaro
+osoa osatu zuen. Orain, liburu bihurtzeko unea iritsi da.
+
+Liburuak bi helburu ditu. Lehenengoa, euskaraz irakastea hizkuntzaren esanahia
+nola aztertzen den, tresna formalen bidez eta haien mugak argi utzita.
+Bigarrena, terminologia koherente bat finkatzea: euskaraz semantikaz aritzeko
+ohitura egon badago, baina sakabanatuta eta askotan ingelesaren kalko hutsez
+osatua. Hemen hautua egin behar izan da, eta hautu bakoitzaren atzean arrazoi
+bat dago.
+
+## Zergatik euskaraz
+
+Euskaraz semantika egiteak badu zailtasun bat eta abantaila bat. Zailtasuna da
+tresna formalen hiztegia ez dagoela finkatuta, eta irakurleak ingelesezko
+testuliburuetara jotzen duela askotan, termino bakoitzaren parekidea asmatu
+behar izanda. Abantaila da, ordea, hizkuntzaren egiturak berak gauza batzuk
+errazten dituela: kasu-sistema gardenak argumentu-egitura erakusten du, eta
+horrek predikatuen azalpena sotilago egiten du.
+
+Horiek guztiak ez dira diskurtso hutsa. Liburu honetan zehar ikusiko duzu
+nolako ondorioak dauzkan hizkuntza jakin bat hautatzeak: zein adibide den
+naturala, zein irakurketa den posible, zein anbiguotasun den egiturazkoa eta
+zein lexikoa. Horiek guztiak ez dira neutroak.
+
+## Norentzat
+
+Hizkuntzalaritzako bigarren zikloko ikasleentzat, batez ere, baina baita
+filosofia, psikologia edo hizkuntza-teknologietatik hurbiltzen denarentzat ere.
+Ez da matematika aurretiko handirik eskatzen. Bai, ordea, prestutasuna sinbolo
+multzo txiki bat erabiltzeko: funtzioak, tipoak, parentesiak. Atal teknikoei
+marka bat jarri zaie, irakurleak jakin dezan zer saltatu dezakeen lehen
+irakurketa batean.
+
+## Egitura eta bibliografia
+
+Kapitulu bakoitzak sarrera bat du, garapena, laburpena, ariketak eta
+irakurketa gehiagorako zerrenda bat. Erreferentziak testuan txertatuta daude
+(`(Roussarie 2017: 42)` moduan), eta zerrenda osoa kapituluaren amaieran.
+
+Bibliografiari dagokionez, bi irizpide jarraitu ditut. Lehenengoa, euskarazko
+materiala lehenetsi eta aitortzea, dagoena gutxi delako eta gutxi hori
+erabilgarria delako. Bigarrena, nazioarteko testuliburu nagusiak ezabatzea
+baino, horiekiko zorra argi adieraztea.
+
+## Erreferentziak
+
+Liburuaren iturri nagusiak aipatuta daude sarreran. Hemen soilik azpimarratu
+nahi dut Roussariek, eta Coppock eta Champollionek, modu oso desberdinetan
+erakutsi dutela gauza bera egin daitekeela: semantika formala irakats daiteke,
+zentzu kritikoa galdu gabe. Haien eredua jarraitu dut, baina ez haien hitzak.
+
+Eskerrik asko urte hauetan zehar oharrak, zuzenketak eta iradokizunak egin
+dizkieten guztiei. Liburu hau, neurri batean, haiena ere bada.

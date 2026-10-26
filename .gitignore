@@ -1,0 +1,47 @@
+# ---------------------------------------------------------------------------
+# Iturburu bibliografikoak: EZ dira inoiz biltegira igotzen.
+# Hirugarrenen PDFak eta eskuizkribuaren jatorrizko .docx fitxategiak hemen
+# daude. Lizentzia arazoak saihesteko, karpeta osoa kanpoan geratzen da.
+# ---------------------------------------------------------------------------
+textbook-sources/
+
+# ---------------------------------------------------------------------------
+# Quarto
+# ---------------------------------------------------------------------------
+_site/
+.quarto/
+.quarto-cache/
+*_files/
+/.luarc.json
+/.Rhistory
+/.RData
+
+# Errendatzearen ondorioak
+*.pdf
+*.docx
+*.typ
+!/assets/**/*.pdf
+
+# ---------------------------------------------------------------------------
+# Sistemako fitxategiak
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------------------------------------------------------
+# Editoreak
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.pyc
+.venv/
+
+/.quarto/
+**/*.quarto_ipynb

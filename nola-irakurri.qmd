@@ -1,0 +1,110 @@
+---
+title: "Nola irakurri liburu hau"
+---
+
+Liburu hau ez da nobela bat, hasieratik amaierara irakurtzekoa. Hala ere, ez da
+salbuespen bilduma bat ere: kapituluek elkarri eraikitzen diote gaina.
+Hona hemen norabide orokorra.
+
+## Hiru zatitan
+
+**Lehen zatia: esanahia eta konposizioa.** Zer da esanahia, nola dago
+hiztegian, eta nola konbinatzen dira hitzak perpaus bihurtzeko. Zati honek
+tresna formalak aurkezten ditu: tipoak, funtzioak, lambda-kalkulua.
+
+**Bigarren zatia: erreferentzia eta mundua.** Espresioek munduko gauzei nola
+egiten dieten erreferentzia, eta zenbat kuantifikatu, identifikatu eta
+deskribatzen duten. Hemen sartzen dira izen sintagmak, kuantifikatzaileak,
+predikatuak eta gertakariak.
+
+**Hirugarren zatia: erabilera.** Esanahi kodifikatuaz harago doana: hiztunak
+zer esan nahi duen, zer inplikatzen duen, zertarako erabiltzen duen hizkuntza.
+Hemen kokatzen dira pragmatika, inplikaturak, indar ilokutiboa eta informazio-
+egitura.
+
+## Atal teknikoak
+
+Kapitulu batzuetan atal oso teknikoa dago, markatuta:
+
+::: {.callout-note title="Atal teknikoa" appearance="simple"}
+Atal honek tresna formalak erabiltzen ditu. Lehen irakurketa batean saltatu
+dezakezu, baina ez betiko: hurrengo kapituluek han aurkeztutakoa erabiliko
+dute.
+:::
+
+Kapituluaren izenburuan *ez* da marka hori agertzen; atalaren barruan baizik.
+Hala, ohiko irakurketan atal teknikoa salta dezakezu, eta bigarren
+irakurketa batean hara itzuli.
+
+## Adibideak
+
+Adibide guztiak zenbatuta daude eta letrekin azpibanatuta, hizkuntzalaritzako
+ohiko konbentzioari jarraituz:
+
+> (12) a. *Ibaia lehortu da.*
+>      b. *Geranioa lehortu da.*
+
+Adibide okerren edo ez-gramatikaltzat jotzen direnen aurretik izartxo bat
+jartzen da: `*Beatriz etorri da norbait`. Galdagarritasunari buruzko zalantzak
+`?` batekin markatzen dira, eta onargarritasun-mailak `??` eta `?*` ikurrekin,
+hots, okerrago dagoen heinean.
+
+## Ariketak
+
+Kapitulu bakoitzaren amaieran ariketak daude. Batzuk ulermen hutsekoak dira;
+beste batzuk, berriz, datu berriak aztertzeko eskatzen dute. Ebazpenak ez daude
+liburu honetan: irakaslearentzat gordeta daude, eta ariketen kodea (`A3.2`
+modukoa) erabiliz eska daitezke.
+
+Ariketek ez dute erantzun bakarra izaten askotan. Hori ez da akats bat, hori da
+puntu nagusia: semantikaren zailtasuna ez datza formula zuzena aurkitzean,
+baizik eta formula batek zer iragartzen duen eta zer ez aztertzean.
+
+## Notazioa
+
+Notazio guztia eranskin batean dago bilduta, taula bakar batean. Irakurleak
+ez du buruz ikasi behar; kontsultarako da.
+
+> $⟦\alpha⟧^{\mathcal{E}}$ espresio baten balio semantikoa da, $\mathcal{E}$
+> ereduarekiko. Ez ezazu irakurri "kako bikoitza": irakurri "alfa-ren
+> denotazioa E-n".
+
+## Edukiaren egitura osoa
+
+Ondoko zerrendak liburuaren plan osoa erakusten du. Momentuz kapitulu batzuk
+baino ez daude argitaratuta; gainerakoak idazten ari dira.
+
+### Lehen liburukia
+
+| # | Kapitulua | Egoera |
+|---|---|---|
+| 1 | Sarrera: semantika zer den | idazteko |
+| 2 | Semantika lexikoa | idazteko |
+| 3 | **Konposizioa** | **argitaratuta (pilotua)** |
+| 4 | Erreferentzia eta izen sintagmak | idazteko |
+| 5 | Kuantifikazioa | idazteko |
+| 6 | Predikatuen semantika | idazteko |
+| 7 | Gertakarien semantika | idazteko |
+| 8 | Modalitatea | idazteko |
+| 9 | Intentsionalitatea | idazteko |
+| 10 | Pragmatikarako sarrera | idazteko |
+| 11 | Inplikaturak | idazteko |
+| 12 | Indar ilokutiboa | idazteko |
+| 13 | Informazio-egitura | idazteko |
+
+### Bigarren liburukia
+
+| # | Kapitulua | Egoera |
+|---|---|---|
+| 14 | Presuposizioa | planifikatuta |
+| 15 | Denbora eta aspektua | planifikatuta |
+| 16 | Pluralak eta izen zenbakaitzak | planifikatuta |
+| 17 | Konparazioa eta graduak | planifikatuta |
+| 18 | Metafora eta ironia | planifikatuta |
+| 19 | Kortesia eta zentsura | planifikatuta |
+
+### Eranskinak
+
+- **A. Terminologia** — euskara/ingeles hiztegia definizioekin.
+- **B. Notazioa** — ikurren taula osoa.
+- **C. Nola aitatu** — liburuaren aipamen zuzena.

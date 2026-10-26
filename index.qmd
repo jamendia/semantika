@@ -1,0 +1,59 @@
+---
+title: "Esanahia eta egitura"
+subtitle: "interpretazioaren zientzia"
+---
+
+::: {.hero}
+:::
+
+## Liburuaz
+
+Giza hizkuntzaren ezaugarririk bereizgarriena semantikatasuna da: soinuz,
+keinuz edo grafoz osatutako espresioek zerbait esan nahi dute. Esan nahi den
+hori oso aberatsa eta konplexua izan daiteke, eta hizkuntzari esker daudenaz eta
+ez daudenaz, gauza eta gertakari konkretu zein abstraktuez, doitasun handiz
+mintza gaitezke.
+
+Liburu hau hori nola gertatzen den azaltzeko saiakera da. Ez da sarrera
+arinkeriazko bat, eta ez da tratatu tekniko hutsa ere: hizkuntzalaritzako
+ikasleak hartzen ditu abiapuntu, baina forma logikoak eta haien atzean dauden
+ideiek pisu handia dute orrialde hauetan.
+
+Hiru galdera nagusik gidatzen dute liburua:
+
+1. **Zer da esanahia?** Nola bereizten ditugu hitzek daramaten informazioa,
+   perpausak adierazten duen proposizioa eta hiztunak esan nahi duena?
+2. **Nola eraikitzen da esanahia?** Nola lortzen dute hitz batzuek, elkarrekin
+   konbinatuta, inork sekula esan ez duen esanahi berri bat?
+3. **Nola erabiltzen da esanahia?** Zer gehitzen diote testuinguruak,
+   asmoak eta hitzartze-arau sozialek esanahi kodifikatuari?
+
+## Nola dago antolatuta
+
+**Lehen liburukia** oinarrizko arkitekturaz arduratzen da: esanahi motak,
+semantika lexikoa, konposizio semantikoa, erreferentzia, kuantifikazioa,
+predikatuak, gertakariak, modalitatea eta intentsionaltasuna. Ondoren,
+erabileraren aldera egiten du jauzi: pragmatika, inplikaturak, indar
+ilokutiboa eta informazio-egitura.
+
+**Bigarren liburukia** gai aurreratuei eskainiko zaie: presuposizioa,
+denbora eta aspektua, pluralak eta izen zenbakaitzak, konparazioa, eta
+pragmatikaren luzapenak (metafora, ironia, kortesia, zentsura).
+
+Kapituluak modu autonomoan irakur daitezke, baina liburua era progresiboan
+pentsatuta dago. Ariketak kapitulu bakoitzaren amaieran daude; ebazpenak
+irakasleentzat gordeta daude.
+
+## Aitortzak
+
+Liburu hau ez da inolako testulibururen itzulpena. Egilearen testua da, eta
+iturri irekietan oinarritzen da: batik bat Laurent Roussarieren *Sémantique
+formelle* (CC BY 4.0) eta Elizabeth Coppock eta Lucas Champollionen *Invitation
+to Formal Semantics* lanean. Aitortza zehatzak [CREDITS.md](CREDITS.md)
+fitxategian daude, eta kapitulu bakoitzaren amaieran dagozkion oharrak.
+
+## Lizentzia
+
+Liburu osoa **Creative Commons Aitortu 4.0 Nazioartekoa** (CC BY 4.0)
+lizentziaren pean dago. Parteka dezakezu eta molda dezakezu, aitortza eman eta
+aldaketak adierazten badituzu.

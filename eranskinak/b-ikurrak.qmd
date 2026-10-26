@@ -1,0 +1,65 @@
+---
+title: "Notazioa"
+---
+
+Orri honetan liburuan zehar erabilitako ikur nagusiak daude bilduta.
+Kontsultarako da: ez da buruz ikasteko.
+
+## Oinarrizko ikurrak
+
+| Ikurra | Esanahia | Adibidea |
+|:---|:---|:---|
+| $⟦\alpha⟧^{\mathcal{E}}$ | $\alpha$ espresioaren balio semantikoa $\mathcal{E}$ ereduan | $⟦\text{etorri}'⟧^{\mathcal{E}}$ |
+| $\mathcal{E}$ | Eredua (munduaren irudikapen formala) | |
+| $\alpha'$ | Espresio baten itzulpen lexikoa | $\text{etorri}'$ |
+| $\lambda x\,[\ldots]$ | Lambda abstrakzioa: $x$-ren gaineko funtzioa | $\lambda x\,[\text{etorri}'(x)]$ |
+| $\langle a, b\rangle$ | $a$-tik $b$-ra doan funtzioaren tipoa | $\langle e, t\rangle$ |
+| $e$ | Banakoen tipoa | *Ane*, *hau* |
+| $t$ | Egi-balioen tipoa | *Ane etorri da* |
+| $\wedge$ | Eta (konjuntzioa) | $P \wedge Q$ |
+| $\vee$ | Edo (disjuntzioa) | $P \vee Q$ |
+| $\neg$ | Ez (ukapena) | $\neg P$ |
+| $\rightarrow$ | Baldintzazkoa | $P \rightarrow Q$ |
+| $\forall$ | Kuantifikatzaile unibertsala | $\forall x$ |
+| $\exists$ | Kuantifikatzaile existentziala | $\exists x$ |
+| $\in$ | Multzokidea | $x \in A$ |
+| $\subseteq$ | Azpimultzoa | $A \subseteq B$ |
+| $\cap$ | Ebakidura | $A \cap B$ |
+| $\cup$ | Batura | $A \cup B$ |
+| $\emptyset$ | Multzo hutsa | |
+| $\longmapsto$ | Elementuen arteko esleipena | $x \longmapsto F(x)$ |
+
+## Sintaxi-etiketak
+
+| Etiketa | Esanahia |
+|:---|:---|
+| P | Perpausa |
+| IS | Izen sintagma |
+| AS | Aditz sintagma |
+| DetS | Determinatzaile sintagma |
+| A | Aditza |
+
+Parentesi etiketatuak horrela irakurtzen dira:
+
+```
+[P [IS Ane-k] [AS [IS Amaia] [A ikusi]]]
+```
+
+Kanpoko parentesia perpausa da (P); barruan, izen sintagma bat (*Ane-k*) eta
+aditz sintagma bat (AS) daude; aditz sintagmaren barruan, berriz, izen sintagma
+bat (*Amaia*) eta aditza (*ikusi*).
+
+## Onargarritasun-markak
+
+| Marka | Esanahia |
+|:---|:---|
+| (markarik gabe) | Onargarria |
+| `?` | Zalantzazkoa |
+| `??` | Oker samarra |
+| `?*` | Okerra, baina ez erabat |
+| `*` | Ez-gramatikala |
+| `#` | Gramatikala, baina esanahi edo erabilera arraroa |
+
+## Terminologia
+
+Termino guztien zerrenda, definizioekin, **A. eranskinean** dago.

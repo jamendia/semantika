@@ -1,0 +1,96 @@
+/*-- scss:defaults --*/
+
+$font-family-sans-serif: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+$font-family-serif: "Source Serif 4", Georgia, serif;
+$body-color: #1a1a1a;
+$link-color: #1f4e79;
+$sidebar-bg: #f7f6f3;
+
+/*-- scss:rules --*/
+
+/* Buruak: tarte handiagoa, pisua */
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Adibideak: hizkuntzalaritzako ohiko itxura (ezkerreko marra mehea) */
+.theorem {
+  border-left: 2px solid #d0d0d0;
+  padding-left: 0.9rem;
+  margin: 1.1rem 0 1.1rem 0.2rem;
+  font-style: normal;
+}
+
+.theorem p {
+  margin-bottom: 0.25rem;
+}
+
+.theorem .theorem-title {
+  font-variant: small-caps;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Adibideen azpibanaketak: a., b., c. */
+.theorem ol,
+.theorem ul {
+  margin-bottom: 0.2rem;
+}
+
+/* Definizioak: markatuagoak */
+.definition, .theorem[data-xref-type="def"] {
+  background: #f7f6f3;
+  border-left: 3px solid #1f4e79;
+  padding: 0.7rem 1rem 0.5rem 1rem;
+}
+
+/* Zuhaitzak eta parentesi etiketatuak: letra monoespatiatua, tamaina txikiagoa */
+.tree,
+pre.tree {
+  font-family: "Iosevka", "Cascadia Mono", monospace;
+  font-size: 0.86em;
+  line-height: 1.35;
+  background: transparent;
+  border: none;
+  padding-left: 0;
+}
+
+/* Matematika lerroan: ez hautsi */
+.math.inline {
+  white-space: nowrap;
+}
+
+/* Erreferentziak: ez hautsi zenbakia eta hitza */
+.quarto-xref {
+  white-space: nowrap;
+}
+
+/* Taulak */
+table {
+  font-size: 0.94em;
+}
+
+/* Oin-oarrak */
+.footnotes {
+  font-size: 0.88em;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 2.5rem;
+}
+
+/* Azalaren hero atala */
+.hero {
+  margin-top: -0.5rem;
+}
+
+/* Inprimatzeko: estekak ez erakutsi */
+@media print {
+  a[href]::after {
+    content: "";
+  }
+}
