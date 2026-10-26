@@ -12,7 +12,7 @@ kapitulu bat idazten hasi aurretik.
 | Izenburua | *Esanahia eta egitura* |
 | Azpititulua | *interpretazioaren zientzia* |
 | Hizkuntza | Euskara batua (Euskaltzaindiaren arauak) |
-| Egilea | Jamendia |
+| Egilea | jamendia |
 | Lizentzia | CC BY 4.0 |
 | Biltegia | `github.com/jamendia/semantika` |
 | Webgunea | `https://jamendia.github.io/semantika/` |
