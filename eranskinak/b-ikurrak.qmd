@@ -49,6 +49,20 @@ Kanpoko parentesia perpausa da (P); barruan, izen sintagma bat (*Ane-k*) eta
 aditz sintagma bat (AS) daude; aditz sintagmaren barruan, berriz, izen sintagma
 bat (*Amaia*) eta aditza (*ikusi*).
 
+## Glossa interlineala
+
+Beste hizkuntza batetako adibideek hiru lerro dituzte: jatorrizko perpausa,
+glossa morfosintaktikoa (hitz bakoitzaren kategoria eta gramatika-informazioa)
+eta itzulpen askea. Euskarazko adibideak ez dira glossatzen.
+
+| Ikurra | Esanahia | Adibidea |
+|:---|:---|:---|
+| `.PST` | Denbora gramatikala: lehenbizikoa | *read.PST* "irakurri zuen" |
+| `.PL` | Multzoa: plurala | *book.PL* "liburuak" |
+
+Glossa morfosintaktikoak puntuz bereizitako etiketak erabiltzen ditu
+(`read.PST`), eta azken lerroko itzulpena euskarazkoa da beti.
+
 ## Onargarritasun-markak
 
 | Marka | Esanahia |
