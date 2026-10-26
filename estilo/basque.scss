@@ -38,13 +38,18 @@ h1 {
 .theorem.example .exnum {
   font-weight: 600;
   color: #444;
-  font-size: 0.95em;
   font-variant: normal;
   line-height: inherit;
 }
 
 .theorem.example .example-body {
   min-width: 0;
+}
+
+/* Gorputzaren lehen elementua zenbakiaren lerroarekin bat etortzeko:
+   ez erakutsi goiko marjinik (glossa-taulak, zerrendak...) */
+.theorem.example .example-body > :first-child {
+  margin-top: 0;
 }
 
 .theorem.example p {
@@ -71,7 +76,7 @@ h1 {
 
 /* Glossak: hitzez hitz leroakatutako taula (linguistika.lua-k sortua) */
 .gloss-table {
-  margin: 0.8rem 0 1rem 0;
+  margin: 0 0 1rem 0;
   font-size: 0.95em;
   border-collapse: collapse;
   width: auto;
@@ -84,8 +89,9 @@ h1 {
   white-space: nowrap;
 }
 
+/* Objektu-hizkuntzako lerroa zuzenean (adibideak ez dira etzan) */
 .gloss-table .gloss-orig td {
-  font-style: italic;
+  font-style: normal;
 }
 
 .gloss-table .gloss-gloss td {
@@ -94,7 +100,10 @@ h1 {
   color: #444;
 }
 
+/* Itzulpen askea: sans expizki finkatua (gorputz-serifera aldatu baino
+   lehen argi uzteko) */
 .gloss-table .gloss-trans td {
+  font-family: $font-family-sans-serif;
   font-size: 0.9em;
   color: #555;
   white-space: normal;

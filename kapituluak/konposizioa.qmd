@@ -13,8 +13,8 @@ haien esanahia ez dago inon gordeta, unean bertan eraikitzen da.
 Eraikuntza hori ez da edozein modutakoa. Har dezagun adibide sinple bat.
 
 ::: {#exm-ibaia}
-a. *Ibaia lehortu da.*
-b. *Geranioa lehortu da.*
+a. Ibaia lehortu da.
+b. Geranioa lehortu da.
 :::
 
 Bi perpaus hauek egitura bera dute, eta hitz berak erabiltzen dituzte
@@ -25,8 +25,8 @@ hori nahikoa da esanahi osoa aldatzeko.
 Orain har dezagun beste adibide bat, aurkakoa dirudiena.
 
 ::: {#exm-errieta}
-a. *Irakasleak ikasleari errieta egin dio.*
-b. *Ikasleak irakasleari errieta egin dio.*
+a. Irakasleak ikasleari errieta egin dio.
+b. Ikasleak irakasleari errieta egin dio.
 :::
 
 Hemen hitzak berberak dira: *irakasle*, *ikasle*, *errieta egin*, *dio*. Baina
@@ -67,19 +67,19 @@ mugarik: perpaus bati *Jonek esan du* aurretik itsatsiz gero, beste perpaus bat
 sortzen da, eta horri beste bat, eta horrela amaigabe.
 
 ::: {#exm-jonek}
-a. *Jonek esan du Miren etorri dela.*
-b. *Mirenek esan du Jonek esan duela Miren etorri dela.*
-c. *Jonek esan du Mirenek esan duela Jonek esan duela Miren etorri dela.*
+a. Jonek esan du Miren etorri dela.
+b. Mirenek esan du Jonek esan duela Miren etorri dela.
+c. Jonek esan du Mirenek esan duela Jonek esan duela Miren etorri dela.
 :::
 
 Fenomeno bera ikusten da hizkuntza guztietan, eta modu are nabarmenagoan
 ingeleseko *fish* hitzarekin, zeinak izen zein aditz gisa funtzionatzen duen.
 
 ::: {#exm-fish}
-a. *Fish* — ‘arraina’ / ‘arrantza egin’
-b. *Fish fish* — ‘arrainak arrantza egiten du’
-c. *Fish fish fish* — ‘arrainak arraina arrantza egiten du’
-d. *Fish fish fish fish* — ‘arrantza egiten duen arrainak arraina arrantza egiten du’
+a. Fish — ‘arraina’ / ‘arrantza egin’
+b. Fish fish — ‘arrainak arrantza egiten du’
+c. Fish fish fish — ‘arrainak arraina arrantza egiten du’
+d. Fish fish fish fish — ‘arrantza egiten duen arrainak arraina arrantza egiten du’
 :::
 
 Espresio kopurua infinitua bada eta hiztunaren gaitasuna, berriz, mugatua
@@ -94,7 +94,7 @@ Bigarren argudioa are nabarmenagoa da. Hona hemen perpaus bat, seguru asko
 lehen aldiz irakurtzen duzuna:
 
 ::: {#exm-tximino}
-*Tximino urdin bat bigarren mendeko espazio-ontzi bat gidatzen ikusi dut.*
+Tximino urdin bat bigarren mendeko espazio-ontzi bat gidatzen ikusi dut.
 :::
 
 Ulertzen duzu, ezta? Ez duzu inoiz perpaus hau entzun, ez eta antzeko bat ere
@@ -107,8 +107,8 @@ esanahietatik abiatuta.
 Hirugarren argudioa sotilagoa da, baina indartsuena agian.
 
 ::: {#exm-maite}
-a. *Jonek Miren maite du.*
-b. *Mirenek Jon maite du.*
+a. Jonek Miren maite du.
+b. Mirenek Jon maite du.
 :::
 
 Bi perpaus hauen esanahiak desberdinak dira, noski. Baina ez dira elkarrekiko
@@ -132,9 +132,9 @@ eta beste batzuek zerbait behar dute osatzeko. Deitu diezaiegun, hurrenez
 hurren, **espresio aseak** eta **espresio asegabeak**.
 
 ::: {#exm-asegabeak}
-a. \**Beatriz norbait*
-b. \**Beatriz etorri da norbait*
-c. \**Beatriz etorri da Beatrizek norbait ikusi du*
+a. \*Beatriz norbait
+b. \*Beatriz etorri da norbait
+c. \*Beatriz etorri da Beatrizek norbait ikusi du
 :::
 
 Adibide hauek gaizki eratuak dira, baina ez sintaxiaren arazo hutsegatik:
@@ -142,9 +142,9 @@ esanahiari dagokionez ere, zerbait falta zaie. Konpara itzazu ondo eratutako
 hauekin:
 
 ::: {#exm-aseak}
-a. *Beatriz etorri da.*
-b. *Beatrizek norbait ikusi du.*
-c. *Beatriz etorri da eta norbait joan da.*
+a. Beatriz etorri da.
+b. Beatrizek norbait ikusi du.
+c. Beatriz etorri da eta norbait joan da.
 :::
 
 Desberdintasuna zera da: lehen multzoan espresio asegabe bat dago, eta
@@ -373,8 +373,8 @@ benetako lan egiten duela.
 Har dezagun *poliki*.
 
 ::: {#exm-poliki}
-a. *Anek eskutitza poliki idatzi du.*
-b. *Poliki eskutitza idatzi du Anek.*
+a. Anek eskutitza poliki idatzi du.
+b. Poliki eskutitza idatzi du Anek.
 :::
 
 *Poliki* ez da banako bati buruzkoa, ez eta perpaus oso bati buruzkoa ere:
@@ -393,8 +393,8 @@ da, eta ez da sarrera lexiko berri bat behar aditz bakoitzeko.
 #### Erlatibozko perpausak
 
 ::: {#exm-erlatiboa}
-a. *liburu zaila*
-b. *Anek irakurri duen liburua*
+a. liburu zaila
+b. Anek irakurri duen liburua
 :::
 
 Bi espresioek banakoen multzo bat adierazten dute, eta baldintza bat edo bi
@@ -415,8 +415,8 @@ perpausen semantika modu bateratuan azaltzen du.
 #### Koordinazioa
 
 ::: {#exm-koordinazioa}
-a. *Katu batzuek jauzi eta miau egin dute.*
-b. *Katu batzuek jauzi egin dute eta katu batzuek miau egin dute.*
+a. Katu batzuek jauzi eta miau egin dute.
+b. Katu batzuek jauzi egin dute eta katu batzuek miau egin dute.
 :::
 
 Demagun hiru katu ditugula: Lili, Fifi eta Nini. Lilik eta Fifik miau egiten
@@ -442,8 +442,8 @@ Lehen ondorioa **ordezgarritasunaren hatsarrea** da: espresio konplexu batean
 sinonimoak diren bi espresio truka daitezke, esanahi osoa aldatu gabe.
 
 ::: {#exm-ordezgarritasuna}
-a. *Ulertzen ez dena galdetu behar da.*
-b. *Ulertzen ez dena itaundu behar da.*
+a. Ulertzen ez dena galdetu behar da.
+b. Ulertzen ez dena itaundu behar da.
 :::
 
 *Galdetu* eta *itaundu* sinonimoak badira, bi perpausek esanahi bera izan behar
@@ -460,8 +460,8 @@ Eta are gehiago: ordezgarritasuna huts egiten du testuinguru intentsionaletan.
 esanahi bera:
 
 ::: {#exm-atxaga}
-a. *Anek jakin nahi du ea Bernardo Atxaga José Irazu den.*
-b. *Anek jakin nahi du ea Bernardo Atxaga Bernardo Atxaga den.*
+a. Anek jakin nahi du ea Bernardo Atxaga José Irazu den.
+b. Anek jakin nahi du ea Bernardo Atxaga Bernardo Atxaga den.
 :::
 
 Hemen hatsarrea ez da hausten: argi uzten du denotazio hutsak ez duela
@@ -473,7 +473,7 @@ eskainitako kapituluan landuko da.
 Bigarren ondorioa are baliagarriagoa da analisirako. Har dezagun perpaus hau:
 
 ::: {#exm-anbiguoa}
-*Ikasle guztiek bi liburu irakurri dituzte.*
+Ikasle guztiek bi liburu irakurri dituzte.
 :::
 
 Perpaus bera ingelesez, glossa interlinealarekin (glossa hizkuntza
@@ -491,8 +491,8 @@ Perpausak bi irakurketa ditu, eta ez dago hitzetan anbiguotasun lexikorik.
 Irakurketak hauek dira:
 
 ::: {#exm-anbiguoa-2}
-a. *Badira bi liburu ikasle guztiek irakurri dituztenak.*
-b. *Ikasle guztiei buruz esan daiteke bakoitzak bi liburu irakurri dituela.*
+a. Badira bi liburu ikasle guztiek irakurri dituztenak.
+b. Ikasle guztiei buruz esan daiteke bakoitzak bi liburu irakurri dituela.
 :::
 
 Bi irakurketa hauek ez dira baliokideak. Lehenak bigarrena dakar, baina
@@ -513,8 +513,8 @@ baztertzea, baizik eta konposizio-mota gehiago onartzea.
 ### Esapide idiomatikoak
 
 ::: {#exm-idiomak}
-a. *Gorriak ikusi ditut.*
-b. *Gizon hori besoa besoaren gainean dago.*
+a. Gorriak ikusi ditut.
+b. Gizon hori besoa besoaren gainean dago.
 :::
 
 Lehen begirada batean, espresio hauen esanahia ez da osagaien esanahitik
@@ -526,8 +526,8 @@ baditu.
 ### Polisemia eta uztardura hautakorra
 
 ::: {#exm-polisemia}
-a. *liburu erraza*
-b. *bide erraza*
+a. liburu erraza
+b. bide erraza
 :::
 
 *Erraz* adjektiboak ez du gauza bera esaten kasu bakoitzean. Lehenengoan
@@ -542,8 +542,8 @@ den, baita zertarako erabiltzen den eta nolako egitura duen ere.
 ### Ko-konposizioa eta tipo koertzioa
 
 ::: {#exm-kokonposizioa}
-a. *sobrea ireki*
-b. *bidea ireki*
+a. sobrea ireki
+b. bidea ireki
 :::
 
 *Ireki* aditzak gauza desberdinak egiten ditu kasu bakoitzean. *Sobre* bat
@@ -554,8 +554,8 @@ Kasurik muturrekoena **tipo koertzioa** da: osagai baten tipoa aldatu egiten da
 besteak eskatzen duen tipora egokitzeko.
 
 ::: {#exm-koertzioa}
-a. *Liburu bat hasi dut.*
-b. *Ogia nahi dut.*
+a. Liburu bat hasi dut.
+b. Ogia nahi dut.
 :::
 
 *Hasi* eta *nahi* aditzek gertaerak hautatzen dituzte. Baina *liburu bat* eta
@@ -563,8 +563,8 @@ b. *Ogia nahi dut.*
 gertaerara jotzen dugu:
 
 ::: {#exm-koertzioa-2}
-a. *Liburu bat irakurtzen hasi naiz.*
-b. *Ogia erosi nahi dut.*
+a. Liburu bat irakurtzen hasi naiz.
+b. Ogia erosi nahi dut.
 :::
 
 Formalki, $\langle e, t\rangle$ tipoko espresio bat gertaera batean
@@ -587,7 +587,7 @@ Baina badago testuinguru-mendekotasun mota sotilago bat, eta horrek
 konposizionalitateari parteski egiten dio eraso.
 
 ::: {#exm-ogitarteko}
-*Umeek ogitarteko gehienak jan dituzte.*
+Umeek ogitarteko gehienak jan dituzte.
 :::
 
 Perpaus hau egiazkoa izan daiteke umeek hiru ogitarteko jan badituzte, baina

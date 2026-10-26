@@ -41,8 +41,8 @@ irakurketa batean hara itzuli.
 Adibide guztiak zenbatuta daude eta letrekin azpibanatuta, hizkuntzalaritzako
 ohiko konbentzioari jarraituz:
 
-> (12) a. *Ibaia lehortu da.*
->      b. *Geranioa lehortu da.*
+> (12) a. Ibaia lehortu da.
+>      b. Geranioa lehortu da.
 
 Adibide okerren edo ez-gramatikaltzat jotzen direnen aurretik izartxo bat
 jartzen da: `*Beatriz etorri da norbait`. Galdagarritasunari buruzko zalantzak

@@ -141,6 +141,13 @@ PDFan ExPex-en `\gla/\glb/\glft` bihurtzen du `tresnak/linguistika.lua`-k;
 HTMLan `<table class="gloss-table">` sortzen du, hitzez hitz lerrokatuta
 (jatorrizko lerroko hitza eta glossako hitza zutabe berean).
 
+**Adibideak ez daude etzan.** Ez erabili `*...*` etzik `#exm-` div-en
+barruan (PDFan zein HTMLan zuzenean errendatzen da). Agramatikaltasun-
+marka, aldiz, izartxo literala da: `\*Beatriz norbait` (ihesdun izartxoa).
+Glossa taulan: objektu-hizkuntzako lerroa zuzenean, glossa monozpatiatua,
+itzulpen askea sans expizkian (`basque.scss`-ek finkatua; gorputzaren
+letra-tipoa serifera aldatuko da etorkizunean).
+
 **Zuhaitzak:** `::: {.tree #id}` div-ak, parentesi etiketatuekin
 (`[P [IS Ane-k] [AS ...]]`). PDFan Forest; HTMLan SVG
 (`python tresnak/arbolak.py`-k sortuak, biltegian gordeta). Ezarpenak
