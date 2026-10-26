@@ -53,6 +53,10 @@ jobs:
 
       - name: Pages prestatu
         uses: actions/configure-pages@v5
+        with:
+          # GitHub Pages automatikoki gaitzen du (Source: GitHub Actions),
+          # eskuz konfiguratu beharrik gabe.
+          enablement: true
 
       - name: Artifacta igo
         uses: actions/upload-pages-artifact@v3
