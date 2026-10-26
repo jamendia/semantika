@@ -28,7 +28,7 @@ irakur daitezke, baina hurrenkera jarraitzeak asko laguntzen du.
 ## Nola aitatu
 
 ```
-Jamendia (2026). Esanahia eta egitura: interpretazioaren zientzia.
+Mendia, Jon Ander (2026). Esanahia eta egitura: interpretazioaren zientzia.
 https://jamendia.github.io/semantika/
 ```
 
