@@ -16,6 +16,7 @@ site_libs/
 /.luarc.json
 /.Rhistory
 /.RData
+AGENTS.md
 
 # Errendatzearen ondorioak
 *.pdf
