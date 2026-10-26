@@ -24,6 +24,22 @@ ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets" / "arbolak"
 TREE_RE = re.compile(r":::\s*\{\.tree\s+#([\w-]+)\}\s*\n(.*?)\n:::", re.DOTALL)
 
+# Kode-fentxa kendu (.tree div baten barnean bloke babestuak onartzen dira;
+# giltzek Forest-eko komak babesten dituzte, adibidez matematika moduan).
+FENCE_RE = re.compile(r"^\s*`{3,}.*$")
+
+
+def tree_edukia(raw: str) -> str:
+    """Divaren edukia garbitu: fentxen lerroak kendu, zuritik garbi."""
+    lines = []
+    for line in raw.splitlines():
+        if FENCE_RE.match(line):
+            continue
+        t = line.strip()
+        if t:
+            lines.append(t)
+    return "\n".join(lines)
+
 # Zuhaitzen ezarpen partekatuak: tex/forest-ezarpenak.tex da iturri bakarra
 # (PDFaren aurreak \input egiten du; hemen irakurri eta muntatzen da).
 FOREST_EZARPENAK = ROOT / "tex" / "forest-ezarpenak.tex"
@@ -57,7 +73,9 @@ def find_trees():
         text = qmd.read_text(encoding="utf-8")
         for match in TREE_RE.finditer(text):
             tid = match.group(1)
-            content = match.group(2).strip()
+            content = tree_edukia(match.group(2))
+            if not content:
+                continue
             if tid in trees and trees[tid] != content:
                 print(f"ABISUA: {tid} bikoiztua edukia desberdinarekin")
             trees[tid] = content

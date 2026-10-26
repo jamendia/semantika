@@ -126,5 +126,17 @@
   }{%
     \par\addvspace{1.2ex}%
   }%
+  % Zuhaitzak adibideen barruan (#exm- div batean .tree div sartuta):
+  % forest-ek ez du \everypar abiarazten, bertikal moduan boxea eraikitzen
+  % duelako, eta beraz (n) etiketa ez litzateke inprimatuko. \forest
+  % (ingurune-hasierako makroa) kiribatzen dugu: etiketa inprimatu behar
+  % bada, \noindent egin (horrek \everypar abiarazi eta etiketa errendatzen
+  % du, edo etiketa jada jarrita badago, ezer ez), eta gero forest abiarazi.
+  % Ezkonduta dagoen \ifadib@jarrita etiketa bikoiztea ekiditen du.
+  \let\adib@oldforest\forest
+  \def\forest{%
+    \noindent\adib@etiketa
+    \adib@oldforest
+  }%
 }
 \makeatother

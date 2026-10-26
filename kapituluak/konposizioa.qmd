@@ -246,23 +246,23 @@ Intuizioak esaten du *ikusi* dela bi banako lotzen dituen erlazioa. Beraz,
 pentsa liteke $\langle\langle e,e\rangle, t\rangle$ tipokoa dela. Baina egitura
 sintaktikoari erreparatzen badiogu, bi argumentuak ez daude maila berean:
 
-$$
-\begin{array}{ccc}
- & \text{P} & \\[2pt]
-\swarrow & & \searrow \\[2pt]
-\text{IS}_{\,e}\text{: Ane-k} & & \text{AS}_{\langle e, t\rangle}
-\end{array}
-$$
+::: {#exm-zuhaitza-p}
+::: {.tree #tree-konp-tipoak-p}
+```
+[{P} [{IS$_e$: Ane-k}] [{AS$_{\langle e,t\rangle}$}]]
+```
+:::
+:::
 
 Eta *AS* delakoaren barnean, beste konposizio bat gertatzen da:
 
-$$
-\begin{array}{ccc}
- & \text{AS}_{\langle e, t\rangle} & \\[2pt]
-\swarrow & & \searrow \\[2pt]
-\text{IS}_{\,e}\text{: Amaia} & & \text{A}_{\langle e, \langle e,t\rangle\rangle}\text{: ikusi}
-\end{array}
-$$
+::: {#exm-zuhaitza-as}
+::: {.tree #tree-konp-tipoak-as}
+```
+[{AS$_{\langle e,t\rangle}$} [{IS$_e$: Amaia}] [{A$_{\langle e,\langle e,t\rangle\rangle}$: ikusi}]]
+```
+:::
+:::
 
 Parentesi etiketatuta, egitura osoa horrela idazten da:
 
@@ -270,8 +270,10 @@ $$
 [\mkern-2mu_{\text{P}}\ \text{Ane-k}\ [\mkern-2mu_{\text{AS}}\ \text{Amaia}\ \text{ikusi}\,]]
 $$
 
+::: {#exm-zuhaitza-osoa}
 ::: {.tree #tree-konp-ikusi}
 [P [IS Ane-k] [AS [IS Amaia] [A ikusi]]]
+:::
 :::
 
 Behetik gorako bidean, lehenengo *Amaia* eta *ikusi* konbinatzen dira *AS*
@@ -296,8 +298,10 @@ semantikoa bat datozela bermatzen du.
 
 ## Lambda eragilea
 
+::: {#exm-amaia-ikusi}
 ::: {.tree #tree-konp-amaia-ikusi}
 [AS [IS Amaia] [A ikusi]]
+:::
 :::
 
 ### Arazoa: espresio asegabeen esanahia

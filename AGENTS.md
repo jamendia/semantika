@@ -116,7 +116,10 @@ gorde behar dute: `(4.1)`. Bi formatuek berdin errendatu behar dute:
   (`adibkont`). Ez aldatu hori arazorik gabe.
 - **HTML:** Quarto-k `Adibidea 4.1` etiketa sortzen du, eta
   `python tresnak/ostprozesatu.py`-k `(n)` global bihurtzen du
-  `_quarto.yml`-ko kapitulu ordena jarraituz. `--check` modua CI-rako:
+  `_quarto.yml`-ko kapitulu ordena jarraituz. Gainera, adibide-diva
+  berrantolatzen du: etiketa `<span class="exnum">` bihurtzen da eta edukia
+  `<div class="example-body">`-n sartzen, zenbakia eta edukia lerro berean
+  jartzeko (`basque.scss` grid diseinua). `--check` modua CI-rako:
   idempotentea dela eta `(1)…(n)` sekuentzia osoa dagoela egiaztatzen du.
 
 **Glossa interlineala** hizkuntza arrotzetako adibideentzat soilik;
@@ -135,12 +138,34 @@ Ikasle guztiek bi liburu irakurri dituzte.
 
 Hiru lerro: jatorrizko perpausa, glossa morfosintaktikoa, itzulpen askea.
 PDFan ExPex-en `\gla/\glb/\glft` bihurtzen du `tresnak/linguistika.lua`-k;
-HTMLan `div.gloss` sortzen du.
+HTMLan `<table class="gloss-table">` sortzen du, hitzez hitz lerrokatuta
+(jatorrizko lerroko hitza eta glossako hitza zutabe berean).
 
 **Zuhaitzak:** `::: {.tree #id}` div-ak, parentesi etiketatuekin
 (`[P [IS Ane-k] [AS ...]]`). PDFan Forest; HTMLan SVG
 (`python tresnak/arbolak.py`-k sortuak, biltegian gordeta). Ezarpenak
 `tex/forest-ezarpenak.tex`-en: iturri bakarra PDF eta SVGrentzat.
+
+**Zuhaitzak beti adibide baten barruan** (`#exm-` div batean
+kapsulatuta): zuhaitza adibide bat da eta zenbakia du `(n)` formatuan,
+ez formatu gainekoa. Zuhaitzaren edukia kode-bloke babestu batean idazten
+da giltzak komengatik babesteko (adibidez tipo-etiketadun nodoak):
+
+````markdown
+::: {#exm-zuhaitza-p}
+::: {.tree #tree-konp-tipoak-p}
+```
+[{P} [{IS$_e$: Ane-k}] [{AS$_{\langle e,t\rangle}$}]]
+```
+:::
+:::
+````
+
+Oharrak: `.tree` divaren `#id`-ak `tree-` aurrizkia izan behar du (ez
+`exm-`, gatazkarik ez sortzeko); zuhaitza aldatzen bada,
+`python tresnak/arbolak.py` exekutatu SVGak birsortzeko. HTMLan SVGaren
+bidea orrialdearen sakonerara egokitzen du `linguistika.lua`-k
+(`QUARTO_DOCUMENT_PATH` / `QUARTO_PROJECT_ROOT` ingurune-aldaketetatik).
 
 ---
 
@@ -284,6 +309,12 @@ Kapitulu berriak gehitzean, zenbakiak automatikoki berrantolatzen dira.
 - **`~` lausoa:** crossref-ek `~` jartzen du adibidearen lehen paragrafo
   gisa; `tex/aurrea.tex`-eko ingurune berriak neutralizatzen du, zenbakia
   lehenengo eduki-lerroan ager dadin.
+- **Zuhaitzak adibideen barruan (PDF):** Forest-ek ez du `\everypar`
+  abiarazten (bertikal moduan boxea eraikitzen du), beraz `(n)` etiketa ez
+  litzateke inprimatuko eta zenbakitze-sekuentziak huts egingo luke.
+  Konponketa `tex/aurrea.tex`-en: `\forest` makroa kiribatzen da
+  (`\noindent\adib@etiketa\adib@oldforest`), `\ifadib@jarrita` etiketa
+  bikoiztea ekiditeko. Ez kendu.
 
 ---
 

@@ -9,7 +9,7 @@
 --                      SVGa tresnak/arbolak.py-k sortzen du (Forest -> SVG),
 --                      eta biltegian gordetzen da. Aldatu zuhaitza bada,
 --                      exekutatu: python tresnak/arbolak.py
---   ::: {.gloss}    -> <div class="gloss"> hiru lerrorekin
+--   ::: {.gloss}    -> <table class="gloss-table"> hitzez hitz lerrokatuta
 --                      (jatorrizkoa / glossa / itzulpena)
 --
 -- LaTeX (PDF):
@@ -34,6 +34,35 @@ local function is_latex()
   return FORMAT:match("latex") ~= nil
 end
 
+-- Orrialdearen sakonera: dokumentuaren karpeta (QUARTO_DOCUMENT_PATH)
+-- proiektu-erroarekin (QUARTO_PROJECT_ROOT) alderatuta. Adibidez,
+-- `kapituluak` azpikarpeta -> "../" ; erroko orrialdeak -> "".
+-- Oharra: PANDOC_STATE.input_files ez da erabiltzen, Quarto-k pandoc-i
+-- fitxategi-temporal bat pasatzen diolako, jatorrizko .qmd-a ez.
+local function asset_prefix()
+  local doc_dir = os.getenv("QUARTO_DOCUMENT_PATH")
+  local root = os.getenv("QUARTO_PROJECT_ROOT")
+  if not doc_dir or doc_dir == "" or not root or root == "" then
+    return ""
+  end
+  local function norm(p)
+    p = p:gsub("\\", "/")
+    p = p:gsub("/+$", "")
+    return p
+  end
+  local d = norm(doc_dir)
+  local r = norm(root)
+  if d == r then
+    return ""
+  end
+  if d:sub(1, #r + 1) == r .. "/" then
+    local rel = d:sub(#r + 2)
+    local _, depth = rel:gsub("/", "")
+    return ("../"):rep(depth + 1)
+  end
+  return ""
+end
+
 -- Div baten lerroak lortu, SoftBreak/LineBreak-ak errespetatuz.
 local function div_lines(el)
   local out = {}
@@ -52,6 +81,13 @@ local function div_lines(el)
       local trimmed = current:match("^%s*(.-)%s*$")
       if trimmed ~= "" then table.insert(out, trimmed) end
       current = ""
+    elseif block.t == "CodeBlock" then
+      -- Kode-blokea (.tree div-en barruan erabiltzen da Forest-eko komak
+      -- babesteko): lerroak hitzez hitz hartu.
+      for line in block.text:gmatch("[^\r\n]+") do
+        local t = line:match("^%s*(.-)%s*$")
+        if t ~= "" then table.insert(out, t) end
+      end
     elseif block.t == "RawBlock" then
       for line in block.text:gmatch("[^\r\n]+") do
         local t = line:match("^%s*(.-)%s*$")
@@ -165,28 +201,48 @@ function Div(el)
     return nil
   end
 
-  -- HTML: zuhaitza SVG gisa.
+  -- HTML: zuhaitza SVG gisa (bide erlatiboa orrialdearen sakonerara egokitua).
   if el.classes:includes("tree") then
     local id = el.identifier or ""
-    local src = "assets/arbolak/" .. id .. ".svg"
+    local src = asset_prefix() .. "assets/arbolak/" .. id .. ".svg"
     local alt = "Zuhaitz sintaktikoa: " .. id
     local img = pandoc.Image({pandoc.Str(alt)}, src, alt)
     return pandoc.Para({img})
   end
 
-  -- HTML: glossa (adibideen div-ak Quarto crossref-ek errendatzen ditu;
-  -- ostprozesatu.py-k zenbakituko ditu).
+  -- HTML: glossa taula gisa (hitz-mailako lerrokatzea).
+  -- Jatorrizko lerroa eta glossa hitzez hitz lotzen dira; itzulpen askea
+  -- zutabe osoan zabaltzen da.
   if el.classes:includes("gloss") then
+    local function escape(s)
+      return (s:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;"))
+    end
     local lines = div_lines(el)
     local orig = lines[1] or ""
     local gloss = lines[2] or ""
     local trans = lines[3] or ""
-    local html = "<div class=\"gloss\">\n"
-    if orig ~= "" then html = html .. "<div class=\"gloss-line gloss-orig\">" .. orig .. "</div>\n" end
-    if gloss ~= "" then html = html .. "<div class=\"gloss-line gloss-gloss\">" .. gloss .. "</div>\n" end
-    if trans ~= "" then html = html .. "<div class=\"gloss-line gloss-trans\">" .. trans .. "</div>\n" end
-    html = html .. "</div>"
-    return pandoc.RawBlock("html", html)
+    local ow, gw = {}, {}
+    for w in orig:gmatch("%S+") do table.insert(ow, w) end
+    for w in gloss:gmatch("%S+") do table.insert(gw, w) end
+    local n = math.max(#ow, #gw)
+    local html = {"<table class=\"gloss-table\">\n<tbody>"}
+    if n > 0 then
+      html[#html + 1] = "<tr class=\"gloss-orig\">"
+      for i = 1, n do
+        html[#html + 1] = "<td>" .. escape(ow[i] or "") .. "</td>"
+      end
+      html[#html + 1] = "</tr>\n<tr class=\"gloss-gloss\">"
+      for i = 1, n do
+        html[#html + 1] = "<td>" .. escape(gw[i] or "") .. "</td>"
+      end
+      html[#html + 1] = "</tr>"
+    end
+    if trans ~= "" then
+      html[#html + 1] = "<tr class=\"gloss-trans\"><td colspan=\"" .. n .. "\">"
+        .. escape(trans) .. "</td></tr>"
+    end
+    html[#html + 1] = "</tbody>\n</table>"
+    return pandoc.RawBlock("html", table.concat(html, "\n"))
   end
 
   return nil
