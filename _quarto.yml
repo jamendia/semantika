@@ -7,7 +7,7 @@ project:
 book:
   title: "Esanahia eta egitura"
   subtitle: "Interpretazioaren zientzia"
-  author: "Jamendia"
+  author: "jamendia"
   date: "2026"
   language: eu
   repo-url: https://github.com/jamendia/semantika
@@ -19,8 +19,8 @@ book:
     search: true
     collapse-level: 1
   page-footer:
-    left: "© 2026 Jamendia · [CC BY 4.0](LICENSE)"
-    right: "Eraikia Quartorekin"
+    left: "© 2026 jamendia · [CC BY 4.0](LICENSE)"
+    right: "Quartorekin Egina"
   search: true
   chapters:
     - index.qmd
@@ -46,10 +46,7 @@ crossref:
   exr-title: "Ariketa"
 
 format:
-  html:
-    theme:
-      - cosmo
-      - estilo/basque.scss
+  bookup-html:
     toc: true
     toc-depth: 3
     number-sections: true
@@ -57,6 +54,7 @@ format:
     link-external-icon: false
     fig-cap-location: bottom
     tbl-cap-location: top
+    css: [estilo/basque.css]
   pdf:
     engine: lualatex
     keep-tex: true

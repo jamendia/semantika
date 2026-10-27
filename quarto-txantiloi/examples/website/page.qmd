@@ -1,0 +1,6 @@
+---
+title: "Sample page"
+---
+
+{{< include ../_sample.qmd >}}
+

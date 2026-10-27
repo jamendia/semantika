@@ -1,0 +1,35 @@
+project:
+  type: website
+
+website:
+  title: "Bookup website"
+  search: true
+  reader-mode: true
+  navbar:
+    background: "#2e3f58"
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - text: "More"
+        menu:
+          - page.qmd
+  sidebar:
+    style: "floating"
+    contents:
+      - section: "Pages"
+        contents:
+          - index.qmd
+          - page.qmd
+          - about.qmd
+  page-footer: 
+    left: "This is quite a fine footer."
+    right: 
+      - icon: github
+        href: https://github.com/juba/bookup-html
+
+format:
+  bookup-html:
+    embed-fonts: true
+
+
