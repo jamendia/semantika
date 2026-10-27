@@ -1,94 +1,94 @@
-eu;en;definizioa;oharrak;egoera;kategoria
-esanahia;meaning;Espresio batek daraman informazio konbentzionala.;;onartua;Oinarrizko kontzeptuak
-esanahi linguistikoa;linguistic meaning;Espresio bati hizkuntzak berak ematen dion esanahia, testuinguruaren eta hiztunaren asmoen gainetik.;;onartua;Oinarrizko kontzeptuak
-esanahi konbentzionala;conventional meaning;Hizkuntza-komunitateak hitzartutako esanahia.;;onartua;Oinarrizko kontzeptuak
-esanahi pragmatikoa;pragmatic meaning;Testuinguruan eta erabileran oinarrituta hiztunak transmititzen duen esanahia.;;onartua;Oinarrizko kontzeptuak
-perpausa;sentence;Osagai sintaktikoen konbinazio ondo eratua, egia-balioa har dezakeena.;Ez erabili "esaldia" zentzu honetan.;onartua;Oinarrizko kontzeptuak
-esaldia;utterance;Hiztun batek testuinguru jakin batean ekoizten duen perpausaren agerraldia.;Ez erabili "perpausa" zentzu honetan.;onartua;Oinarrizko kontzeptuak
-proposizioa;proposition;Perpaus batek adierazten duen eduki abstraktua, egiazkoa edo faltsua izan daitekeena.;;onartua;Oinarrizko kontzeptuak
-adierazitako proposizioa;proposition expressed;Perpausak literalki adierazten duen proposizioa.;;onartua;Oinarrizko kontzeptuak
-hiztunaren esanahia;speaker meaning;Hiztunak esaldi batekin transmititu nahi duen esanahia.;;onartua;Oinarrizko kontzeptuak
-testuingurua;context;Espresio baten interpretaziorako garrantzitsua den informazioa: egoera, hiztuna, entzulea, denbora eta lekua.;;onartua;Oinarrizko kontzeptuak
-egokitasun deskriptiboa;descriptive adequacy;Teoria batek hiztunen intuizioak behar bezala deskribatzen dituen ala ez.;;onartua;Oinarrizko kontzeptuak
-egia-baldintza;truth condition;Perpaus bat egiazkoa izateko bete behar den baldintza.;;onartua;Oinarrizko kontzeptuak
-egia-balioa;truth value;Egiazkoa edo faltsua izatearen propietatea.;;onartua;Oinarrizko kontzeptuak
-eredua;model;Munduaren irudikapen formala, banakoek eta haien arteko harremanek osatua.;Ez erabili "modeloa".;onartua;Oinarrizko kontzeptuak
-errepresentazio semantikoa;semantic representation;Espresio baten esanahiaren idazkera formala.;;onartua;Oinarrizko kontzeptuak
-inferentzia;inference;Proposizio batetik bestera arrazoibidez igarotzea.;;onartua;Oinarrizko kontzeptuak
-glossa interlineala;interlinear gloss;Adibide linguistiko bati jarraitzen dion hiru lerroko azalpena: jatorrizko perpausa, hitz bakoitzaren glossa morfosintaktikoa eta itzulpen askea.;Euskarazko adibideak ez dira glossatzen, beste hizkuntza batetakoak bai.;berria;Oinarrizko kontzeptuak
-konposizionalitatearen hatsarrea;principle of compositionality;Espresio konplexu baten esanahia osagaien esanahien eta egitura sintaktikoaren funtzioa da.;Literaturan "printzipioa" ere erabiltzen da.;onartua;Konposizioa
-konposizio semantikoa;semantic composition;Osagaien esanahietatik espresio konplexuaren esanahia eraikitzea.;;onartua;Konposizioa
-espresio asea;saturated expression;Bere argumentu guztiak beteta dituen espresioa.;;onartua;Konposizioa
-espresio asegabea;unsaturated expression;Argumenturen bat falta zaion espresioa, funtzio baten bidez osatzen dena.;;onartua;Konposizioa
-sarrera lexikoa;lexical entry;Hiztegian hitz bati dagokion informazio multzoa.;;onartua;Konposizioa
-hiztegi mentala;mental lexicon;Hiztunak buruan duen hitzen eta haien esanahien biltegia.;;onartua;Konposizioa
-egitura sintaktikoa;syntactic structure;Osagaien arteko antolaketa hierarkikoa.;;onartua;Konposizioa
-egiturazko anbiguotasuna;structural ambiguity;Espresio batek egitura sintaktiko bat baino gehiago izateak sortzen duen anbiguotasuna.;;onartua;Konposizioa
-anbiguotasun lexikoa;lexical ambiguity;Hitz bakar batek esanahi bat baino gehiago izateagatiko anbiguotasuna.;;onartua;Konposizioa
-ordezgarritasunaren hatsarrea;principle of substitutivity;Sinonimoak truka daitezke esanahi osoa aldatu gabe.;;onartua;Konposizioa
-irakurketa;reading;Espresio baten interpretazio posible bat.;;onartua;Konposizioa
-uztardura hautakorra;selective binding;Adjektibo edo modifikatzaile batek izenaren ezaugarri jakin bat hautatzea.;Pustejovsky 1995.;onartua;Konposizioa
-ko-konposizioa;co-composition;Bi osagairen esanahiek elkar moldatuz esanahi berria sortzea.;Pustejovsky 1995.;onartua;Konposizioa
-tipo koertzioa;type coercion;Osagai baten tipo semantikoa aldatzea beste osagaiak eskatutako tipora egokitzeko.;;onartua;Konposizioa
-tipo semantikoa;semantic type;Espresio baten propietate semantikoak formalki sailkatzen dituen etiketa (e, t eta haien konbinazioak).;;onartua;Tipoak eta funtzioak
-funtzioa;function;Eremu bateko elementuei hein bateko balioak esleitzen dizkien erlazioa.;;onartua;Tipoak eta funtzioak
-eremua;domain;Funtzio batek onartzen dituen argumentuen multzoa.;;onartua;Tipoak eta funtzioak
-heina;range;Funtzio batek ematen dituen balioen multzoa.;;onartua;Tipoak eta funtzioak
-funtzio karakteristikoa;characteristic function;Multzo baten kide izateari 0 edo 1 balioa esleitzen dion funtzioa.;;onartua;Tipoak eta funtzioak
-lambda eragilea;lambda operator;Argumentu baten gainean abstrakzioa egiteko eragilea (λ).;;onartua;Tipoak eta funtzioak
-lambda abstrakzioa;lambda abstraction;Aldagai aske baten gainean funtzio bat eraikitzea.;;onartua;Tipoak eta funtzioak
-lambda bihurketa;lambda conversion;Lambda espresio bat argumentu bati aplikatzean aldagaia haren balioaz ordeztea.;;onartua;Tipoak eta funtzioak
-aldagaia;variable;Balio zehaztugabea adierazten duen sinboloa.;;onartua;Tipoak eta funtzioak
-denotazioa;denotation;Espresio batek eredu batean adierazten duen objektua edo multzoa.;;onartua;Tipoak eta funtzioak
-balio semantikoa;semantic value;Espresio baten interpretazioa ereduarekiko, denotazioaren sinonimo teknikoa.;Ez erabili "balore semantikoa".;onartua;Tipoak eta funtzioak
-predikatua;predicate;Banakoei propietate edo erlazio bat esleitzen dien espresioa.;;onartua;Tipoak eta funtzioak
+lorpena;accomplishment;Amaiera naturala duen gertakaria.;;onartua;Gertakariak
+burutzea;achievement;Une batean gertatzen den aldaketa.;;onartua;Gertakariak
+jarduera;activity;Amaiera naturalik gabeko gertakaria.;;onartua;Gertakariak
+antonimia;antonymy;Esanahi kontrajarriko hitzen arteko harremana.;;onartua;Semantika lexikoa
 argumentua;argument;Predikatu batek eskatzen duen espresioa.;;onartua;Tipoak eta funtzioak
 argumentu-egitura;argument structure;Predikatu batek eskatzen dituen argumentuen multzoa eta haien rolak.;;onartua;Tipoak eta funtzioak
-erreferentzia;reference;Espresio batek munduko objektu edo multzo zehatz bati egiten dion lotura.;;onartua;Erreferentzia
-erreferentziagaia;referent;Espresio batek erreferentzia egiten dion objektua.;Ez erabili "erreferentea".;onartua;Erreferentzia
-izena;noun;Banakoak, multzoak edo substantziak izendatzen dituen kategoria.;;onartua;Erreferentzia
-izen propioa;proper noun;Banako bakar bati erreferentzia egiten dion izena.;;onartua;Erreferentzia
+aspektua;aspect;Gertakari baten barne-egitura denboran nola aurkezten den.;;onartua;Gertakariak
+aurreiritzia;background;Entzuleak ezagutzat jotzen duen informazioa.;;onartua;Testua eta egitura
+funtzio karakteristikoa;characteristic function;Multzo baten kide izateari 0 edo 1 balioa esleitzen dion funtzioa.;;onartua;Tipoak eta funtzioak
+ko-konposizioa;co-composition;Bi osagairen esanahiek elkar moldatuz esanahi berria sortzea.;Pustejovsky 1995.;onartua;Konposizioa
+iruzkina;comment;Gaiari buruz esaten dena.;;onartua;Testua eta egitura
 izen arrunta;common noun;Banakoen multzo bati dagokion izena.;;onartua;Erreferentzia
-izen sintagma;noun phrase;Izen baten nukleoa duen sintagma (IS).;;onartua;Erreferentzia
-determinatzaile sintagma;determiner phrase;Determinatzailea buru duen sintagma (DetS).;;onartua;Erreferentzia
-aditz sintagma;verb phrase;Aditza buru duen sintagma (AS).;;onartua;Erreferentzia
-kuantifikatzailea;quantifier;Multzo bateko kide kopuruari buruz zerbait esaten duen espresioa.;;onartua;Erreferentzia
-kuantifikazioa;quantification;Kuantifikatzaileen bidez multzoei buruzko baieztapenak egitea.;;onartua;Erreferentzia
-esparrua;scope;Kuantifikatzaile edo eragile baten eragina zein zatiri dagokion.;;onartua;Erreferentzia
+testuingurua;context;Espresio baten interpretaziorako garrantzitsua den informazioa: egoera, hiztuna, entzulea, denbora eta lekua.;;onartua;Oinarrizko kontzeptuak
+esanahi konbentzionala;conventional meaning;Hizkuntza-komunitateak hitzartutako esanahia.;;onartua;Oinarrizko kontzeptuak
 deiktikoa;deictic;Testuinguruaren arabera soilik interpreta daitekeen espresioa (ni, hemen, atzo).;;onartua;Erreferentzia
+denotazioa;denotation;Espresio batek eredu batean adierazten duen objektua edo multzoa.;;onartua;Tipoak eta funtzioak
+egokitasun deskriptiboa;descriptive adequacy;Teoria batek hiztunen intuizioak behar bezala deskribatzen dituen ala ez.;;onartua;Oinarrizko kontzeptuak
+determinatzaile sintagma;determiner phrase;Determinatzailea buru duen sintagma (DetS).;;onartua;Erreferentzia
+eremua;domain;Funtzio batek onartzen dituen argumentuen multzoa.;;onartua;Tipoak eta funtzioak
 erreferentzia-murrizketa;domain restriction;Kuantifikatzailearen eremua testuinguruak mugatzea.;;onartua;Erreferentzia
-esanahi lexikoa;lexical meaning;Hitz bati hiztegian dagokion esanahia.;;onartua;Semantika lexikoa
-hiponimia;hyponymy;Esanahi-harremana, non baten esanahia bestearen barnean dagoen.;;onartua;Semantika lexikoa
-hiperonimia;hypernymy;Esanahi orokorragoa duen hitzaren eta zehatzagoaren arteko harremana.;;onartua;Semantika lexikoa
-antonimia;antonymy;Esanahi kontrajarriko hitzen arteko harremana.;;onartua;Semantika lexikoa
-sinonimia;synonymy;Bi espresiok esanahi bera izatea.;;onartua;Semantika lexikoa
-polisemia;polysemy;Hitz batek elkarrekin lotutako hainbat esanahi izatea.;;onartua;Semantika lexikoa
-esapide idiomatikoa;idiom;Osagaien esanahitik zuzenean ateratzen ez den esanahia duen espresioa.;;onartua;Semantika lexikoa
-faktiboa;factive;Osagarriaren egia suposatzen duen aditza (jakin, damutu).;;onartua;Semantika lexikoa
-presuposizioa;presupposition;Perpausak egia izateko aurretiaz onartutzat ematen den informazioa.;;onartua;Semantika lexikoa
+eu;en;definizioa;oharrak;egoera;kategoria
 ekarpena;entailment;Proposizio bat egiazkoa bada nahitaez beste bat ere egiazkoa izatea.;;onartua;Semantika lexikoa
 gertakaria;event;Denboran eta espazioan kokatutako gertaera edo egoera.;;onartua;Gertakariak
-egoera;state;Aldaketarik gabeko gertakaria.;;onartua;Gertakariak
-jarduera;activity;Amaiera naturalik gabeko gertakaria.;;onartua;Gertakariak
-burutzea;achievement;Une batean gertatzen den aldaketa.;;onartua;Gertakariak
-lorpena;accomplishment;Amaiera naturala duen gertakaria.;;onartua;Gertakariak
-aspektua;aspect;Gertakari baten barne-egitura denboran nola aurkezten den.;;onartua;Gertakariak
-modalitatea;modality;Beharrezko, posible edo derrigorrezko izateari buruzko esanahia.;;onartua;Modalitatea
-intentsionalitatea;intensionality;Espresio baten denotazioa mundu posibleen araberakoa izatea.;;onartua;Modalitatea
 estentsioa;extension;Espresio batek mundu jakin batean adierazten duen multzoa.;;onartua;Modalitatea
-intentsioa;intension;Espresio baten denotazioa mundu posible guztietan zehar.;;onartua;Modalitatea
-mundu posiblea;possible world;Egia izan zitekeen egoera oso bat.;;onartua;Modalitatea
-pragmatika;pragmatics;Erabilerak esanahiari gehitzen diona aztertzen duen diziplina.;;onartua;Pragmatika
-inplikatura;implicature;Hiztunak esan gabe iradokitzen duen esanahia.;;onartua;Pragmatika
-inplikazioa;implication;Testuinguruan oinarritutako inferentzia zabala.;;onartua;Pragmatika
-indar ilokutiboa;illocutionary force;Esaldi batekin egiten den ekintza (baieztatu, eskatu, agindu).;;onartua;Pragmatika
-egintza ilokutiboa;illocutionary act;Esaldi baten bidez burutzen den ekintza.;;onartua;Pragmatika
-egintza perlokutiboa;perlocutionary act;Esaldi batek entzulearengan sortzen duen efektua.;;onartua;Pragmatika
-lokuzio egintza;locutionary act;Esaldi bat esateko ekintza bera.;;onartua;Pragmatika
-kortesia;politeness;Hizkuntza-erabileran harreman soziala zaintzeko estrategiak.;;onartua;Pragmatika
-informazio-egitura;information structure;Perpausak informazio zaharra eta berria nola antolatzen duen.;;onartua;Testua eta egitura
-gaia;topic;Perpausak zerbait esaten duenari buruzko zatia.;;onartua;Testua eta egitura
-iruzkina;comment;Gaiari buruz esaten dena.;;onartua;Testua eta egitura
+faktiboa;factive;Osagarriaren egia suposatzen duen aditza (jakin, damutu).;;onartua;Semantika lexikoa
 fokua;focus;Informazio berria edo nabarmentzen den zatia.;;onartua;Testua eta egitura
-aurreiritzia;background;Entzuleak ezagutzat jotzen duen informazioa.;;onartua;Testua eta egitura
+funtzioa;function;Eremu bateko elementuei hein bateko balioak esleitzen dizkien erlazioa.;;onartua;Tipoak eta funtzioak
+hiperonimia;hypernymy;Esanahi orokorragoa duen hitzaren eta zehatzagoaren arteko harremana.;;onartua;Semantika lexikoa
+hiponimia;hyponymy;Esanahi-harremana, non baten esanahia bestearen barnean dagoen.;;onartua;Semantika lexikoa
+esapide idiomatikoa;idiom;Osagaien esanahitik zuzenean ateratzen ez den esanahia duen espresioa.;;onartua;Semantika lexikoa
+egintza ilokutiboa;illocutionary act;Esaldi baten bidez burutzen den ekintza.;;onartua;Pragmatika
+indar ilokutiboa;illocutionary force;Esaldi batekin egiten den ekintza (baieztatu, eskatu, agindu).;;onartua;Pragmatika
+inplikazioa;implication;Testuinguruan oinarritutako inferentzia zabala.;;onartua;Pragmatika
+inplikatura;implicature;Hiztunak esan gabe iradokitzen duen esanahia.;;onartua;Pragmatika
+inferentzia;inference;Proposizio batetik bestera arrazoibidez igarotzea.;;onartua;Oinarrizko kontzeptuak
+informazio-egitura;information structure;Perpausak informazio zaharra eta berria nola antolatzen duen.;;onartua;Testua eta egitura
+intentsioa;intension;Espresio baten denotazioa mundu posible guztietan zehar.;;onartua;Modalitatea
+intentsionalitatea;intensionality;Espresio baten denotazioa mundu posibleen araberakoa izatea.;;onartua;Modalitatea
+glosa interlineala;interlinear gloss;Adibide linguistiko bati jarraitzen dion hiru lerroko azalpena: jatorrizko perpausa, hitz bakoitzaren glossa morfosintaktikoa eta itzulpen askea.;Euskarazko adibideak ez dira glossatzen, beste hizkuntza batetakoak bai.;berria;Oinarrizko kontzeptuak
+lambda abstrakzioa;lambda abstraction;Aldagai aske baten gainean funtzio bat eraikitzea.;;onartua;Tipoak eta funtzioak
+lambda bihurketa;lambda conversion;Lambda espresio bat argumentu bati aplikatzean aldagaia haren balioaz ordeztea.;;onartua;Tipoak eta funtzioak
+lambda eragilea;lambda operator;Argumentu baten gainean abstrakzioa egiteko eragilea (λ).;;onartua;Tipoak eta funtzioak
+anbiguotasun lexikoa;lexical ambiguity;Hitz bakar batek esanahi bat baino gehiago izateagatiko anbiguotasuna.;;onartua;Konposizioa
+sarrera lexikoa;lexical entry;Hiztegian hitz bati dagokion informazio multzoa.;;onartua;Konposizioa
+esanahi lexikoa;lexical meaning;Hitz bati hiztegian dagokion esanahia.;;onartua;Semantika lexikoa
+esanahi linguistikoa;linguistic meaning;Espresio bati hizkuntzak berak ematen dion esanahia, testuinguruaren eta hiztunaren asmoen gainetik.;;onartua;Oinarrizko kontzeptuak
+lokuzio egintza;locutionary act;Esaldi bat esateko ekintza bera.;;onartua;Pragmatika
+esanahia;meaning;Espresio batek daraman informazio konbentzionala.;;onartua;Oinarrizko kontzeptuak
+hiztegi mentala;mental lexicon;Hiztunak buruan duen hitzen eta haien esanahien biltegia.;;onartua;Konposizioa
+modalitatea;modality;Beharrezko, posible edo derrigorrezko izateari buruzko esanahia.;;onartua;Modalitatea
+eredua;model;Munduaren irudikapen formala, banakoek eta haien arteko harremanek osatua.;"Ez erabili ""modeloa"".";onartua;Oinarrizko kontzeptuak
 perpaus ez-deklaratiboa;non-declarative sentence;Baieztapena ez den perpausa (galdera, agindua, harridura).;;onartua;Testua eta egitura
+izena;noun;Banakoak, multzoak edo substantziak izendatzen dituen kategoria.;;onartua;Erreferentzia
+izen sintagma;noun phrase;Izen baten nukleoa duen sintagma (IS).;;onartua;Erreferentzia
+egintza perlokutiboa;perlocutionary act;Esaldi batek entzulearengan sortzen duen efektua.;;onartua;Pragmatika
+kortesia;politeness;Hizkuntza-erabileran harreman soziala zaintzeko estrategiak.;;onartua;Pragmatika
+polisemia;polysemy;Hitz batek elkarrekin lotutako hainbat esanahi izatea.;;onartua;Semantika lexikoa
+mundu posiblea;possible world;Egia izan zitekeen egoera oso bat.;;onartua;Modalitatea
+esanahi pragmatikoa;pragmatic meaning;Testuinguruan eta erabileran oinarrituta hiztunak transmititzen duen esanahia.;;onartua;Oinarrizko kontzeptuak
+pragmatika;pragmatics;Erabilerak esanahiari gehitzen diona aztertzen duen diziplina.;;onartua;Pragmatika
+predikatua;predicate;Banakoei propietate edo erlazio bat esleitzen dien espresioa.;;onartua;Tipoak eta funtzioak
+presuposizioa;presupposition;Perpausak egia izateko aurretiaz onartutzat ematen den informazioa.;;onartua;Semantika lexikoa
+konposizionalitatearen hatsarrea;principle of compositionality;Espresio konplexu baten esanahia osagaien esanahien eta egitura sintaktikoaren funtzioa da.;"Literaturan ""printzipioa"" ere erabiltzen da.";onartua;Konposizioa
+ordezgarritasunaren hatsarrea;principle of substitutivity;Sinonimoak truka daitezke esanahi osoa aldatu gabe.;;onartua;Konposizioa
+izen propioa;proper noun;Banako bakar bati erreferentzia egiten dion izena.;;onartua;Erreferentzia
+proposizioa;proposition;Perpaus batek adierazten duen eduki abstraktua, egiazkoa edo faltsua izan daitekeena.;;onartua;Oinarrizko kontzeptuak
+adierazitako proposizioa;proposition expressed;Perpausak literalki adierazten duen proposizioa.;;onartua;Oinarrizko kontzeptuak
+kuantifikazioa;quantification;Kuantifikatzaileen bidez multzoei buruzko baieztapenak egitea.;;onartua;Erreferentzia
+kuantifikatzailea;quantifier;Multzo bateko kide kopuruari buruz zerbait esaten duen espresioa.;;onartua;Erreferentzia
+heina;range;Funtzio batek ematen dituen balioen multzoa.;;onartua;Tipoak eta funtzioak
+irakurketa;reading;Espresio baten interpretazio posible bat.;;onartua;Konposizioa
+erreferentzia;reference;Espresio batek munduko objektu edo multzo zehatz bati egiten dion lotura.;;onartua;Erreferentzia
+erreferentziagaia;referent;Espresio batek erreferentzia egiten dion objektua.;"Ez erabili ""erreferentea"".";onartua;Erreferentzia
+espresio asea;saturated expression;Bere argumentu guztiak beteta dituen espresioa.;;onartua;Konposizioa
+esparrua;scope;Kuantifikatzaile edo eragile baten eragina zein zatiri dagokion.;;onartua;Erreferentzia
+hautazko uztardura;selective binding;Adjektibo edo modifikatzaile batek izenaren ezaugarri jakin bat hautatzea.;Pustejovsky 1995.;onartua;Konposizioa
+konposizio semantikoa;semantic composition;Osagaien esanahietatik espresio konplexuaren esanahia eraikitzea.;;onartua;Konposizioa
+errepresentazio semantikoa;semantic representation;Espresio baten esanahiaren idazkera formala.;;onartua;Oinarrizko kontzeptuak
+tipo semantikoa;semantic type;Espresio baten propietate semantikoak formalki sailkatzen dituen etiketa (e, t eta haien konbinazioak).;;onartua;Tipoak eta funtzioak
+balio semantikoa;semantic value;Espresio baten interpretazioa ereduarekiko, denotazioaren sinonimo teknikoa.;"Ez erabili ""balore semantikoa"".";onartua;Tipoak eta funtzioak
+perpausa;sentence;Osagai sintaktikoen konbinazio ondo eratua, egia-balioa har dezakeena.;"Ez erabili ""esaldia"" zentzu honetan.";onartua;Oinarrizko kontzeptuak
+hiztunaren esanahia;speaker meaning;Hiztunak esaldi batekin transmititu nahi duen esanahia.;;onartua;Oinarrizko kontzeptuak
+egoera;state;Aldaketarik gabeko gertakaria.;;onartua;Gertakariak
+egiturazko anbiguotasuna;structural ambiguity;Espresio batek egitura sintaktiko bat baino gehiago izateak sortzen duen anbiguotasuna.;;onartua;Konposizioa
+sinonimia;synonymy;Bi espresiok esanahi bera izatea.;;onartua;Semantika lexikoa
+egitura sintaktikoa;syntactic structure;Osagaien arteko antolaketa hierarkikoa.;;onartua;Konposizioa
+gaia;topic;Perpausak zerbait esaten duenari buruzko zatia.;;onartua;Testua eta egitura
+egia-baldintza;truth condition;Perpaus bat egiazkoa izateko bete behar den baldintza.;;onartua;Oinarrizko kontzeptuak
+egia-balioa;truth value;Egiazkoa edo faltsua izatearen propietatea.;;onartua;Oinarrizko kontzeptuak
+tipo koertzioa;type coercion;Osagai baten tipo semantikoa aldatzea beste osagaiak eskatutako tipora egokitzeko.;;onartua;Konposizioa
+espresio asegabea;unsaturated expression;Argumenturen bat falta zaion espresioa, funtzio baten bidez osatzen dena.;;onartua;Konposizioa
+esaldia;utterance;Hiztun batek testuinguru jakin batean ekoizten duen perpausaren agerraldia.;"Ez erabili ""perpausa"" zentzu honetan.";onartua;Oinarrizko kontzeptuak
+aldagaia;variable;Balio zehaztugabea adierazten duen sinboloa.;;onartua;Tipoak eta funtzioak
+aditz sintagma;verb phrase;Aditza buru duen sintagma (AS).;;onartua;Erreferentzia

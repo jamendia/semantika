@@ -36,6 +36,8 @@ book:
 
 lang: eu
 
+pdf-engine: xelatex
+
 bibliography: bibliografia.bib
 csl: estilo/unified-style-sheet-for-linguistics.csl
 filters:
@@ -56,7 +58,7 @@ format:
     tbl-cap-location: top
     css: [estilo/basque.css]
   pdf:
-    engine: lualatex
+    engine: xelatex
     keep-tex: true
     include-in-header: tex/aurrea.tex
     toc: true

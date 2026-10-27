@@ -1,28 +1,126 @@
 % ---------------------------------------------------------------------------
 % tex/aurrea.tex — PDFaren aurrea (preamble).
 %
-% Quarto-k kargatzen du: format: pdf > include-in-header.
+% XeLaTeX + fontspec + unicode-math erabiltzen da.
 %
-% ExPex + unicode-math GATAZKA (konponduta, baina ez aldatu arrazoirik gabe):
-% Quarto-txantiloiak unicode-math kargatzen du lualatex-entzat, eta
-% unicode-math-ek \AtBeginDocumentean beraplikatzen du bere ikur-taula
-% (unicode-math-luatex.sty, \__um_define_math_chars:). Taula horretan
-% U+2AA5 ("greater-than beside less-than") ikurraren izena \gla da:
-%   \UnicodeMathSymbol{"02AA5}{\gla}{\mathrel}{greater-than beside less-than}
-% Beraz, hasierakoan \gla \let egiten zaio karaktere-token bati, eta ExPex-en
-% \gla glossa-lerroaren makroa suntsituta geratzen da: \gla ez da hedatzen,
-% talde-egitura puskatzen da, eta \endgl huts egiten du ("Too many }'s").
-% (\glb ez da jotzen, izenez ez datorrelako bat unicode-matheren taularekin.)
-% KONPONBIDEA: expex kargatu ondoren kopia bat gorde (\expex@gla) eta
-% \AtBeginDocumentean bueltatu. Hook-ak ordenan exekutatzen dira:
-% unicode-math-ena lehen (txantiloiak erregistratua), gurea gero.
+% Iturri hauek eskaintzen dituzte:
+%   - ETbb:              Bembo-ko ala testuko letra (serif, testua nagusia)
+%   - Alegreya Sans:     letra sansa (goiburuen letra eta atalak)
+%   - Alegreya Sans SC:  letra sansa kapitälua (small caps)
+%   - FiraMono:          letra monoespatziatua
+%   - texgyrepagella-math: Palatino-ko ala matematika letra
+%
+% Fontak TeX Live-en texmf-tree batean/installatuta daude, eta fontspec
+% lurrun bideak haiaketuak topicaldu eta.
 % ---------------------------------------------------------------------------
 
-\usepackage{expex}               % adibideak + glossa interlineala
-\usepackage[linguistics]{forest} % zuhaitzak
+\usepackage{fontspec}
+
+% --- Iturri nagusia: ETbb (Bembo-ko ala, serif) ------------------------------
+\setmainfont{ETbb}[
+  Path=/home/vcpmealj/texlive/texmf-dist/fonts/opentype/public/etbb/,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic,
+  BoldItalicFont=*-BoldItalic,
+  Ligatures={TeX,Common,Contextual},
+  Contextuals={Alternate},
+  Kerning=Uppercase
+]
+
+% --- Iturri batzuk eskaintzen dituzte:
+%   - ETbb:              Bembo-ko ala testuko letra (serif, testua nagusia)
+%   - Alegreya Sans:     letra sansa (goiburuen letra eta atalak)
+%   - Alegreya Sans SC:  letra sansa kapitälua (small caps)
+%   - FiraMono:          letra monoespatziatua
+%   - texgyrepagella-math: Palatino-ko ala matematika letra
+%
+% Fontak TeX Live-en texmf-tree batean/installatuta daude, eta fontspec
+% lurrun bideak haiaketuak topicaldu eta.
+% ---------------------------------------------------------------------------
+
+\usepackage{fontspec}
+
+% --- Iturri nagusia: ETbb (Bembo-ko ala, serif) ------------------------------
+\setmainfont{ETbb}[
+  Path=/home/vcpmealj/texlive/texmf-dist/fonts/opentype/public/etbb/,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic,
+  BoldItalicFont=*-BoldItalic,
+  Ligatures={TeX,Common,Contextual},
+  Contextuals={Alternate},
+  Kerning=Uppercase
+]
+
+% --- Matematikaren letra: unicode-math + texgyrepagella-math (Palatino-ko ala)
+\usepackage{unicode-math}
+\setmathfont{texgyrepagella-math}[
+  Path=/home/vcpmealj/texlive/texmf-local/fonts/opentype/public/tex-gyre-math/,
+  Extension=.otf
+]
+
+% --- Letra sansa: Alegreya Sans (goiburuen letra) ---------------------------
+\setsansfont{AlegreyaSans}[
+  Path=/home/vcpmealj/texlive/texmf-local/fonts/opentype/public/alegreya/,
+  Extension=.ttf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic,
+  BoldItalicFont=*-BoldItalic,
+  SmallCapsFont=AlegreyaSansSC-Regular,
+  SmallCapsFeatures={Letters=SmallCaps},
+  Ligatures={TeX,Common,Contextual},
+  Contextuals={Alternate},
+  Kerning=Uppercase,
+  Scale=1.03
+]
+
+% --- Letra monoespatziatua: FiraMono ------------------------------------------
+\setmonofont{FiraMono}[
+  Path=/home/vcpmealj/texlive/texmf-local/fonts/opentype/public/fira/,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Oblique,
+  BoldItalicFont=*-BoldOblique,
+  Ligatures={TeX,Common,Contextual},
+  Contextuals={Alternate},
+  Kerning=Uppercase
+]
+
+% --- Euskarako hizpene-kontrola: babel (basque) -------------------------------
+% Quarto-ko template-a babel-a kargatzen du, ezinezpa berriz kargatu.
+% Basquekoa hizpene-mota gehituko da dokumentua hasita.
+\AtBeginDocument{%
+  \babelprovide[import]{basque}%
+}
+
+% --- Microtipografia: protruazioa, espazioa, kerning --------------------------
+\usepackage{microtype}
+\microtypecontext{spacing=nonfrench}
+
+% --- Stmaryrd: \llbracket / \rrbracket (newunicodechar-er mapetarako) ---------
+\usepackage{stmaryrd}
+\providecommand{\lBrack}{\llbracket}
+\providecommand{\rBrack}{\rrbracket}
+\providecommand{\mscrE}{\mathcal{E}}
+
+% --- Pifont: \ding{} simboluak (helper macroetan erabiltzen diruak) -------------
+\usepackage{pifont}
+
+% --- ExPex: adibideak + glossa interlineala -----------------------------------
+\usepackage{expex}
+\usepackage[linguistics]{forest}
 \input{tex/forest-ezarpenak.tex}
 
-% --- ExPex / unicode-math gatazkaren konponketa (ikus goiko oharra) --------
+% --- ExPes / unicode-math konponketa ------------------------------------------
+% unicode-math-ren \__um_define_math_chars \begin{document}-n \gla,
+% \glb, \glc, \glft makroak berraketake, eta ExPes-en \endgl errore
+% agreea agertuko da. ExPes kargatu ondoren kopiak gorde eta
+% \AtBeginDocument-ean bueltatu.
 \makeatletter
 \let\expex@gla\gla
 \let\expex@glb\glb
@@ -36,10 +134,10 @@
 }
 \makeatother
 
-% --- Notazioaren unicode karaktereak -> LaTeX makroak -----------------------
+% --- Notazioaren unicode karaktereak -> LaTeX makroak -------------------------
 % .qmd iturrietan karaktereak literalki daude (⟦α⟧^ℰ, ⟨e, t⟩...); pandoc-ek
-% pasatzen ditu aldatu gabe. unicode-math-ek izen natiboak ditu horietarako:
-% U+27E6 -> \lBrack, U+27E7 -> \rBrack, U+2130 -> \mscrE.
+% pasatzen ditu aldatugabe. newunicodechar-k karaktere hauetak matematikoki
+% osatzen ditu (\ensuremath bidez).
 \usepackage{newunicodechar}
 \newunicodechar{⟦}{\ensuremath{\lBrack}}
 \newunicodechar{⟧}{\ensuremath{\rBrack}}
@@ -65,12 +163,39 @@
 \newunicodechar{⟹}{\ensuremath{\Longrightarrow}}
 \newunicodechar{⟼}{\ensuremath{\longmapsto}}
 
-% --- ExPex ezarpenak --------------------------------------------------------
-% exnoformat=(X) eta exnotype=arabic ExPex-en lehenetsiak dira: zenbakitze
-% globala (1), (2), (3)... liburu osoan, kapituluko resetik gabe.
-\lingset{aboveglftskip=.3ex, exskip=1.2ex, interpartskip=.6ex}
+% --- Semantikoaren makro laguntzaileak ------------------------------------------
+\newcommand{\refp}[1]{(\protect\ref{#1})}
+\newcommand{\header}[1]{\textit{\textbf{#1}}}
+\newcommand{\gheader}[1]{\textsc{#1}}
+\newcommand{\subheader}[1]{\textit{#1}}
+\newcommand{\exheader}[1]{\textbf{#1}}
+\newcommand{\good}[0]{\ding{51}}
+\newcommand{\bad}[0]{\ding{56}}
+\newcommand{\mon}[1]{\texttt{#1}}
+\newcommand{\term}[1]{\textsc{#1}}
+\newcommand{\flower}[0]{\ding{96}}
+\newcommand{\bigStar}[0]{\ding{90}}
+\newcommand{\gap}{\rule{0.4cm}{0.4pt}}
+\newcommand{\arrow}[0]{\ding{224}}
+\newcommand{\K}{\text{\sffamily K}}
+\newcommand{\Pos}{\text{\sffamily P}}
+\newcommand{\Kfn}{\text{\footnotesize\sffamily K}}
+\newcommand{\Posfn}{\text{\footnotesize\sffamily P}}
+\newcommand{\I}{\text{\sffamily I}}
+\newcommand{\Ifn}{\text{\footnotesize\sffamily I}}
+\newcommand{\posscitet}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+\newcommand{\possciteauthor}[1]{\citeauthor{#1}'s}
+\newcommand{\lam}[1]{\ensuremath{\lambda #1 \,.\,}}
+\newcommand{\lamp}[1]{\ensuremath{\lambda #1 \,:\,}}
+\newcommand{\sqar}[1]{\(\rightsquigarrow\) \emph{#1}}
+\newcommand{\sqnar}[1]{\(\nrightsquigarrow\) \emph{#1}}
 
-% --- Adibide-ingurunea: zenbakitze globala ----------------------------------
+% --- ExPex ezarpenak ----------------------------------------------------------
+% Glossaren eta itzulpenaren arteko espazioa murrizatua
+% (aboveglftskip=0pt pantailatik 0.3extik pasatu da).
+\lingset{aboveglftskip=0pt, exskip=1.2ex, interpartskip=.6ex}
+
+% --- Adibide-ingurunea: zenbakitze globala ------------------------------------
 % Quarto crossref-ek \begin{example} ingurunea sortzen du amsthm-ekin,
 % kapituluko zenbakitzearekin ("Adibidea 4.1"). Hizkuntzalaritzako
 % konbentzioa liburu osoko zenbakitzea da: (1), (2), (3)... crossref-ek bere
@@ -89,7 +214,7 @@
 \def\adib@etiketa{%
   \ifadib@jarrita\else
     \adib@jarritatrue
-    \llap{(\arabic{adibkont})\enspace}%
+    \llap{\makebox[2.4em][r]{(\arabic{adibkont})}\enspace}%
   \fi
 }
 \def\adib@empty{}
@@ -110,7 +235,7 @@
         \adib@oldatitem[{##1}]%
       \else
         \adib@jarritatrue
-        \adib@oldatitem[{(\arabic{adibkont})\enspace##1}]%
+        \adib@oldatitem[{\makebox[2.4em][r]{(\arabic{adibkont})}\enspace##1}]%
       \fi
     }%
     \ignorespaces
@@ -122,7 +247,7 @@
   % bateratzeko); amsthm-aren "Ariketa 4.1" goiburua ordezten du.
   \renewenvironment{exercise}[1][]{%
     \par\addvspace{1.2ex}\refstepcounter{exercise}%
-    \noindent\llap{(\theexercise)\enspace}\ignorespaces
+    \noindent\llap{\makebox[2.4em][r]{(\theexercise)}\enspace}\ignorespaces
   }{%
     \par\addvspace{1.2ex}%
   }%
