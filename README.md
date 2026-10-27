@@ -2,12 +2,12 @@
 
 **Interpretazioaren zientzia**
 
-Liburu ireki bat, euskaraz, hizkuntzaren esanahiaz.
+Liburu ireki bat, euskaraz, hizkuntza naturalek esanahia adierazteko duten moduei buruzkoa.
 
 - **Egilea:** jamendia
 - **Lizentzia:** [CC BY 4.0](LICENSE)
 - **Biltegia:** <https://github.com/jamendia/semantika>
-- **Egoera:** eraikuntza-fasea. Pilotua: *Konposizioa* kapitulua.
+- **Egoera:** eraikuntza-fasean. Pilotua: *Konposizioa* kapitulua.
 
 ## Edukia
 
@@ -17,7 +17,7 @@ kuantifikaziotik intentsionaltasunera, eta handik erabileraren pragmatikara.
 
 Lehenengo liburukian oinarrizko arkitektura lantzen da; bigarrenean, berriz,
 gai aurreratuak (presuposizioa, denbora-aspektua, pluralak, konparazioa) eta
-pragmatikaren luzapenak (metafora, ironia, kortesia, zentsura).
+pragmatikaren luzapenak (metafora, ironia, kortesia, etab.).
 
 ## Nola irakurri
 
