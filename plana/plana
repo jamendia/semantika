@@ -1,0 +1,91 @@
+New ch.		Feeds from									Status
+1		1A full + Kroeger 1 + Roussarie 1 + C&C 1					writable today
+2.1–2.3		3A extracts + 4(1) bits + manuscript 5.1 bits + Roussarie 2 + Kroeger 2–3	writable
+3		C&C 2–5 + Roussarie 5 + pilot's existing layouts				writable (pilot gives the worked examples)
+4		pilot refactor + Z&S ch. 5 (QA) + C&C 6						cheap — refactor
+5		3A (9k words: it outranks a subchapter — see below) + Kroeger 5–7 + 3.1 	writable
+6		3.2 + C&C + Kroeger 14								writable
+7		4. Gertakarien semantika full + Kroeger 20–22					writable
+8		5. ADITZ MODALAK outline + F&H modality/attitudes + 5. Intensionalitatea	writable (8.1 devs from outline)
+9		5. Intensionalitatea full + F&H conditionals + Kroeger 19			writable
+
+
+
+
+
+----------------------------------------
+
+
+Part Ia
+1.  Sarrera (semantika zer den)
+    from 1A, Kroeger ch. 1, Roussarie ch. 1, C&B 1.2
+
+    topics: very general introduction, "the meaning of meaning", etc.
+
+# Intuitive introduction to the three main players: arguments, predicates
+# and truth-condition, with associated concepts: extensions/intension,
+# compositionality, at-issue meaning vs. other varieties of meaning.
+2.  Ospe haundiko hirukotea
+    2.1 Hitza
+        Kroeger 2.1-2.5, user 3A & 5.1, C&B1.3, Zimmermann & Sternefeld ch.2
+
+        topics: denotation, extension/intension, referential vs predicational,
+            how diefferent expressions lead to different **semantic relations**
+            (entailment, constradiction, etc.).
+
+    2.2 Perpausa
+        C&B 1.3, Kroeger 3.1-3.3, Roussarie 2.1,  Zimmermann & Sternefeld ch.4
+
+        truth-conditions, truth-conditioanal semantics, extensions as meanings
+        of sentences,
+    
+    2.3 Predikatuak
+        Roussarie 2.2-2.3, bits from user 4(1), 5.
+        
+        first look into compositionality and predicates as functions that take
+        arguments (entities) to output truthconditions.
+
+Part Ib
+# Formalism; required to bring students up to speed with heim and kratzer
+3.  Formalisms
+    C&B ch.2-5, Roussarie 5
+
+    3.1 Sets, relations and functions
+    3.2 Logic (propositional/predicate)
+    3.3 Typed lambda calculus
+
+4.  Composition and meaning calculation
+    Zimmermann & Sternefeld ch.5, C&B 6, 
+
+    simple application of chapter 3.
+
+# So far this was the basic system. Now we expand on it.
+Part II
+Part IIa 
+
+#Revisiting what we know
+5.  Nominal semantics
+    Kroeger ch.5-7
+
+    5.1 Lexical semantics
+        user from 3A, Zimmermann & Sternefeld ch.2
+           from reference to modifiers, adjectives, type-shifing.
+    5.2 Properties: homonimy, polysemy, synonimy, etc.
+    5.3 Selectional restrictions
+
+
+6.  Quantification
+
+7.  Verbs
+    7.1 Event semantics     # extend the system with events
+    7.2 Tense               # extend the sytem with times
+    7.3 Aspect
+
+8.  Sentences 
+    # introduce possible worlds/situations
+    8.1 Modal Verbs
+    8.2 Attitute predicates
+
+9.  Intensionality at large
+    9.1 de re/de dicto interpretations of DPs
+    9.2 conditionals                            Provide an assessment of this reordering.
