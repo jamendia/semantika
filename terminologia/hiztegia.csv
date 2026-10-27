@@ -1,3 +1,4 @@
+eu;en;definizioa;oharrak;egoera;kategoria
 lorpena;accomplishment;Amaiera naturala duen gertakaria.;;onartua;Gertakariak
 burutzea;achievement;Une batean gertatzen den aldaketa.;;onartua;Gertakariak
 jarduera;activity;Amaiera naturalik gabeko gertakaria.;;onartua;Gertakariak
@@ -18,7 +19,6 @@ egokitasun deskriptiboa;descriptive adequacy;Teoria batek hiztunen intuizioak be
 determinatzaile sintagma;determiner phrase;Determinatzailea buru duen sintagma (DetS).;;onartua;Erreferentzia
 eremua;domain;Funtzio batek onartzen dituen argumentuen multzoa.;;onartua;Tipoak eta funtzioak
 erreferentzia-murrizketa;domain restriction;Kuantifikatzailearen eremua testuinguruak mugatzea.;;onartua;Erreferentzia
-eu;en;definizioa;oharrak;egoera;kategoria
 ekarpena;entailment;Proposizio bat egiazkoa bada nahitaez beste bat ere egiazkoa izatea.;;onartua;Semantika lexikoa
 gertakaria;event;Denboran eta espazioan kokatutako gertaera edo egoera.;;onartua;Gertakariak
 estentsioa;extension;Espresio batek mundu jakin batean adierazten duen multzoa.;;onartua;Modalitatea

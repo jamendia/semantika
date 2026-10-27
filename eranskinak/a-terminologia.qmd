@@ -30,7 +30,7 @@ Guztira **93** termino daude, 9 ataletan banatuta.
 | **esanahi linguistikoa** | linguistic meaning | Espresio bati hizkuntzak berak ematen dion esanahia, testuinguruaren eta hiztunaren asmoen gainetik. |  |
 | **esanahi pragmatikoa** | pragmatic meaning | Testuinguruan eta erabileran oinarrituta hiztunak transmititzen duen esanahia. |  |
 | **esanahia** | meaning | Espresio batek daraman informazio konbentzionala. |  |
-| **glossa interlineala†** | interlinear gloss | Adibide linguistiko bati jarraitzen dion hiru lerroko azalpena: jatorrizko perpausa, hitz bakoitzaren glossa morfosintaktikoa eta itzulpen askea. | Euskarazko adibideak ez dira glossatzen, beste hizkuntza batetakoak bai. |
+| **glosa interlineala†** | interlinear gloss | Adibide linguistiko bati jarraitzen dion hiru lerroko azalpena: jatorrizko perpausa, hitz bakoitzaren glossa morfosintaktikoa eta itzulpen askea. | Euskarazko adibideak ez dira glossatzen, beste hizkuntza batetakoak bai. |
 | **hiztunaren esanahia** | speaker meaning | Hiztunak esaldi batekin transmititu nahi duen esanahia. |  |
 | **inferentzia** | inference | Proposizio batetik bestera arrazoibidez igarotzea. |  |
 | **perpausa** | sentence | Osagai sintaktikoen konbinazio ondo eratua, egia-balioa har dezakeena. | Ez erabili "esaldia" zentzu honetan. |
@@ -46,6 +46,7 @@ Guztira **93** termino daude, 9 ataletan banatuta.
 | **egiturazko anbiguotasuna** | structural ambiguity | Espresio batek egitura sintaktiko bat baino gehiago izateak sortzen duen anbiguotasuna. |  |
 | **espresio asea** | saturated expression | Bere argumentu guztiak beteta dituen espresioa. |  |
 | **espresio asegabea** | unsaturated expression | Argumenturen bat falta zaion espresioa, funtzio baten bidez osatzen dena. |  |
+| **hautazko uztardura** | selective binding | Adjektibo edo modifikatzaile batek izenaren ezaugarri jakin bat hautatzea. | Pustejovsky 1995. |
 | **hiztegi mentala** | mental lexicon | Hiztunak buruan duen hitzen eta haien esanahien biltegia. |  |
 | **irakurketa** | reading | Espresio baten interpretazio posible bat. |  |
 | **ko-konposizioa** | co-composition | Bi osagairen esanahiek elkar moldatuz esanahi berria sortzea. | Pustejovsky 1995. |
@@ -54,7 +55,6 @@ Guztira **93** termino daude, 9 ataletan banatuta.
 | **ordezgarritasunaren hatsarrea** | principle of substitutivity | Sinonimoak truka daitezke esanahi osoa aldatu gabe. |  |
 | **sarrera lexikoa** | lexical entry | Hiztegian hitz bati dagokion informazio multzoa. |  |
 | **tipo koertzioa** | type coercion | Osagai baten tipo semantikoa aldatzea beste osagaiak eskatutako tipora egokitzeko. |  |
-| **uztardura hautakorra** | selective binding | Adjektibo edo modifikatzaile batek izenaren ezaugarri jakin bat hautatzea. | Pustejovsky 1995. |
 
 ## Tipoak eta funtzioak
 
@@ -203,7 +203,8 @@ Guztira **93** termino daude, 9 ataletan banatuta.
 | funtzioa | function |
 | gaia | topic |
 | gertakaria | event |
-| glossa interlineala† | interlinear gloss |
+| glosa interlineala† | interlinear gloss |
+| hautazko uztardura | selective binding |
 | heina | range |
 | hiperonimia | hypernymy |
 | hiponimia | hyponymy |
@@ -249,7 +250,6 @@ Guztira **93** termino daude, 9 ataletan banatuta.
 | testuingurua | context |
 | tipo koertzioa | type coercion |
 | tipo semantikoa | semantic type |
-| uztardura hautakorra | selective binding |
 
 ::: {.callout-warning title="Fitxategi sortua" appearance="simple"}
 Orri hau automatikoki sortzen da `terminologia/hiztegia.csv` fitxategitik.
