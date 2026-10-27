@@ -47,6 +47,7 @@ desktop.ini
 __pycache__/
 *.pyc
 .venv/
+tresnak/*
 
 /.quarto/
 **/*.quarto_ipynb
