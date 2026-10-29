@@ -1,6 +1,8 @@
 ---
-title: "Hitzaurrea"
+number: false
 ---
+
+# Hitzaurrea {.unnumbered}
 
 Liburu hau ez da hutsetik sortu. Urteak daramatzat semantika eta pragmatika
 irakasten, eta urte horietan zehar gela batean funtzionatu zuen materiala

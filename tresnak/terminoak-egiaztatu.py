@@ -23,8 +23,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-# Ez dira aztertzen
-BAZTERTU_KARPETAK = {"_site", ".quarto", ".git", "textbook-sources", "tresnak"}
+# Ez dira aztertzen: sortutako edo lan-materialak dituzten karpetak
+# (kapituluak, eranskinak eta erroko .qmd-ak soilik begiratzen dira).
+BAZTERTU_KARPETAK = {
+    "_site", ".quarto", ".git", "textbook-sources", "tresnak",
+    "_extensions", ".github", "estilo", "tex", "plana", "assets",
+    "state", "quarto-txantiloi", "semantika-itzulpena",
+}
 SORTUTAKO_FITXATEGIAK = {"eranskinak/a-terminologia.qmd"}
 
 # 1. Argitaratu aurretik kendu beharreko markatzaileak

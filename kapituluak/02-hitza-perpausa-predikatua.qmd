@@ -1,0 +1,16 @@
+﻿---
+title: "Hitza, perpausa eta predikatua"
+---
+
+## Sarrera
+
+Kapitulu honetan hizkuntzaren egitura axiomakor eta gardenean errotuko dugu. Egitura hizkuntza batean zer den kontzeptu mendekotasunik sakonena azalduko dugu: hitza, perpausa eta predikatua. Horretarako, hiritarrei irisabilgun dugu landu: hitzak zer zertan azaltzen dira, nola eraikitzen den perpausa bat eta nola definitu behar daituzte predicate-funtzoak.
+
+Lehen abiapuntua ez da edozein adibide gako-zerrenda deskribatzea; baizik eta hiritarren nabarmenena bilduko dugu: zer izenak okurgarriak diren, zer perpausak eraikitzen diren eta nola define baitu egiten dugu predicate-motak euskaratik. Hau hurrengo txandan erabiltzen dugu eremu eta zerga hartara zuzentzerako, eta horizonte indartsuago bihurtzea bermatuko dugu.
+
+> **Esperientzia bilatua.** Hiritarren abiapuntua hizkuntzagailu hau behatzea. Hiritarrek denbora askotan hitz-edo-bidez egindako testu gutxituan aurkitu ahurbetetzenak ezagutzeko eguneroko oinarrizko moduak: izenak noraterainaino grabatzen dituzten, perpausak sarra eta nola defina baituzte predicate-motak zuri jardun diren.
+
+## Hitza: esanahi lexikoak eta mota-sistemak
+
+### Nork definituko du hitzak?
+

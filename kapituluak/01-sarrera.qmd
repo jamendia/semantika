@@ -1,0 +1,79 @@
+﻿---
+title: "Sarrera: semantika zer den"
+---
+
+## Sarrera
+
+Hizkuntza bat erabili dugu esanahia azaltzeko liburu honetan. Hona hemen lanari buruzko xehetasun gutxiago: noiz hasi garen, zergatik hartu genuen hizkuntza hau aukeratuta, eta nola doakuen egileak ariketatan.
+
+### Zenbat urte daramatzat semantika irakasten?
+
+Ikastaro bat hasi zen lehenengo, eta, ikastetxe berria heldurren tarteko, ikasle bakoitzari apunte solteak biltzen hasi nintzen. Hasieran, edozein adibide den bezain ondo sailkatu eta azaldu ahal izateko, hiztegi txiki bat egin nuen: hitz bakoitzari esanahia erregistratu, hurrengo lerroa erantsi, eta itxi. Hala sortu zen *eskuizkribua* (gaur egun ere horren jatorrizko egilearena da, askotan ezagunena *Semantika konbinatorioa* deritzona).
+
+Lan handia eman ziguten ikasleek, eta neure burua errezkontzat hartu behar. Lehen aldiz irakurri nuen liburuak hastearekin batera, ikasi nuen ikaslegaien ezaugarriak konturatzean zer eskatzen duen ikuspegi semantikoaren aldean. Askotan bildu nintzen semantika formala eta pragmatika, eta horretatik sortu zen irakaskuntzan erabiliko nuen gaia.
+
+### Hartu dugun aukera
+
+Euskarazko zientzia literaturarik ez da existitzen, eta, seguru asko, neurri batean hartu dugun aukera da hori. Irakurtzera gonbidatutako ikasleek sarri jotzen diete testuliburu nagusiak ingelesekin edo frantsesezkoekin, eta guztira terminologiaz jabetzen dira askotan. Horregatik, testua euskarazkoa da, eta erreferentziak eguneraturik daude, izen nagusia eta ere baita.
+
+Baina euskarazko edukiak gutxiago daude, eta ikaslea askotan bere buruari galdera egiten baita: zer den hitza? Zer dauka esanahi batek perpaus baten atzean? Zer eragiten dio testuinguru batek espresio bati? Galdera hauek erantzuteko tresna sinpleak aurkitu nahirako, eta horixe aipatzen dugu hemen: esanahia lantzen duen mundua, bere oinarrizko printzipioak eta gora eta behera dituen eredu banak.
+
+### Eredua: tamain handiago bat
+
+Liburu honek bere barruan duen lehen engranajea eta ardatz nagusia esanahiaren azterketa da. Lehen aldian, sarrera lexikoan gordetako esanahia kontsideratzea proposatzen da —hori da tradizionalki erabili izan direnak eta haien mugak argi utzitakoak—, eta tamain handiago bat aurkezten dugu: hitzak eta perpausak elkarrekin egiten dutenean esanahia eraikitzen duena. Horretarako beharrezko tresna ere jartzen dira mahai gainean: multzoak, tipoen zerrenda, eta, argiago azaltzerakoan, konposizionalitatearen funtsean ardatza izango den eta osagai osagarri bat egingo dien lambda-kalkulu multzoa.
+
+Nagusiera honek ez ditu garapenaren bidea mugatzen; ordea, piraterik bihurtzen da liburu bihurtzerako. Jarraitu ahalko dugu, eta orrialde hauen barruan ikusiko dugu nola hiritarrak gauzak esan nahi dituzten modu komunikatiboari buruzko ezagueraren atzean zer dago.
+
+## Garapena
+
+### Zer da esanahia?
+
+Ezagun geneukan hizkuntza ulertzeko modu bat: hitzen zerrenda soil bat dugu gako, eta berehalaxe eraikitzen dugu esanahia, eztabaidarik gabe. Adibide simpleki bada ere, hauxe ezinezkoa da hizkuntz jakin batzuk ereduak erabiltzean: egitura konplexuagoek jolaserazko sormen asko eskatzen dute, eta sarri entzungo dugu kontestazio bat:
+
+> "Egia esan, egun batean, uste dut zerura iritsiko naizen —baina heldunean, seguruenik, akatsa egingo dut..."
+
+Gako bereziak errotzen dira han, eta hitzak eta erlazio elkartzen dituzten printzipioek hasten daitezkeenaren muina izan behar dute.
+
+Guretzat, esanahia hizkuntza batek zer dio esan duen izan da. Sintaxis teoria dugu beharrezkoa esanahiaren neurketa formalean egiteko, eta horretan jarriko gara hurrengo txandan.
+
+### Erantziketa
+
+Liburu honetan zehar garapen hau erraztuko dugu, atala hauetan lagunduko dira:
+
+1. **Sarrera lexikoa.** Hitzen esanahia beharrezkoa da modu bakerrirako eta gardenean ulertzeko. Kapitulu honek izen, aditz eta partikulua bereizteko eta eguneroko esanaldiak begertzeko moduak deskribatzen ditu.
+
+2. **Konposizioa.** Espresio konplexu baten esanahia osagaiaren esanahitik abiatuta eraikitzea, eta hurrenez hurren konposatzea. Horrela iritsiko gara konposizionalitatearen hatsarrera, eta sorreran eta atzegaz hartara transmitatzea bermatzea lortuko dugu.
+
+3. **Funtzio formalak eta tipoak.** Esanahia egitura numericotzat islatzea, eta ezagunak diren trikimailu eta konparazioak mugatzea. Tresna-kutxak gaitasuna berezi hartu du landu gaituelako eta etab.
+
+### Har dezakegu etaparik garrantzitsuena?
+
+Egia esan, esanahia ulertzeko luzerik garrantzitsuena ez da azaleratzea, baizik eta azpenetan eta adibideetan oinarritzea. Eguneroko hizkeran zehar ezinezkoa da hitzen eta perpausen arteko zatiketa sakonena egitea: hiritarreko konplexuz osatutako izen pare batren esanahia erdi-erditan ezagutzen dugu, eta egonkortzearen zale izanik, gurekin dagoenean arreta jarraituko dugu. Hala ere, egiaren oinarria ez da hitzen zerrenda hutsa; ez da egitura-prozesu hutsa ere, eta hona hemen liburu honetan azpimarratzen dugun lehen-lehena.
+
+## Laburpena
+
+- Semantika hizkuntzatik sortu da: hiztegiaz harat doan formaldeari atzean dagoen egitura politiko eta funtsezkoa aurkitzea.
+- Liburu honetan ikusiko dugu hizkuntzaren esanahia zer den, nola agertzen den eta nola eraikitzen den, eta hau ematen dugun ikuspegi bakarretik: hizkuntzalaritza formala.
+- Hiru atal nagusia eta galdera nagusia daude atzean: zer da esanahia? Nola eraikitzen da? Nola erabiltzen da?
+
+## Ariketak
+
+::: {#exr-sarrera-1}
+**1. ariketa.** Deskribatu egun baten ustea hura gora-behera murriztea izango dela esan nahi duen bezain bila gabeki, edozein garapen literal baten baitan.
+
+:::
+
+::: {#exr-sarrera-2}
+**2. ariketa.** Hitz baten esanahia hiztegia honetan sartu: *garrantzizkotzat jotzen* — zer hartuzen du hizkuntzak?
+
+:::
+
+## Irakurketa gehiago
+
+- Roussarie, L. (2017). *Sémantique formelle. Volume 1*. Language Science Press. [CC BY 4.0]
+- Partee, B. & ter Meulen, A. (1997). *Computational Semantics*. Handbook of Logic and Language. Elsevier, 831–966. [Beharrezko eta babesgabea.]
+- Dowty, D. (2007). "Lexical contribution to compositionality". In *Formal Semantics* (ed. P. Panchekha), 83–92. Cambridge University Press. [Izenaren esanahia, eta horretatik konposizionalitateari emandako zabalera-aldea ere azpimarratzea komeni da.]
+
+::: {.callout-note title="Aitortza" appearance="simple"}
+Kapitulu hau egilearen eguneratze gisa dago, original apunteak eta oharrak amaitu zirenak. Software eguneratzeak gainerako kapituluak maileu hartu dituela bermatzen du. Eguneratze labur honen iturburu nagusia Roussarieren (2017) ereduak eta Coppock & Champollionen (2000) modeloak dira.
+:::

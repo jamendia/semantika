@@ -58,12 +58,14 @@ __pycache__/
 *.out
 
 # ---------------------------------------------------------------------------
-# Quarto font-embedding aurkezpena (sortutako fitxategiak)
+# Quarto font-embedding fitxategi sortuak. Erro-eremuak bakarrik estaltzen
+# dira horrela: _extensions/bookup/fonts/ biltegira igotzea nahi dugu
+# (gaia birsortu ez dadin, honi eusten dio).
 # ---------------------------------------------------------------------------
-fonts/
+/fonts/
 
-eranskinak/fonts/
-kapituluak/fonts/
+/eranskinak/fonts/
+/kapituluak/fonts/
 
 # ---------------------------------------------------------------------------
 # OpenCode sesioko fitxategiak

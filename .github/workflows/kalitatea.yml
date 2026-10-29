@@ -28,6 +28,7 @@ jobs:
       - name: LaTeX paketeak instalatu
         run: |
           tlmgr install \
+            etbb alegreya fira tex-gyre-math stmaryrd \
             expex forest newunicodechar babel-basque \
             unicode-math fontspec latexmk \
             koma-script selnolig parskip xurl bookmark

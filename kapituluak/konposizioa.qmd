@@ -157,6 +157,12 @@ hierarkia hori formalki adierazi behar da.
 
 ### Tipo semantikoak
 
+::: {.callout-note title="Atal teknikoa" appearance="simple"}
+Atal honek tresna formalak erabiltzen ditu. Lehen irakurketa batean saltatu
+dezakezu, baina ez betiko: hurrengo kapituluek han aurkeztutakoa erabiliko
+dute.
+:::
+
 Demagun *Beatriz etorri da* perpausak egi-balio bat duela: egiazkoa ala
 faltsua. *Beatriz* izenak, aldiz, banako bat adierazten du. Bi hauek gauza
 desberdinak dira, eta desberdintasun hori formalki markatu behar dugu.
@@ -264,11 +270,15 @@ Eta *AS* delakoaren barnean, beste konposizio bat gertatzen da:
 :::
 :::
 
-Parentesi etiketatuta, egitura osoa horrela idazten da:
+Parentesi etiketatuta, egitura osoa horrela idazten da:[^etiketak]
 
 $$
 [\mkern-2mu_{\text{P}}\ \text{Ane-k}\ [\mkern-2mu_{\text{AS}}\ \text{Amaia}\ \text{ikusi}\,]]
 $$
+
+[^etiketak]: Anglo-erako literaturan etiketa baliokideak aurkituko dituzu:
+P $\approx$ $S$ (*sentence*), IS $\approx$ $NP$/$DP$ eta AS $\approx$ $VP$.
+Etiketa bietako zerrenda B. eranskinean dago.
 
 ::: {#exm-zuhaitza-osoa}
 ::: {.tree #tree-konp-ikusi}
@@ -483,7 +493,7 @@ arrotzetarako erabiltzen da; euskarazko adibideak ez dira glossatzen):
 ::: {.gloss}
 Every student read two books
 every student read.PST two book.PL
-Ikasle guztiek bi liburu irakurri dituzte.
+'Ikasle guztiek bi liburu irakurri dituzte.'
 :::
 :::
 

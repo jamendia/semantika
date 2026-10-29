@@ -1,6 +1,8 @@
 ---
-title: "Nola irakurri liburu hau"
+number: false
 ---
+
+# Nola irakurri liburu hau {.unnumbered}
 
 Liburu hau ez da nobela bat, hasieratik amaierara irakurtzekoa. Hala ere, ez da
 salbuespen bilduma bat ere: kapituluek elkarri eraikitzen diote gaina.
@@ -53,8 +55,8 @@ hots, okerrago dagoen heinean.
 
 Kapitulu bakoitzaren amaieran ariketak daude. Batzuk ulermen hutsekoak dira;
 beste batzuk, berriz, datu berriak aztertzeko eskatzen dute. Ebazpenak ez daude
-liburu honetan: irakaslearentzat gordeta daude, eta ariketen kodea (`A3.2`
-modukoa) erabiliz eska daitezke.
+liburu honetan: irakaslearentzat gordeta daude, eta ariketaren kodea erabiliz
+eska daitezke, `(Ariketa 3.2)` moduan idatzita dagoen bezala.
 
 Ariketek ez dute erantzun bakarra izaten askotan. Hori ez da akats bat, hori da
 puntu nagusia: semantikaren zailtasuna ez datza formula zuzena aurkitzean,
@@ -79,18 +81,22 @@ baino ez daude argitaratuta; gainerakoak idazten ari dira.
 | # | Kapitulua | Egoera |
 |---|---|---|
 | 1 | Sarrera: semantika zer den | idazteko |
-| 2 | Semantika lexikoa | idazteko |
+| 2 | Hitza, perpausa eta predikatua | idazteko |
 | 3 | **Konposizioa** | **argitaratuta (pilotua)** |
-| 4 | Erreferentzia eta izen sintagmak | idazteko |
-| 5 | Kuantifikazioa | idazteko |
-| 6 | Predikatuen semantika | idazteko |
-| 7 | Gertakarien semantika | idazteko |
-| 8 | Modalitatea | idazteko |
+| 4 | Tresna-kutxa: multzoak, logika eta lambda-kalkulua | idazteko |
+| 5 | Semantika lexikoa | idazteko |
+| 6 | Kuantifikazioa | idazteko |
+| 7 | Aditzak: gertakariak, denbora eta aspektua | idazteko |
+| 8 | Modalitatea eta jarrerak | idazteko |
 | 9 | Intentsionalitatea | idazteko |
 | 10 | Pragmatikarako sarrera | idazteko |
 | 11 | Inplikaturak | idazteko |
 | 12 | Indar ilokutiboa | idazteko |
 | 13 | Informazio-egitura | idazteko |
+
+Gida-ohar bat: lehenengo lau kapituluek lanerako oinarria ematen dute,
+adibideetatik abiatuta (1–3), eta tresna formalak laburtuta (4); hortik
+aurrera gai bakoitzak bere kapitulua du.
 
 ### Bigarren liburukia
 
@@ -108,3 +114,9 @@ baino ez daude argitaratuta; gainerakoak idazten ari dira.
 - **A. Terminologia** — euskara/ingeles hiztegia definizioekin.
 - **B. Notazioa** — ikurren taula osoa.
 - **C. Nola aitatu** — liburuaren aipamen zuzena.
+
+## Baliabideak sarean
+
+- Sebastian Löbner, *Understanding Semantics*, [ikasleentzako
+  baliabideak](https://routledgetextbooks.com/textbooks/_author/loebner-9781444122435/students.php).
+- Barbara Parteeren [irakaskuntza-materialak](https://people.umass.edu/partee/Teaching.htm).

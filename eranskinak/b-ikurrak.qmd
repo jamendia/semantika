@@ -39,6 +39,9 @@ Kontsultarako da: ez da buruz ikasteko.
 | DetS | Determinatzaile sintagma |
 | A | Aditza |
 
+Kontinuatze-ohar bat: anglo-erako literaturan baliokideak P $\approx$ $S$
+(*sentence*), IS $\approx$ $NP$/$DP$ eta AS $\approx$ $VP$ dira.
+
 Parentesi etiketatuak horrela irakurtzen dira:
 
 ```

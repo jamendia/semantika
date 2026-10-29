@@ -8,17 +8,17 @@
 %   - Alegreya Sans:     letra sansa (goiburuen letra eta atalak)
 %   - Alegreya Sans SC:  letra sansa kapitälua (small caps)
 %   - FiraMono:          letra monoespatziatua
-%   - texgyrepagella-math: Palatino-ko ala matematika letra
+%   - texgyrepagella-math: Pageya-ren matematika-letra (Palatino tankera)
 %
-% Fontak TeX Live-en texmf-tree batean/installatuta daude, eta fontspec
-% lurrun bideak haiaketuak topicaldu eta.
+% Letra-bilaketak kpathsea-ren bidez egiten dira (izen + luzapena); ez dago
+% Path absoluturik. TeX Live-ek pakete hauek behar ditu: etbb, alegreya,
+% fira, tex-gyre-math.
 % ---------------------------------------------------------------------------
 
 \usepackage{fontspec}
 
 % --- Iturri nagusia: ETbb (Bembo-ko ala, serif) ------------------------------
 \setmainfont{ETbb}[
-  Path=/home/vcpmealj/texlive/texmf-dist/fonts/opentype/public/etbb/,
   Extension=.otf,
   UprightFont=*-Regular,
   BoldFont=*-Bold,
@@ -29,43 +29,22 @@
   Kerning=Uppercase
 ]
 
-% --- Iturri batzuk eskaintzen dituzte:
-%   - ETbb:              Bembo-ko ala testuko letra (serif, testua nagusia)
-%   - Alegreya Sans:     letra sansa (goiburuen letra eta atalak)
-%   - Alegreya Sans SC:  letra sansa kapitälua (small caps)
-%   - FiraMono:          letra monoespatziatua
-%   - texgyrepagella-math: Palatino-ko ala matematika letra
-%
-% Fontak TeX Live-en texmf-tree batean/installatuta daude, eta fontspec
-% lurrun bideak haiaketuak topicaldu eta.
-% ---------------------------------------------------------------------------
-
-\usepackage{fontspec}
-
-% --- Iturri nagusia: ETbb (Bembo-ko ala, serif) ------------------------------
-\setmainfont{ETbb}[
-  Path=/home/vcpmealj/texlive/texmf-dist/fonts/opentype/public/etbb/,
-  Extension=.otf,
-  UprightFont=*-Regular,
-  BoldFont=*-Bold,
-  ItalicFont=*-Italic,
-  BoldItalicFont=*-BoldItalic,
-  Ligatures={TeX,Common,Contextual},
-  Contextuals={Alternate},
-  Kerning=Uppercase
-]
-
-% --- Matematikaren letra: unicode-math + texgyrepagella-math (Palatino-ko ala)
+% --- Matematikaren letra: unicode-math + texgyrepagella-math ------------------
+% Quarto/Pandoc-en LaTeX txantiloiak `unicode-math` derrigorrez kargatzen du
+% XeLaTeX-ekin; ezin da kendu txantiloi propiorik gabe. Baina haren letra
+% lehenetsia (Latin Modern Math) alda dezakegu: hemen Pageya (TeX Gyre Pagella
+% Math) ezartzen da, Palatino tankerako matematika-letra, testuaren serif
+% letrarekin (ETbb) ondo ezkontzen dena.
+% Oharra: mathpazo (legacy) EZ da erabili behar, unicode-math-ekin talka egiten
+% baitu eta ExPex-en glossa hausten baitu.
 \usepackage{unicode-math}
 \setmathfont{texgyrepagella-math}[
-  Path=/home/vcpmealj/texlive/texmf-local/fonts/opentype/public/tex-gyre-math/,
   Extension=.otf
 ]
 
 % --- Letra sansa: Alegreya Sans (goiburuen letra) ---------------------------
 \setsansfont{AlegreyaSans}[
-  Path=/home/vcpmealj/texlive/texmf-local/fonts/opentype/public/alegreya/,
-  Extension=.ttf,
+  Extension=.otf,
   UprightFont=*-Regular,
   BoldFont=*-Bold,
   ItalicFont=*-Italic,
@@ -80,7 +59,6 @@
 
 % --- Letra monoespatziatua: FiraMono ------------------------------------------
 \setmonofont{FiraMono}[
-  Path=/home/vcpmealj/texlive/texmf-local/fonts/opentype/public/fira/,
   Extension=.otf,
   UprightFont=*-Regular,
   BoldFont=*-Bold,
@@ -116,11 +94,10 @@
 \usepackage[linguistics]{forest}
 \input{tex/forest-ezarpenak.tex}
 
-% --- ExPes / unicode-math konponketa ------------------------------------------
-% unicode-math-ren \__um_define_math_chars \begin{document}-n \gla,
-% \glb, \glc, \glft makroak berraketake, eta ExPes-en \endgl errore
-% agreea agertuko da. ExPes kargatu ondoren kopiak gorde eta
-% \AtBeginDocument-ean bueltatu.
+% --- ExPex / unicode-math konponketa ------------------------------------------
+% unicode-math-ek \gla, \glb, \glc eta \glft makroak berdefinitzen ditu, eta
+% ExPex-en \endgl-k "Too many }'s" errorea ematen du. ExPex kargatu ondoren
+% kopiak gorde eta \AtBeginDocument-en berrezarri.
 \makeatletter
 \let\expex@gla\gla
 \let\expex@glb\glb

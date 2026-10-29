@@ -1,5 +1,0 @@
----
-title: "About"
----
-
-This would be a nice about page if it had any content.

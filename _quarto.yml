@@ -28,7 +28,31 @@ book:
     - nola-irakurri.qmd
     - part: "I. Esanahia eta konposizioa"
       chapters:
+        - kapituluak/01-sarrera.qmd
+        - kapituluak/02-hitza-perpausa-predikatua.qmd
         - kapituluak/konposizioa.qmd
+        - kapituluak/04-tresna-kutxa.qmd
+        - kapituluak/05-semantika-lexikoa.qmd
+    - part: "II. Erreferentzia eta mundua"
+      chapters:
+        - kapituluak/06-kuantifikazioa.qmd
+        - kapituluak/07-aditzak.qmd
+        - kapituluak/08-modalitatea.qmd
+        - kapituluak/09-intentsionalitatea.qmd
+    - part: "III. Erabilera"
+      chapters:
+        - kapituluak/10-pragmatika-sarrera.qmd
+        - kapituluak/11-inplikaturak.qmd
+        - kapituluak/12-indar-ilokutiboa.qmd
+        - kapituluak/13-informazio-egitura.qmd
+    - part: "IV. Bigarren liburukia: gai aurreratuak"
+      chapters:
+        - kapituluak/14-presuposizioa.qmd
+        - kapituluak/15-denbora-aspektua.qmd
+        - kapituluak/16-pluralak.qmd
+        - kapituluak/17-konparazioa.qmd
+        - kapituluak/18-metafora.qmd
+        - kapituluak/19-kortesia.qmd
   appendices:
     - eranskinak/a-terminologia.qmd
     - eranskinak/b-ikurrak.qmd
@@ -59,7 +83,7 @@ format:
     css: [estilo/basque.css]
   pdf:
     engine: xelatex
-    keep-tex: true
+    keep-tex: false
     include-in-header: tex/aurrea.tex
     toc: true
     number-sections: true

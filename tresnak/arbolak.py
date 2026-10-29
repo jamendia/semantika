@@ -28,6 +28,14 @@ TREE_RE = re.compile(r":::\s*\{\.tree\s+#([\w-]+)\}\s*\n(.*?)\n:::", re.DOTALL)
 # giltzek Forest-eko komak babesten dituzte, adibidez matematika moduan).
 FENCE_RE = re.compile(r"^\s*`{3,}.*$")
 
+# Ez dira aztertzen: zuhaitz-iturrian kapitulu-eremuak besterik ez dira
+# begiratzen (sortutako edo lan-tresnen karpetak kanpoan geratzen dira).
+BAZTERTU_KARPETAK = {
+    ".git", "_site", ".quarto", "textbook-sources", "tresnak",
+    "_extensions", ".github", "estilo", "tex", "plana", "assets",
+    "state", "quarto-txantiloi", "semantika-itzulpena",
+}
+
 
 def tree_edukia(raw: str) -> str:
     """Divaren edukia garbitu: fentxen lerroak kendu, zuritik garbi."""

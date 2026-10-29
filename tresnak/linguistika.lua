@@ -217,6 +217,16 @@ function Div(el)
     local function escape(s)
       return (s:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;"))
     end
+    -- Morfema gramatikalak letra larri txikiz erakusteko: "read.PST" ->
+    -- "read.<span class=\"gloss-abbr\">PST</span>". Glossako hitz arruntek
+    -- ez dute aldaketarik.
+    local function gloss_cell(w)
+      local base, abbr = w:match("^(.-)%.([%u%d]+)$")
+      if base and base ~= "" then
+        return escape(base) .. ".<span class=\"gloss-abbr\">" .. escape(abbr) .. "</span>"
+      end
+      return escape(w)
+    end
     local lines = div_lines(el)
     local orig = lines[1] or ""
     local gloss = lines[2] or ""
@@ -233,7 +243,7 @@ function Div(el)
       end
       html[#html + 1] = "</tr>\n<tr class=\"gloss-gloss\">"
       for i = 1, n do
-        html[#html + 1] = "<td>" .. escape(gw[i] or "") .. "</td>"
+        html[#html + 1] = "<td>" .. gloss_cell(gw[i] or "") .. "</td>"
       end
       html[#html + 1] = "</tr>"
     end

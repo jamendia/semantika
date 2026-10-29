@@ -1,0 +1,28 @@
+﻿---
+title: "Modalitatea eta jarrerak"
+---
+
+::: {.callout-warning title="Zirriborroa" appearance="simple"}
+Kapitulu hau idazteke dago oraindik: egitura besterik ez dago hemen.
+:::
+
+## Sarrera
+
+Zergatik garrantzitsua den gaia azalduko du kapituluak. Oraingoz, huts
+besterik ez dago hemen.
+
+## Garapena
+
+Edukia.
+
+## Laburpena
+
+- Kapituluaren puntu nagusia oraindik zehazteke dago.
+
+## Ariketak
+
+Ariketak kapituluarekin batera idatziko dira.
+
+## Irakurketa gehiago
+
+Irakurketa-gomendioak kapituluarekin batera garatuko dira.

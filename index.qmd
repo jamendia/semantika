@@ -1,12 +1,8 @@
----
-title: "Esanahia eta egitura"
-subtitle: "interpretazioaren zientzia"
----
+﻿# Esanahia eta egitura {.unnumbered}
 
-::: {.hero}
+::: {.sarrera-lelo}
+Interpretazioaren zientzia · hizkuntzalaritza formala euskaraz
 :::
-
-## Liburuaz
 
 Giza hizkuntzaren ezaugarririk bereizgarriena semantikatasuna da: soinuz,
 keinuz edo grafoz osatutako espresioek zerbait esan nahi dute. Esan nahi den
@@ -28,7 +24,11 @@ Hiru galdera nagusik gidatzen dute liburua:
 3. **Nola erabiltzen da esanahia?** Zer gehitzen diote testuinguruak,
    asmoak eta hitzartze-arau sozialek esanahi kodifikatuari?
 
-## Nola dago antolatuta
+Irakurketa bidea eta liburuaren egituraren erabateko taula
+[irakurketa-gidan](nola-irakurri.qmd) daude. Lehen pausua aukeratzen
+baduzu, [1. kapituluan](kapituluak/01-sarrera.qmd) hasten da dena.
+
+## Nola dago antolatuta {.unnumbered}
 
 **Lehen liburukia** oinarrizko arkitekturaz arduratzen da: esanahi motak,
 semantika lexikoa, konposizio semantikoa, erreferentzia, kuantifikazioa,
@@ -40,11 +40,18 @@ ilokutiboa eta informazio-egitura.
 denbora eta aspektua, pluralak eta izen zenbakaitzak, konparazioa, eta
 pragmatikaren luzapenak (metafora, ironia, kortesia, zentsura).
 
+Atalak:
+
+- [I. Esanahia eta konposizioa](kapituluak/01-sarrera.qmd)
+- [II. Erreferentzia eta mundua](kapituluak/06-kuantifikazioa.qmd)
+- [III. Erabilera](kapituluak/10-pragmatika-sarrera.qmd)
+- [IV. Bigarren liburukia: gai aurreratuak](kapituluak/14-presuposizioa.qmd)
+
 Kapituluak modu autonomoan irakur daitezke, baina liburua era progresiboan
 pentsatuta dago. Ariketak kapitulu bakoitzaren amaieran daude; ebazpenak
 irakasleentzat gordeta daude.
 
-## Aitortzak
+## Aitortzak {.unnumbered}
 
 Liburu hau ez da inolako testulibururen itzulpena. Egilearen testua da, eta
 iturri irekietan oinarritzen da: batik bat Laurent Roussarieren *Sémantique
@@ -52,7 +59,7 @@ formelle* (CC BY 4.0) eta Elizabeth Coppock eta Lucas Champollionen *Invitation
 to Formal Semantics* lanean. Aitortza zehatzak [CREDITS.md](CREDITS.md)
 fitxategian daude, eta kapitulu bakoitzaren amaieran dagozkion oharrak.
 
-## Lizentzia
+## Lizentzia {.unnumbered}
 
 Liburu osoa **Creative Commons Aitortu 4.0 Nazioartekoa** (CC BY 4.0)
 lizentziaren pean dago. Parteka dezakezu eta molda dezakezu, aitortza eman eta

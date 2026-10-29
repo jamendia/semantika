@@ -14,7 +14,7 @@ bat (erreferentzia) lehen esleitutako zenbakia jasotzen du.
 Gainera, crossref-ek sortutako adibide-divak berrantolatzen dira:
 etiketa `<span class="exnum">` bihurtzen da eta edukia
 `<div class="example-body">`-n sartzen, zenbakia eta edukia lerro
-berean oinarri-linean jartzeko (`basque.scss` flex diseinua).
+berean oinarri-linean jartzeko (`estilo/basque.css` grid diseinua).
 
 Erabilera:
     python tresnak/ostprozesatu.py            # _site/**/*.html berridatzi
@@ -111,7 +111,7 @@ def restructure(text: str) -> str:
         </div>
         </div>
 
-    Zenbakia eta edukia lerro berean jartzeko (`basque.scss`-eko flex
+    Zenbakia eta edukia lerro berean jartzeko (`estilo/basque.css`-eko grid
     diseinuak erabiltzen du). Idempotentea: berrantolatu ondoren etiketa
     ez dago jada `<p><span class="theorem-title">...` formatuan."""
     out: list[str] = []
