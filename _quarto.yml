@@ -3,6 +3,9 @@ project:
   output-dir: _site
   resources:
     - assets/
+    # Letra-tipoak (woff2) estekak estilo/letrak/letrak.css-tik erreferentziatzen
+    # ditu; baina Quarto-k ez ditu automatikoki kopiatzen, beraz hemen zerrendatu.
+    - estilo/letrak/
 
 book:
   title: "Esanahia eta egitura"
@@ -72,7 +75,13 @@ crossref:
   exr-title: "Ariketa"
 
 format:
-  bookup-html:
+  html:
+    # Gaia proiektuaren barruan dago (estilo/gaia.scss), ez luzapen batean:
+    # horrela `quarto render --to html`-ek gaia zuzen aplikatzen du.
+    theme:
+      light: [estilo/gaia.scss]
+      dark: [estilo/gaia.scss, estilo/gaia-iluna.scss]
+    css: [estilo/letrak/letrak.css, estilo/basque.css]
     toc: true
     toc-depth: 3
     number-sections: true
@@ -80,7 +89,6 @@ format:
     link-external-icon: false
     fig-cap-location: bottom
     tbl-cap-location: top
-    css: [estilo/basque.css]
   pdf:
     engine: xelatex
     keep-tex: false

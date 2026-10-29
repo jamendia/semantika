@@ -48,6 +48,21 @@ jobs:
       - name: Errendatu (HTML)
         run: quarto render --to html
 
+      - name: Gaia zuzena kargatu dela egiaztatu
+        # Babes-hesia: `--to html`-ek gaia isilka baztertuko balu (lehen
+        # gertatu zen bezala), hemen huts egin behar du, ez argitaratu.
+        run: |
+          test -f _site/estilo/basque.css \
+            || { echo "::error::estilo/basque.css ez da _site-ra kopiatu"; exit 1; }
+          test -f _site/estilo/letrak/letrak.css \
+            || { echo "::error::estilo/letrak/letrak.css falta da"; exit 1; }
+          test -f _site/estilo/letrak/roboto-v29-latin-regular.woff2 \
+            || { echo "::error::letra-tipoak ez dira _site-ra kopiatu"; exit 1; }
+          grep -q "estilo/basque.css" _site/index.html \
+            || { echo "::error::index.html-ek ez du estilo/basque.css kargatzen"; exit 1; }
+          grep -q -- "--sidebar-bg-docked" _site/site_libs/bootstrap/*.css \
+            || { echo "::error::gaia pertsonalizatua ez da konpilatu (theme falta da)"; exit 1; }
+
       - name: HTML ostprozesatu (adibideen etiketak)
         run: python tresnak/ostprozesatu.py
 

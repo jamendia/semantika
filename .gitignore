@@ -58,9 +58,9 @@ __pycache__/
 *.out
 
 # ---------------------------------------------------------------------------
-# Quarto font-embedding fitxategi sortuak. Erro-eremuak bakarrik estaltzen
-# dira horrela: _extensions/bookup/fonts/ biltegira igotzea nahi dugu
-# (gaia birsortu ez dadin, honi eusten dio).
+# Quarto-k orrialde-mailan sortutako letra-tipo karpetak. Gure letra-tipoak
+# estilo/letrak/ -en bizi dira eta biltegian gordeta daude; hemen zerrendatutako
+# bideak Quarto-k berak sortutako kopiak dira, ez ditugunak igotzea nahi.
 # ---------------------------------------------------------------------------
 /fonts/
 
