@@ -1,0 +1,15 @@
+title: Linguistics
+author: Freebuff Linguistics Extension
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  filters:
+    - filter-cjk.lua
+    - filter-gloss.lua
+    - filter-deriv.lua
+    - filter-tree.lua
+    - filter-examples.lua
+  formats:
+    html:
+      css: linguistics.css
+

@@ -71,3 +71,10 @@ __pycache__/
 # OpenCode sesioko fitxategiak
 # ---------------------------------------------------------------------------
 WORKING_SESSIONS_OPENCODE/
+
+# ---------------------------------------------------------------------------
+# quarto-ling: hizkuntzalaritza-luzapenaren demo-proiektua. Luzapena bera
+# _extensions/linguistics-en dago; demo hau ez da liburuaren parte eta ez da
+# biltegira igotzen.
+# ---------------------------------------------------------------------------
+/quarto-ling/

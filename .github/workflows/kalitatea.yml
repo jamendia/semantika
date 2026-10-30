@@ -29,15 +29,12 @@ jobs:
         run: |
           tlmgr install \
             etbb alegreya fira tex-gyre-math stmaryrd \
-            expex forest newunicodechar babel-basque \
+            expex pgf newunicodechar babel-basque \
             unicode-math fontspec latexmk \
             koma-script selnolig parskip xurl bookmark
 
       - name: Terminologia birsortu
         run: python tresnak/hiztegia.py
-
-      - name: Zuhaitzak egiaztatu (SVGak biltegian daudela)
-        run: python tresnak/arbolak.py --check
 
       - name: Kalitate-egiaztapena
         run: python tresnak/terminoak-egiaztatu.py

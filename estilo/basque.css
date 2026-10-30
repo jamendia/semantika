@@ -58,22 +58,26 @@ h1 {
   padding: 0.7rem 1rem 0.5rem 1rem;
 }
 
-/* Zuhaitzak: zentratuta, marjina */
-.tree, pre.tree, .quarto-figure .tree {
-  text-align: center;
+/* Zuhaitzak: linguistics luzapenak SVG zentratua sortzen du `.ling-tree`
+   div batean; hemen marjina soilik doitzen dugu. SVGko testuek
+   `currentColor` erabiltzen dute, beraz modu iluna automatikoa da. */
+#quarto-document-content .ling-tree {
   margin: 1rem auto;
 }
 
-.tree img,
-img[src*="arbolak"] {
-  max-width: 100%;
-  height: auto;
-  /* SVG sortuak natural txikiak dira (96–134pt); pantailan handiago
-     erakusten dira, arrazoia zehazteko: irakurgarritasuna. */
-  min-width: 220px;
+/* Zuhaitzen etiketak Roboto letraz idazten dira; ⟨ ⟩ karaktereak ez dauzka,
+   beraz letra-multzoan sinbolo horiek dituzten letrak gehitzen ditugu
+   (Windows / macOS / Linux). */
+#quarto-document-content .ling-tree svg text {
+  font-family: Roboto, "Segoe UI Symbol", "Apple Symbols", "DejaVu Sans",
+    "Cambria Math", "STIX Two Math", sans-serif;
 }
 
-.tree img {
+/* Luzapenaren CSSak `.ling-tree svg path { fill: none }` ezartzen du, eta
+   horrek gezi-puntak (marker) ikusezin uzten ditu. Hemen berrezarri. */
+#quarto-document-content .ling-tree svg marker path {
+  fill: currentColor;
+  stroke: none;
 }
 
 /* Glossak: Leipzig estiloko hiru lerroak (jatorrizkoa / glossa morfosintaktikoa /
@@ -136,17 +140,6 @@ img[src*="arbolak"] {
   padding-top: 0.2em;
 }
 
-/* Zuhaitzak eta parentesi etiketatuak: letra monoespatiatua, tamaina txikiagoa */
-.tree,
-pre.tree {
-  font-family: "Fira Mono", monospace;
-  font-size: 0.86em;
-  line-height: 1.35;
-  background: transparent;
-  border: none;
-  padding-left: 0;
-}
-
 /* Matematika lerroan: ez hautsi */
 .math.inline {
   white-space: nowrap;
@@ -191,11 +184,6 @@ body.quarto-dark .theorem[data-xref-type="def"] {
 
 body.quarto-dark .footnotes {
   border-top-color: var(--bs-border-color);
-}
-
-/* Zuhaitz-bilaka beltzez daude; ilunean zuritzen dira irakurgarri izan dadin */
-body.quarto-dark img[src*="arbolak"] {
-  filter: invert(1);
 }
 
 /* Inprimatzeko: estekak ez erakutsi */

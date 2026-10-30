@@ -34,9 +34,6 @@ jobs:
       - name: Terminologia birsortu
         run: python tresnak/hiztegia.py
 
-      - name: Zuhaitzak egiaztatu (SVGak biltegian daudela)
-        run: python tresnak/arbolak.py --check
-
       - name: Kalitate-egiaztapena
         run: python tresnak/terminoak-egiaztatu.py
 

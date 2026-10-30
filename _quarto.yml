@@ -68,7 +68,10 @@ pdf-engine: xelatex
 bibliography: bibliografia.bib
 csl: estilo/unified-style-sheet-for-linguistics.csl
 filters:
+  # Gure iragazkia: adibideak (ExPex/crossref) eta glossak.
   - tresnak/linguistika.lua
+  # _extensions/linguistics: zuhaitzak (SVG/TikZ) eta deribazio semantikoak.
+  - linguistics
 
 crossref:
   exm-title: "Adibidea"

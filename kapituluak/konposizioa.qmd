@@ -254,9 +254,7 @@ sintaktikoari erreparatzen badiogu, bi argumentuak ez daude maila berean:
 
 ::: {#exm-zuhaitza-p}
 ::: {.tree #tree-konp-tipoak-p}
-```
-[{P} [{IS$_e$: Ane-k}] [{AS$_{\langle e,t\rangle}$}]]
-```
+[P [IS_e Ane-k] [AS^{⟨e,t⟩}]]
 :::
 :::
 
@@ -264,9 +262,7 @@ Eta *AS* delakoaren barnean, beste konposizio bat gertatzen da:
 
 ::: {#exm-zuhaitza-as}
 ::: {.tree #tree-konp-tipoak-as}
-```
-[{AS$_{\langle e,t\rangle}$} [{IS$_e$: Amaia}] [{A$_{\langle e,\langle e,t\rangle\rangle}$: ikusi}]]
-```
+[AS^{⟨e,t⟩} [IS_e Amaia] [A^{⟨e,⟨e,t⟩⟩} ikusi]]
 :::
 :::
 

@@ -1,0 +1,152 @@
+/* ============================================================
+   Linguistics extension styles
+   ============================================================ */
+
+/* ---------- 1. Numbered examples ---------- */
+.ling-ex {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.75em;
+  align-items: start;
+  margin: 0.9em 0;
+}
+.ling-ex-num {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.ling-ex-body > :first-child { margin-top: 0; }
+.ling-ex-body > :last-child  { margin-bottom: 0; }
+.ling-ex-body > p            { margin: 0.2em 0; }
+
+/* sub-examples: a., b., c. share one letter column beside the parent number */
+.ling-sublist {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.75em;
+  row-gap: 0.2em;
+  align-items: start;
+}
+.ling-sublist > .ling-subex {
+  display: contents;
+}
+.ling-sub-label {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.ling-sub-body > :first-child { margin-top: 0; }
+.ling-sub-body > :last-child  { margin-bottom: 0; }
+.ling-sub-body > p            { margin: 0; }
+.ling-sub-body > .ling-gloss  { margin: 0.25em 0 0; }
+
+/* judgment markers occupy a box as wide as the widest marker among the
+   sibling examples, then exactly one space, so that the example text of a.
+   b. c. lines up whether it carries a marker or not */
+.ling-judgment {
+  display: inline-block;
+  padding-right: 0.25em;   /* one space */
+}
+.ling-preamble { margin-right: 0.4em; }
+
+/* ---------- 2. Interlinear glosses ---------- */
+.ling-gloss { margin: 0.35em 0 0.5em; }
+
+.ling-gloss table,
+.ling-deriv table {
+  border: none !important;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.45;
+}
+.ling-gloss table td,
+.ling-gloss table th,
+.ling-deriv table td,
+.ling-deriv table th {
+  border: none !important;
+  background: none !important;
+  padding: 0 0.75em 0 0;
+  vertical-align: baseline;
+  white-space: normal;
+}
+.ling-gloss table tr > td:last-child,
+.ling-deriv table tr > td:last-child { padding-right: 0; }
+
+/* the free-translation tier sits slightly below the gloss */
+.ling-gloss td.ling-gloss-free { padding-top: 0.15em; }
+
+/* ---------- 3. Semantic derivations ---------- */
+.ling-deriv { margin: 0.6em 0; }
+/* one grid for the whole derivation: every column is as wide as the widest
+   cell in it, so formulas never wrap; the justification column takes the
+   remaining width and is set flush with the right margin */
+.ling-deriv-rows {
+  display: grid;
+  column-gap: 0.75em;
+  justify-content: start;
+  align-items: baseline;
+}
+/* without a justification column the derivation keeps its natural width */
+.ling-deriv-rows:not(.ling-deriv-has-notes) {
+  justify-content: start;
+  width: max-content;
+  max-width: 100%;
+}
+/* an unnumbered derivation (no step column) is centred at its natural width,
+   its justification column right-aligned at the right edge of that block */
+.ling-deriv.ling-deriv-centered .ling-deriv-rows {
+  justify-content: center;
+  width: max-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+.ling-deriv-row { display: contents; }
+.ling-deriv-step {
+  text-align: right;
+  white-space: nowrap;
+}
+.ling-deriv-lhs {
+  text-align: right;
+  white-space: nowrap;
+}
+.ling-deriv-eq {
+  text-align: center;
+  white-space: nowrap;
+}
+.ling-deriv-rhs { text-align: left; }
+.ling-deriv-note {
+  text-align: right;
+  padding-left: 1.5em;   /* clear of the formula, whatever the measure */
+  font-style: italic;
+  white-space: nowrap;
+}
+
+/* ---------- 4. Syntax trees ---------- */
+.ling-tree {
+  margin: 1em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  text-align: center;
+}
+.ling-tree svg {
+  max-width: 100%;
+  height: auto;
+  overflow: visible;
+  font-family: inherit;
+}
+.ling-tree svg text {
+  font-family: inherit;
+  fill: currentColor;
+}
+.ling-tree svg line,
+.ling-tree svg path {
+  stroke: currentColor;
+  fill: none;
+}
+
+/* keep examples from being squeezed on narrow screens */
+@media (max-width: 700px) {
+  .ling-gloss { overflow-x: auto; }
+}

@@ -1,14 +1,10 @@
 -- tresnak/linguistika.lua
--- Pandoc iragazkia: hizkuntzalaritzako adibideak, zuhaitzak eta glossak.
+-- Pandoc iragazkia: hizkuntzalaritzako adibideak eta glossak.
 --
 -- HTML (lehenetsia):
 --   ::: {#exm-...}  -> Quarto crossref-ek errendatzen du (theorem example);
 --                      tresnak/ostprozesatu.py-k zenbakitzen du gero,
 --                      liburu osoan (1), (2), (3)...
---   ::: {.tree #id} -> <img src="assets/arbolak/<id>.svg">
---                      SVGa tresnak/arbolak.py-k sortzen du (Forest -> SVG),
---                      eta biltegian gordetzen da. Aldatu zuhaitza bada,
---                      exekutatu: python tresnak/arbolak.py
 --   ::: {.gloss}    -> <table class="gloss-table"> hitzez hitz lerrokatuta
 --                      (jatorrizkoa / glossa / itzulpena)
 --
@@ -18,7 +14,9 @@
 --                      Azpizatiak (a., b., c.) pandoc-en OrderedList gisa
 --                      heldu eta \a errepikatuz sortzen dira.
 --   ::: {.gloss}    -> \begingl \gla/\glb/\glft ... \endgl (ExPex)
---   ::: {.tree #id} -> \begin{forest}...\end{forest}
+--
+-- Zuhaitzak (`{.tree}`) eta deribazio semantikoak (`{.deriv}`) ez dira hemen
+-- kudeatzen: _extensions/linguistics luzapenaren ardura dira (SVG/TikZ).
 --
 -- LaTeX-en #exm- div-ak Quarto crossref-ek jaso ditzan, hau da, gure
 -- iragazkiak identifikatzailearekin ikus ditzan, `quarto._quarto.ast.walk`
@@ -32,35 +30,6 @@ local ok, quarto = pcall(require, "quarto")
 
 local function is_latex()
   return FORMAT:match("latex") ~= nil
-end
-
--- Orrialdearen sakonera: dokumentuaren karpeta (QUARTO_DOCUMENT_PATH)
--- proiektu-erroarekin (QUARTO_PROJECT_ROOT) alderatuta. Adibidez,
--- `kapituluak` azpikarpeta -> "../" ; erroko orrialdeak -> "".
--- Oharra: PANDOC_STATE.input_files ez da erabiltzen, Quarto-k pandoc-i
--- fitxategi-temporal bat pasatzen diolako, jatorrizko .qmd-a ez.
-local function asset_prefix()
-  local doc_dir = os.getenv("QUARTO_DOCUMENT_PATH")
-  local root = os.getenv("QUARTO_PROJECT_ROOT")
-  if not doc_dir or doc_dir == "" or not root or root == "" then
-    return ""
-  end
-  local function norm(p)
-    p = p:gsub("\\", "/")
-    p = p:gsub("/+$", "")
-    return p
-  end
-  local d = norm(doc_dir)
-  local r = norm(root)
-  if d == r then
-    return ""
-  end
-  if d:sub(1, #r + 1) == r .. "/" then
-    local rel = d:sub(#r + 2)
-    local _, depth = rel:gsub("/", "")
-    return ("../"):rep(depth + 1)
-  end
-  return ""
 end
 
 -- Div baten lerroak lortu, SoftBreak/LineBreak-ak errespetatuz.
@@ -81,13 +50,6 @@ local function div_lines(el)
       local trimmed = current:match("^%s*(.-)%s*$")
       if trimmed ~= "" then table.insert(out, trimmed) end
       current = ""
-    elseif block.t == "CodeBlock" then
-      -- Kode-blokea (.tree div-en barruan erabiltzen da Forest-eko komak
-      -- babesteko): lerroak hitzez hitz hartu.
-      for line in block.text:gmatch("[^\r\n]+") do
-        local t = line:match("^%s*(.-)%s*$")
-        if t ~= "" then table.insert(out, t) end
-      end
     elseif block.t == "RawBlock" then
       for line in block.text:gmatch("[^\r\n]+") do
         local t = line:match("^%s*(.-)%s*$")
@@ -170,13 +132,6 @@ end
 -- LaTeX-erako Div maneiatzailea (quarto._quarto.ast.walk bidez exekutatzen da,
 -- crossref-aren custom nodoak ikusgai daudela).
 local function latex_div(el)
-  -- Zuhaitza -> Forest.
-  if el.classes:includes("tree") then
-    local lines = div_lines(el)
-    return pandoc.RawBlock("latex",
-      "\\begin{forest}\n" .. table.concat(lines, "\n") .. "\n\\end{forest}")
-  end
-
   -- Adibidea -> ExPex (zenbakitze globala).
   if el.identifier:match("^exm%-") then
     return pandoc.RawBlock("latex", example_latex(el))
@@ -199,15 +154,6 @@ function Div(el)
       return latex_div(el)
     end
     return nil
-  end
-
-  -- HTML: zuhaitza SVG gisa (bide erlatiboa orrialdearen sakonerara egokitua).
-  if el.classes:includes("tree") then
-    local id = el.identifier or ""
-    local src = asset_prefix() .. "assets/arbolak/" .. id .. ".svg"
-    local alt = "Zuhaitz sintaktikoa: " .. id
-    local img = pandoc.Image({pandoc.Str(alt)}, src, alt)
-    return pandoc.Para({img})
   end
 
   -- HTML: glossa taula gisa (hitz-mailako lerrokatzea).

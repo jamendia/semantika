@@ -29,6 +29,8 @@ BAZTERTU_KARPETAK = {
     "_site", ".quarto", ".git", "textbook-sources", "tresnak",
     "_extensions", ".github", "estilo", "tex", "plana", "assets",
     "state", "quarto-txantiloi", "semantika-itzulpena",
+    # Luzapenaren demo-proiektua: ez da liburuaren parte (ikusi .gitignore).
+    "quarto-ling",
 }
 SORTUTAKO_FITXATEGIAK = {"eranskinak/a-terminologia.qmd"}
 

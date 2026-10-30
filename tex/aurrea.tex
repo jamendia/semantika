@@ -90,9 +90,9 @@
 \usepackage{pifont}
 
 % --- ExPex: adibideak + glossa interlineala -----------------------------------
+% Zuhaitzak _extensions/linguistics luzapenak marrazten ditu (TikZ); beraz,
+% hemen ez da forest kargatzen.
 \usepackage{expex}
-\usepackage[linguistics]{forest}
-\input{tex/forest-ezarpenak.tex}
 
 % --- ExPex / unicode-math konponketa ------------------------------------------
 % unicode-math-ek \gla, \glb, \glc eta \glft makroak berdefinitzen ditu, eta
@@ -227,18 +227,6 @@
     \noindent\llap{\makebox[2.4em][r]{(\theexercise)}\enspace}\ignorespaces
   }{%
     \par\addvspace{1.2ex}%
-  }%
-  % Zuhaitzak adibideen barruan (#exm- div batean .tree div sartuta):
-  % forest-ek ez du \everypar abiarazten, bertikal moduan boxea eraikitzen
-  % duelako, eta beraz (n) etiketa ez litzateke inprimatuko. \forest
-  % (ingurune-hasierako makroa) kiribatzen dugu: etiketa inprimatu behar
-  % bada, \noindent egin (horrek \everypar abiarazi eta etiketa errendatzen
-  % du, edo etiketa jada jarrita badago, ezer ez), eta gero forest abiarazi.
-  % Ezkonduta dagoen \ifadib@jarrita etiketa bikoiztea ekiditen du.
-  \let\adib@oldforest\forest
-  \def\forest{%
-    \noindent\adib@etiketa
-    \adib@oldforest
   }%
 }
 \makeatother
