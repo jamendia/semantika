@@ -15,6 +15,13 @@
 --                      heldu eta \a errepikatuz sortzen dira.
 --   ::: {.gloss}    -> \begingl \gla/\glb/\glft ... \endgl (ExPex)
 --
+-- Glossa-forma bi:
+--   * hiru lerro soilak (hemen): hitz-mailako lerrokatzea, ohiko kasua.
+--   * barnean pipe-taula bat: morfema-zutabeak behar dituenerako.
+--     Orduan `_extensions/linguistics`-eko filter-gloss.lua-k hartzen du
+--     (HTML: `.ling-gloss` taula; LaTeX: tabular). Hemen ez dugu ukitzen,
+--     bestela taula hutsa sortzen da isilean.
+--
 -- Zuhaitzak (`{.tree}`) eta deribazio semantikoak (`{.deriv}`) ez dira hemen
 -- kudeatzen: _extensions/linguistics luzapenaren ardura dira (SVG/TikZ).
 --
@@ -71,20 +78,69 @@ local function to_latex(blocks)
   return s:gsub("%s+$", "")
 end
 
+-- Glossako testua LaTeXerako ihes egin. `div_lines`-ek testu soila ematen du
+-- (stringify), beraz karaktere bereziak literalak dira. Pasa bakarrean
+-- egiten da, `\textbackslash{}`-en giltzak berriz ez ihes egiteko.
+local TEX_ESCAPES = {
+  ["\\"] = "\\textbackslash{}",
+  ["{"] = "\\{",
+  ["}"] = "\\}",
+  ["$"] = "\\$",
+  ["&"] = "\\&",
+  ["#"] = "\\#",
+  ["%"] = "\\%",
+  ["_"] = "\\_",
+  ["~"] = "\\textasciitilde{}",
+  ["^"] = "\\textasciicircum{}",
+}
+
+local function tex_escape(s)
+  return (s:gsub("[\\{}$&#%%_~^]", function(c) return TEX_ESCAPES[c] end))
+end
+
+-- Morfema gramatikalak letra larri txikiz: "read.PST" -> "read.\textsc{PST}".
+-- HTMLko `.gloss-abbr` estiloa islatzen du, bi formatuek itxura bera izan
+-- dezaten (aurretik PDFak "PST" letra larri arruntez erakusten zuen).
+local function gloss_word_tex(w)
+  local base, abbr = w:match("^(.-)%.([%u%d]+)$")
+  if base and base ~= "" then
+    return tex_escape(base) .. ".\\textsc{" .. abbr .. "}"
+  end
+  return tex_escape(w)
+end
+
+local function gloss_line_tex(line)
+  local out = {}
+  for w in line:gmatch("%S+") do
+    table.insert(out, gloss_word_tex(w))
+  end
+  return table.concat(out, " ")
+end
+
 -- Glossa div-a -> ExPex blokea. Lerro bakoitzak // amaiera behar du
 -- (ExPex-ek argumentu iheskorra hartzen du bestela).
 local function gloss_latex(lines)
   local parts = {}
   if lines[1] and lines[1] ~= "" then
-    table.insert(parts, "\\gla " .. lines[1] .. " //")
+    table.insert(parts, "\\gla " .. gloss_line_tex(lines[1]) .. " //")
   end
   if lines[2] and lines[2] ~= "" then
-    table.insert(parts, "\\glb " .. lines[2] .. " //")
+    table.insert(parts, "\\glb " .. gloss_line_tex(lines[2]) .. " //")
   end
   if lines[3] and lines[3] ~= "" then
-    table.insert(parts, "\\glft " .. lines[3] .. " //")
+    table.insert(parts, "\\glft " .. tex_escape(lines[3]) .. " //")
   end
   return "\\begingl\n" .. table.concat(parts, "\n") .. "\n\\endgl"
+end
+
+-- Pipe-taula bat badu, glossa morfema-zutabekoa da eta luzapenaren
+-- filter-gloss.lua-k hartu behar du. Hemen ez ukitu: `div_lines`-ek ez luke
+-- lerro bakar bat ere irakurriko eta taula huts bat sortuko litzateke.
+local function has_table(el)
+  for _, block in ipairs(el.content) do
+    if block.t == "Table" then return true end
+  end
+  return false
 end
 
 -- Adibide div-a (#exm-...) -> ExPex (\ex edo \pex).
@@ -99,7 +155,7 @@ local function example_latex(el)
   local gloss_lines = nil
   local body = {}
   for _, block in ipairs(el.content) do
-    if block.t == "Div" and block.classes:includes("gloss") then
+    if block.t == "Div" and block.classes:includes("gloss") and not has_table(block) then
       gloss_lines = div_lines(block)
     else
       table.insert(body, block)
@@ -137,8 +193,9 @@ local function latex_div(el)
     return pandoc.RawBlock("latex", example_latex(el))
   end
 
-  -- Glossa (adibide baten barnean egon edo ez).
-  if el.classes:includes("gloss") then
+  -- Glossa (adibide baten barnean egon edo ez). Pipe-taula bada, luzapenak
+  -- hartzen du (ikus hasierako oharra).
+  if el.classes:includes("gloss") and not has_table(el) then
     return pandoc.RawBlock("latex", gloss_latex(div_lines(el)))
   end
 
@@ -158,8 +215,8 @@ function Div(el)
 
   -- HTML: glossa taula gisa (hitz-mailako lerrokatzea).
   -- Jatorrizko lerroa eta glossa hitzez hitz lotzen dira; itzulpen askea
-  -- zutabe osoan zabaltzen da.
-  if el.classes:includes("gloss") then
+  -- zutabe osoan zabaltzen da. Pipe-taula bada, luzapenak hartzen du.
+  if el.classes:includes("gloss") and not has_table(el) then
     local function escape(s)
       return (s:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;"))
     end

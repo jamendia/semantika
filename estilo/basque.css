@@ -30,11 +30,15 @@ h1 {
   align-items: start;
 }
 
+/* Zenbakia ezkerrean lerrokatzen da, testu-marjina bertan has dadin:
+   "(1)" eta "(12)" ezker-ertzean bat datoz, eta gorputza 3em-ra dago beti
+   (2.6em-ko zutabea + 0.4em-ko tartea). */
 .theorem.example .exnum {
   font-weight: 600;
   color: #444;
   font-variant: normal;
   line-height: inherit;
+  text-align: left;
 }
 
 .theorem.example .example-body {
@@ -49,6 +53,69 @@ h1 {
 
 .theorem.example p {
   margin-bottom: 0.25rem;
+}
+
+/* Azpizatiak (a., b., c.): letra gorputzaren ezker-ertzean zintzilik,
+   testua 1.5em-ra. `ol`-aren kako-lekua eta goiko marjina kentzen dira
+   (letrak 1.2em barrurago zeuden eta zenbakiaren lerroa bultzatzen zuten);
+   beheko 1rem marjina, tema-ren lehenetsia, mantentzen da adibidearen
+   ondorengo tarteak berdin jarrai dezan. */
+.theorem.example ol[type="a"],
+.adib-mock ol[type="a"] {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 1rem 0;
+}
+
+.theorem.example ol[type="a"] > li,
+.adib-mock ol[type="a"] > li {
+  position: relative;
+  padding-left: 1.5em;
+  margin: 0;
+}
+
+/* `counter(list-item)`-ek `list-style: none`-rekin ere aurrera egiten du:
+   elementua `display: list-item` da oraindik. Posizio absolutuak edozein
+   eduki-bloke onartzen du (glossa, zuhaitza) testua 1.5em-ra mantenduta. */
+.theorem.example ol[type="a"] > li::before,
+.adib-mock ol[type="a"] > li::before {
+  content: counter(list-item, lower-alpha) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5em;
+}
+
+/* Adibide eredua (`nola-irakurri.qmd`): zenbakia markdown-en bertan idatzita
+   dago ("(12)"), kontagailu globala ukitu gabe. LaTeXek parentesiak gordetzen
+   ditu (`\def\labelenumi{(\arabic{enumi})}`), HTMLak ez (Pandoc-ek `type="1"`
+   besterik ez du jartzen), beraz hemen gehitzen ditugu `::before` bidez. */
+.adib-mock {
+  margin: 0 0 1rem 0;
+}
+
+.adib-mock > ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.adib-mock > ol > li {
+  position: relative;
+  padding-left: 3em;
+  margin: 0;
+}
+
+.adib-mock > ol > li::before {
+  content: "(" counter(list-item) ")";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2.6em;
+  text-align: left;
+  font-weight: 600;
+  color: #444;
+  line-height: inherit;
 }
 
 /* Definizioak: markatuagoak */
@@ -131,6 +198,36 @@ h1 {
   letter-spacing: 0.04em;
 }
 
+/* Luzapenaren glossa-forma (morfema-zutabeak): `{.gloss}` div-ak pipe-taula
+   bat badu, `_extensions/linguistics`-eko filter-gloss.lua-k hartzen du eta
+   `.ling-gloss` taula sortzen du (tresnak/linguistika.lua-k uzten dio).
+   Tema-ren taula-arauak hemen ere gainditu behar dira, bestela datu-taula
+   baten itxura hartzen du. Lerro-mailako estiloak ez dira hemen errepikatzen:
+   luzapenak ez die ilarari klaserik jartzen. */
+#quarto-document-content .ling-gloss table {
+  width: auto;
+  margin: 0.15rem 0 0.9rem 0;
+  border-collapse: collapse;
+  font-size: 1em;
+  line-height: 1.35;
+}
+
+#quarto-document-content .ling-gloss table tbody tr,
+#quarto-document-content .ling-gloss table tbody tr:first-child,
+#quarto-document-content .ling-gloss table tbody tr:last-child {
+  border: none;
+}
+
+#quarto-document-content .ling-gloss table td {
+  border: none;
+  padding: 0 0.7em 0.05em 0;
+  vertical-align: baseline;
+}
+
+#quarto-document-content .ling-gloss table td:last-child {
+  padding-right: 0;
+}
+
 /* Itzulpen askea: gorputzaren letra, komatxoen artean (iturrian) */
 #quarto-document-content .gloss-table .gloss-trans td {
   font-family: var(--bs-body-font-family);
@@ -169,7 +266,8 @@ table {
 
 /* Iluneko modua: gorputzak `quarto-dark` klasea jasotzen du;
    kolore finkatuak (argi-moduarekikoak) aldatzen dira sare honetan. */
-body.quarto-dark .theorem.example .exnum {
+body.quarto-dark .theorem.example .exnum,
+body.quarto-dark .adib-mock > ol > li::before {
   color: var(--bs-secondary-color);
 }
 
